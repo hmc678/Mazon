@@ -1,10 +1,11 @@
 SplineFontDB: 3.0
-FontName: MendozaHebrew-Regular
-FullName: Mendoza Hebrew Regular
-FamilyName: MendozaHebrew
+FontName: MazonHebrew-Regular
+FullName: Mazon Hebrew Regular
+FamilyName: Mazon Hebrew
 Weight: Regular
-Copyright: Copyright (c) 2014 Ryan Dorsey\nCreated with FontForge 2.0 (http://fontforge.sf.net)\nLicensed under SIL Open Font License v1.1 (http://scripts.sil.org/OFL)
+Copyright: Copyright (c) 2014 Ryan Dorsey\nLicensed under SIL Open Font License v1.1 (http://scripts.sil.org/OFL)\nCreated with FontForge 2.0 (http://fontforge.sf.net)
 UComments: "2014-10-16: Created." 
+FontLog: "Mazon Hebrew Regular+AAoACgAA-A low contrast Hebrew font intended as a companion font to ITC Mendoza Roman Std.+AAoACgAA-2014-10-16: Version 0.1.  Initial version." 
 Version: 0.1
 ItalicAngle: 0
 UnderlinePosition: -100
@@ -20,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1413475767
-ModificationTime: 1413487359
+ModificationTime: 1413496309
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -100,7 +101,7 @@ SplineSet
  626.084 444.666 631.017 429.213 623.284 416.755 c 4
  581.485 349.409 529.262 279.623 484.83 237.706 c 4
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57665
@@ -137,7 +138,7 @@ SplineSet
  146.771 600.561 162.659 582.237 180.761 582.208 c 4
  245.689 582.102 308.338 580.899 356.33 579.761 c 4x70
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57666
@@ -173,7 +174,7 @@ SplineSet
  68.3027 67.2217 69.6641 76.0391 78.8633 80.8252 c 0
  136.031 110.562 208.602 156.704 244.023 186.007 c 0
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57667
@@ -209,7 +210,7 @@ SplineSet
  80.8389 476.703 68.6328 482.129 70.123 491.538 c 2
  87.9414 597.214 l 2x60
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57668
@@ -255,7 +256,7 @@ SplineSet
  88.7344 475.709 76.5283 481.135 78.0186 490.544 c 2
  96.1533 596.78 l 2
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57669
@@ -285,7 +286,7 @@ SplineSet
  263.306 9.98438 216.549 -10.9922 210.595 -11.4033 c 0
  204.651 -11.8125 202.608 -1.22168 202.608 2.87891 c 0
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57670
@@ -318,7 +319,7 @@ SplineSet
  181.48 576.8 235.071 541.494 293.945 495.686 c 0
  302.319 489.17 319.804 473.49 311.867 461.161 c 2
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57671
@@ -356,7 +357,7 @@ SplineSet
  368.391 481.555 294.641 483.974 228.275 476.346 c 0
  192.326 472.214 173.745 446.703 171.99 384.081 c 0xb0
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57672
@@ -396,7 +397,7 @@ SplineSet
  167.281 250.25 183.679 175.338 218.911 111.549 c 0
  257.123 42.3623 398.966 76.0068 462.454 113.643 c 0
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57673
@@ -420,7 +421,7 @@ SplineSet
  278.033 504.304 285.712 491.169 283.172 476.728 c 0
  268.615 393.964 245.237 308.265 235.569 278.746 c 1
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57674
@@ -456,7 +457,7 @@ SplineSet
  594.592 465.451 l 2
  566.936 450.604 563.666 420.83 563.592 376.529 c 2x90
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57675
@@ -488,7 +489,7 @@ SplineSet
  301.734 580.518 391.351 568.219 483.605 537.312 c 0
  592.784 500.735 560.077 486.644 559.552 379.054 c 1
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57676
@@ -528,7 +529,7 @@ SplineSet
  159.197 594.496 168.966 588.528 182.213 588.044 c 0
  195.46 587.559 285.978 586.542 333.994 585.719 c 0xa0
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57677
@@ -564,7 +565,7 @@ SplineSet
  72.4727 183.487 85.7061 402.699 87.1963 449.348 c 0xd8
  87.8164 468.742 92.0039 538.854 90.9258 596.812 c 0
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57678
@@ -610,7 +611,7 @@ SplineSet
  152.152 598.793 160.172 602.839 173.758 590.05 c 0
  203.434 562.115 219.542 542.705 241.147 505.284 c 0
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57679
@@ -642,7 +643,7 @@ SplineSet
  181.479 577.886 224.927 550.045 283.802 504.236 c 0
  292.176 497.721 309.356 481.828 300.496 470.146 c 0x40
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57680
@@ -677,7 +678,7 @@ SplineSet
  83.1641 87.0459 87.8506 99.2988 111.299 97.7578 c 2
  256.243 88.2305 l 2
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57681
@@ -709,7 +710,7 @@ SplineSet
  477.498 132.603 504.327 178.147 509.154 279.864 c 0
  515.142 406.05 489.027 446.872 368.946 467.463 c 0
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57682
@@ -752,7 +753,7 @@ SplineSet
  84.8672 -13.584 87.1875 -5.87598 101.724 -4.2002 c 0
  159.42 2.45312 257.819 26.4385 314.788 43.1592 c 0
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57683
@@ -793,7 +794,7 @@ SplineSet
  513.868 -198.109 461.795 -218.938 455.841 -219.349 c 0
  449.897 -219.758 447.632 -209.161 447.854 -205.067 c 0
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57684
@@ -837,7 +838,7 @@ SplineSet
  117.496 588.475 120.109 591.005 123.76 590.934 c 2
  136.409 590.721 l 2
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57685
@@ -880,7 +881,7 @@ SplineSet
  550.364 473.811 556.256 458.04 548.105 445.852 c 0
  484.605 350.894 374.139 234.917 247.197 118.047 c 0
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57686
@@ -928,7 +929,7 @@ SplineSet
  103.966 94.4043 112.675 97.1211 127.146 96.8486 c 0
  226.119 94.9863 322.84 93.6973 420.459 95.8164 c 0
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57687
@@ -971,7 +972,7 @@ SplineSet
  262.717 485.771 215.794 483.386 95.3574 481.108 c 0
  80.8652 480.834 68.415 486.291 70.1641 495.671 c 0
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57688
@@ -1002,7 +1003,7 @@ SplineSet
  543.796 575.119 513.055 549.974 515.166 375.666 c 2
  518.544 96.8516 l 2
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57689
@@ -1054,7 +1055,7 @@ SplineSet
  350.582 162.344 305.089 161.081 293.29 169.446 c 0
  288.43 172.892 288.368 181.566 289.76 185.424 c 0
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: afii57690
@@ -1096,7 +1097,7 @@ SplineSet
  446.938 481.555 380.686 483.974 314.32 476.346 c 0
  278.371 472.214 261.178 446.728 261.369 384.081 c 0
 EndSplineSet
-Validated: 524321
+Validated: 33
 EndChar
 
 StartChar: space
