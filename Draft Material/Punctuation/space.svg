@@ -63,10 +63,6 @@
        orientation="1,0"
        position="180,500"
        id="guide3869" />
-    <sodipodi:guide
-       orientation="0,1"
-       position="500,43"
-       id="guide11274" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -76,7 +72,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
