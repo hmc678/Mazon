@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="middle dot.svg">
+   sodipodi:docname="bullet.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,7 +25,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="229.10258"
+     inkscape:cx="231.12289"
      inkscape:cy="568.042"
      inkscape:document-units="px"
      inkscape:current-layer="g3232"
@@ -72,7 +72,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -89,7 +89,7 @@
          id="path3234"
          d="m 125.15401,122.33312 c 31.84179,-1.15715 64.83325,-19.13615 64.83325,-65.334271 0,-54.9807546 -36.25019,-71.974806 -68.36534,-71.974806 -41.62325,0 -62.40003,23.4867026 -62.40003,73.489505 0,41.026249 25.06218,65.304802 65.93212,63.819572 z"
          inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-width:1.04808593;stroke-opacity:1"
+         style="fill:none;stroke:#000000;stroke-width:0.82443326;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
          sodipodi:nodetypes="sssss" />
     </g>
   </g>

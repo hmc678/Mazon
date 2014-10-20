@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="apostrophe.svg">
+   sodipodi:docname="quotation mark.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,7 +25,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="100.75847"
+     inkscape:cx="-33.884387"
      inkscape:cy="807.47674"
      inkscape:document-units="px"
      inkscape:current-layer="g3232"
@@ -72,7 +72,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -89,13 +89,13 @@
          id="path3234-81"
          d="m 136.49108,122.69423 c 28.9981,-0.327 57.36609,-6.571 54.8259,-65.358003 -4.11659,-95.269506 -33.9676,-209.379987 -55.1831,-209.379987 -26.48666,0 -43.636594,76.673803 -48.973206,210.895987 -2.230987,56.112003 12.4948,64.256003 49.330406,63.842003 z"
          inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-opacity:1"
+         style="fill:none;stroke:#000000;stroke-opacity:1;stroke-width:1.032;stroke-miterlimit:4;stroke-dasharray:none"
          sodipodi:nodetypes="sssss" />
       <path
          id="path3234-81-4"
          d="m -24.508921,122.69423 c 28.9980997,-0.327 57.36609,-6.571 54.8259,-65.358 -4.11659,-95.269501 -33.9676003,-209.37998 -55.1831,-209.37998 -26.486661,0 -43.63659,76.673799 -48.97321,210.89598 -2.23098,56.112 12.4948,64.256 49.33041,63.842 z"
          inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-opacity:1"
+         style="fill:none;stroke:#000000;stroke-opacity:1;stroke-width:1.032;stroke-miterlimit:4;stroke-dasharray:none"
          sodipodi:nodetypes="sssss" />
     </g>
   </g>

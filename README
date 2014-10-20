@@ -2,6 +2,8 @@
 
 Mazon Hebrew is a low-contrast Hebrew font intended to be a companion to [ITC Mendoza Roman Std](http://www.fontshop.com/fonts/downloads/itc/itc_mendoza_roman_std_book/).  It is released under the SIL Open Font License v1.1, which can be found in the file `LICENSE` or at http://scripts.sil.org/OFL.
 
-## Notes
+## Files
 
-The directory `Draft Material` contains the raw `.svg` files that make up the font.  These are [Inkscape](http://www.inkscape.org)-flavored `.svg`s and may not work with other vector graphic editors.  These files are imported into [FontForge](http://fontforge.org) (saved as `.sfd` files) which is used to create the final font files.
+In the root directory, you will find `specimen.pdf` a type specimen for Mazon Hebrew (as well as `specimen.sla`, a [Scribus](http://www.scribus.net) file).  In addition, you can find the text of the SIL Open Font License, this `README`, and `MazonHebrew-Regular.sfd`, a [FontForge](http://fontforge.org) file for generating the final product: `MazonHebrew-Regular.otf`.
+
+The directory `Draft Material` contains two directories, `Letterforms` and `Punctuation`.  They contain the raw `.svg` files, one per glyph, which are imported into Fontforge to generate the font.  These are [Inkscape](http://www.inkscape.org)-flavored `.svg`s and may not work with other vector graphic editors.

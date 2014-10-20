@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="200.27255"
-     inkscape:cy="465.29442"
+     inkscape:cx="65.629693"
+     inkscape:cy="443.78213"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -72,7 +72,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -84,12 +84,12 @@
     <g
        id="g3232"
        transform="matrix(-1,0,0,-1,277.92313,800.26609)"
-       style="fill:none;stroke:#000000;stroke-opacity:1">
+       style="fill:none;stroke:#000000;stroke-opacity:1;stroke-width:1.032;stroke-miterlimit:4;stroke-dasharray:none">
       <path
          id="path3234"
          d="M 139,122.35714 C 167.97689,121.19959 198,103.21429 198,57 198,2 165.01136,-15 135.78571,-15 97.907427,-15 79,8.4949239 79,58.515229 c 0,41.04061 22.80726,65.327661 60,63.841911 z"
          inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-opacity:1"
+         style="fill:none;stroke:#000000;stroke-opacity:1;stroke-width:1.032;stroke-miterlimit:4;stroke-dasharray:none"
          sodipodi:nodetypes="sssss" />
     </g>
   </g>

@@ -25,7 +25,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="488.35923"
+     inkscape:cx="107.53172"
      inkscape:cy="595.52525"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -76,7 +76,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -86,7 +86,7 @@
      id="layer1"
      transform="translate(0,-52.362183)">
     <path
-       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:none;stroke:#000000;stroke-width:1.03199995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:none;stroke:#000000;stroke-width:1.032;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
        d="M 248.74383,52.146338 C 154.77896,181.75568 100,326.5139 100,498.70022 c 0,180.71134 60.69057,331.69505 162.90447,464.85226 11.06359,14.4129 20.28041,13.679 22.22012,1.444 l 4.74164,-29.9085 c 1.37224,-8.65556 -0.10807,-14.39937 -3.27275,-19.7484 -76.2351,-128.85446 -106.90244,-252.3284 -106.90244,-416.63936 0,-158.29062 24.60885,-272.30895 99.13538,-402.525022 2.66724,-4.66032 2.5452,-10.11496 1.5105,-16.69518 l -4.67835,-29.75213 c -2.01622,-12.822249 -14.82605,-14.255946 -26.91474,2.41845 z"
        id="path10568"
        inkscape:connector-curvature="0"
