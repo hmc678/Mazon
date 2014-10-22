@@ -51,6 +51,8 @@ Several pieces of software have been used to help develop Mazon.  These may be o
 
 ## Source files
 
+Please note that the font files and type specimen (`MazonHebrew-Regular.(otf|sfd)` and `specimen.(pdf|sla)`) are not updated every commit, but only on new versions (i.e., tagged commits).  If you wish to use a version of Mazon that is based off of a non-release commit, you will need to generate the appropriate files yourself.
+
 ### Layout
 
 The following tree represents the layout of the Mazon Font Software source tree.
@@ -67,7 +69,7 @@ The following tree represents the layout of the Mazon Font Software source tree.
     |-- makefont.py                 - a python script for generating the fonts.
     |-- MazonHebrew-Regular.otf     - a useable OpenType font.
     |-- MazonHebrew-Regular.sfd     - the Fontforge save file.
-    |-- README                      - brief introduction to the font.
+    |-- README                      - a brief introduction to the font.
     |-- specimen.pdf                - a type specimen.
     `-- specimen.sla                - the Scribus save for the type specimen.
 
