@@ -39,7 +39,8 @@ for d in DIRS:
         fullpath = path.join(d, f)
         if path.isfile(fullpath):
             print 'Processing file: {}'.format(f)
-            # Retrieve the filename sans extension.
+            # Retrieve the filename sans extension, i.e., the glyph's unicode
+            # name.
             glyphname = path.splitext(path.basename(f))[0]
             try:
                 glyphnum = ord(unicodedata.lookup(glyphname))
@@ -49,6 +50,8 @@ for d in DIRS:
                 continue
             glyph = font.createChar(glyphnum)
             glyph.importOutlines(fullpath)
+            # This value is subject to change and seems to just be a capricious
+            # side effect of the svg import.
             glyph.transform(psMat.translate(0, -50))
             glyph.left_side_bearing  = 60
             glyph.right_side_bearing = 60
