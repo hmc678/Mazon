@@ -13,7 +13,7 @@
    height="1000"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="hebrew letter ayin.svg">
   <defs
      id="defs4" />
@@ -32,11 +32,11 @@
      showgrid="true"
      gridtolerance="10"
      guidetolerance="10"
-     showguides="false"
+     showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1680"
-     inkscape:window-height="983"
-     inkscape:window-x="0"
+     inkscape:window-width="1851"
+     inkscape:window-height="1053"
+     inkscape:window-x="69"
      inkscape:window-y="27"
      inkscape:window-maximized="1">
     <sodipodi:guide
