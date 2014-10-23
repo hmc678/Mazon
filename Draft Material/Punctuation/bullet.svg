@@ -13,7 +13,7 @@
    height="1000"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="bullet.svg">
   <defs
      id="defs4" />
@@ -34,9 +34,9 @@
      guidetolerance="10"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1680"
-     inkscape:window-height="983"
-     inkscape:window-x="0"
+     inkscape:window-width="1851"
+     inkscape:window-height="1053"
+     inkscape:window-x="69"
      inkscape:window-y="27"
      inkscape:window-maximized="1">
     <sodipodi:guide
@@ -87,9 +87,9 @@
        style="fill:none;stroke:#000000;stroke-opacity:1">
       <path
          id="path3234"
-         d="m 125.15401,122.33312 c 31.84179,-1.15715 64.83325,-19.13615 64.83325,-65.334271 0,-54.9807546 -36.25019,-71.974806 -68.36534,-71.974806 -41.62325,0 -62.40003,23.4867026 -62.40003,73.489505 0,41.026249 25.06218,65.304802 65.93212,63.819572 z"
+         d="m 98.107932,136.75856 c 38.535408,-1.4004 78.462168,-23.15885 78.462168,-79.068514 0,-66.538533 -43.87052,-87.104988 -82.736756,-87.104988 -50.373067,0 -75.517438,28.4239588 -75.517438,88.9381 0,49.650582 30.330626,79.032842 79.792026,77.235402 z"
          inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-width:0.82443326;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         style="fill:none;stroke:#000000;stroke-width:0.99774152;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          sodipodi:nodetypes="sssss" />
     </g>
   </g>

@@ -13,8 +13,8 @@
    height="1000"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
-   sodipodi:docname="sof pasuq.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="hebrew punctuation sof pasuq.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,18 +25,18 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="-237.46888"
-     inkscape:cy="487.73457"
+     inkscape:cx="137.35736"
+     inkscape:cy="545.12113"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g3232-2"
      showgrid="true"
      gridtolerance="10"
      guidetolerance="10"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1680"
-     inkscape:window-height="983"
-     inkscape:window-x="0"
+     inkscape:window-width="1851"
+     inkscape:window-height="1053"
+     inkscape:window-x="69"
      inkscape:window-y="27"
      inkscape:window-maximized="1">
     <sodipodi:guide
@@ -82,21 +82,30 @@
      id="layer1"
      transform="translate(0,-52.362183)">
     <g
-       id="g3232"
-       transform="matrix(-1,0,0,-1,277.92313,800.26609)"
-       style="fill:none;stroke:#000000;stroke-opacity:1;fill-opacity:1;stroke-width:1.032;stroke-miterlimit:4;stroke-dasharray:none">
-      <path
-         id="path3234"
-         d="M 139,122.35714 C 167.97689,121.19959 198,103.21429 198,57 198,2 165.01136,-15 135.78571,-15 97.907427,-15 79,8.4949239 79,58.515229 c 0,41.04061 22.80726,65.327661 60,63.841911 z"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-opacity:1;fill-opacity:1;stroke-width:1.032;stroke-miterlimit:4;stroke-dasharray:none"
-         sodipodi:nodetypes="sssss" />
+       id="g3081">
+      <g
+         id="g3075">
+        <g
+           id="g3070">
+          <g
+             style="fill:none;stroke:#000000;stroke-width:1.03199995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+             transform="matrix(-1,0,0,1,285.92313,208.29376)"
+             id="g3232-2">
+            <path
+               sodipodi:nodetypes="sssss"
+               style="fill:none;stroke:#000000;stroke-width:1.18553042;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+               inkscape:connector-curvature="0"
+               d="m 130.14581,162.86851 c 16.90293,-0.67523 67.77742,-64.35108 67.77742,-87.080315 0,-23.795948 -54.30734,-90.71143 -71.4699,-90.71143 -19.71748,0 -65.233708,70.651519 -65.233708,92.452079 0,21.205684 48.319848,86.162836 68.926188,85.339666 z"
+               id="path3234-6" />
+            <path
+               sodipodi:nodetypes="sssss"
+               style="fill:none;stroke:#000000;stroke-width:1.18553042;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+               inkscape:connector-curvature="0"
+               d="m 130.14581,433.17642 c 16.90293,0.67523 67.77742,64.35108 67.77742,87.08031 0,23.79595 -54.30734,90.71143 -71.4699,90.71143 -19.71749,0 -65.233707,-70.65152 -65.233707,-92.45208 0,-21.20568 48.319847,-86.16283 68.926187,-85.33966 z"
+               id="path3234-6-4" />
+          </g>
+        </g>
+      </g>
     </g>
-    <path
-       id="path3234-0"
-       d="m 137.64286,342.65902 c 28.97689,-1.15755 59,-19.14285 59,-65.35715 0,-55 -32.98864,-72 -62.21429,-72 -37.878279,0 -56.785709,23.49493 -56.785709,73.51523 0,41.04061 22.807259,65.32767 59.999999,63.84192 z"
-       inkscape:connector-curvature="0"
-       style="fill:none;stroke:#000000;stroke-opacity:1;stroke-width:1.032;stroke-miterlimit:4;stroke-dasharray:none"
-       sodipodi:nodetypes="sssss" />
   </g>
 </svg>

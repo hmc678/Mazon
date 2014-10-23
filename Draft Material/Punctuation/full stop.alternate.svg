@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="asterisk.svg">
+   sodipodi:docname="hebrew punctuation sof pasuq.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -24,20 +24,20 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="48.80356"
-     inkscape:cy="696.0475"
+     inkscape:zoom="0.7"
+     inkscape:cx="137.35736"
+     inkscape:cy="545.12113"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g3232-2"
      showgrid="true"
      gridtolerance="10"
      guidetolerance="10"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="3078"
-     inkscape:window-height="1752"
-     inkscape:window-x="122"
-     inkscape:window-y="48"
+     inkscape:window-width="1851"
+     inkscape:window-height="1053"
+     inkscape:window-x="69"
+     inkscape:window-y="27"
      inkscape:window-maximized="1">
     <sodipodi:guide
        orientation="0,1"
@@ -63,10 +63,6 @@
        orientation="1,0"
        position="180,500"
        id="guide3869" />
-    <sodipodi:guide
-       orientation="0,1"
-       position="500,43"
-       id="guide11274" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -76,7 +72,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -85,11 +81,25 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-52.362183)">
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1.28999996;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 328.46706,327.13273 c -53.99531,60.25874 -70.43762,-63.46963 -92.84094,-55.66133 -22.40333,7.80831 41.58244,122.71171 -38.92646,108.95343 -80.50892,-13.75828 15.55575,-93.29339 -2.65438,-110.07272 -18.21013,-16.77937 -81.40798,93.79777 -104.712631,15.70782 -23.304648,-78.08995 87.903211,-30.58759 91.914251,-54.64366 4.01105,-24.05608 -128.08964,-24.92116 -75.70703,-86.75161 52.38262,-61.830461 73.4398,61.4641 97.69927,51.24589 24.25946,-10.21821 -42.43127,-116.556575 37.75833,-103.736279 80.18961,12.820299 -13.58978,93.108219 2.75229,108.230239 16.34207,15.12203 84.50299,-92.66921 108.43681,-14.65031 23.93382,78.0189 -92.94383,29.55049 -94.06718,53.74463 -1.12335,24.19415 124.34298,27.37516 70.34767,87.6339 z"
-       id="path2987"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="zzzzzzzzzzzzz" />
+    <g
+       id="g3081">
+      <g
+         id="g3075">
+        <g
+           id="g3070">
+          <g
+             style="fill:none;stroke:#000000;stroke-width:1.03199995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+             transform="matrix(-1,0,0,1,285.92313,208.29376)"
+             id="g3232-2">
+            <path
+               sodipodi:nodetypes="sssss"
+               style="fill:none;stroke:#000000;stroke-width:1.18553042;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+               inkscape:connector-curvature="0"
+               d="m 130.14581,433.17642 c 16.90293,0.67523 67.77742,64.35108 67.77742,87.08031 0,23.79595 -54.30734,90.71143 -71.4699,90.71143 -19.71749,0 -65.233707,-70.65152 -65.233707,-92.45208 0,-21.20568 48.319847,-86.16283 68.926187,-85.33966 z"
+               id="path3234-6-4" />
+          </g>
+        </g>
+      </g>
+    </g>
   </g>
 </svg>
