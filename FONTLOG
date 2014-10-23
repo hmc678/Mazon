@@ -57,7 +57,7 @@ Please note that the font files and type specimen (`MazonHebrew-Regular.(otf|sfd
 
 The following tree represents the layout of the Mazon Font Software source tree.
 
-    mazon-hebrew
+    .
     |-- Draft Material
     |   |-- basis.svg               - an empty, measured grid for new glyphs.
     |   |-- Letterforms
@@ -72,6 +72,8 @@ The following tree represents the layout of the Mazon Font Software source tree.
     |-- README                      - a brief introduction to the font.
     |-- specimen.pdf                - a type specimen.
     `-- specimen.sla                - the Scribus save for the type specimen.
+
+The glyphs under the directories in `Draft Material` are named after their Unicode character names minus the code point, e.g., the file `full stop.svg` contains an illustration of the character `U+002E FULL STOP`, whereas `hebrew letter alef.svg` contains the same for `U+05D0 HEBREW LETTER ALEF`.  If you create additional glyphs, be sure to name them after their Unicode names.  This is both so others know what the glyph is supposed to represent and so that `makefont.py` can place the glyph appropriately in the font.
 
 ### makefont.py
 
