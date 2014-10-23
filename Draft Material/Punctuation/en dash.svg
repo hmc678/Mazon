@@ -13,7 +13,7 @@
    height="1000"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="en dash.svg">
   <defs
      id="defs4" />
@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="5.3062957"
-     inkscape:cy="567.63431"
+     inkscape:cx="-331.21968"
+     inkscape:cy="565.85431"
      inkscape:document-units="px"
      inkscape:current-layer="g2998"
      showgrid="true"
@@ -34,9 +34,9 @@
      guidetolerance="10"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1680"
-     inkscape:window-height="983"
-     inkscape:window-x="0"
+     inkscape:window-width="1851"
+     inkscape:window-height="1053"
+     inkscape:window-x="69"
      inkscape:window-y="27"
      inkscape:window-maximized="1">
     <sodipodi:guide
@@ -87,9 +87,9 @@
        style="fill:none;stroke:#000000;stroke-opacity:1">
       <path
          id="path3000"
-         d="m 317.77012,152.81109 c -61.50617,1.9e-4 -159.80747,-0.8221 -250.385237,-3.26269 -9.224067,-0.24854 -12.676375,4.68955 -10.932637,15.12492 2.206395,13.20413 4.412789,26.40826 6.619183,39.61239 2.241709,13.41547 5.493047,22.36674 19.515229,21.73731 60.484772,-2.71505 141.968982,-3 215.788792,-3 57.59772,0 137.72443,4.5823 202.73803,3 14.94621,-0.36376 16.49076,-4.6277 14.85554,-14.62879 l -7.88799,-48.2434 c -2.02609,-12.39169 -9.17747,-12.03666 -22.05684,-11.60243 -69.14532,2.33127 -105.02108,1.2625 -168.25407,1.26269 z"
+         d="m 242.16666,152.73762 c -43.75958,1.9e-4 -113.69764,-0.82381 -178.140672,-3.26951 -6.562613,-0.24906 -9.538075,4.77276 -7.778204,15.15654 l 6.727649,39.69522 c 2.262451,13.34916 3.908119,22.4135 13.884429,21.78277 43.032878,-2.72073 98.987828,-3.00628 151.508138,-3.00628 40.97883,0 100.00462,4.59188 146.2596,3.00628 10.63373,-0.36453 12.14234,-4.69245 10.56922,-14.65938 l -7.63036,-48.34428 c -1.94914,-12.34937 -6.52946,-12.06182 -15.6927,-11.62668 -49.19457,2.33614 -74.71896,1.26513 -119.7071,1.26532 z"
          inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-opacity:1;stroke-width:1.032;stroke-miterlimit:4;stroke-dasharray:none"
+         style="fill:none;stroke:#000000;stroke-width:0.87138569;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          sodipodi:nodetypes="sssssssssss" />
       <g
          id="g3782"

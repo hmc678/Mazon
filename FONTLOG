@@ -87,10 +87,6 @@ Please note, however, that the font produced by `makefont.py` is currently a ver
   about half a dozen times per glyph, so if you are concerned about clobbering
   your terminal with text, consider running the script with `2> /dev/null`
   (*nix systems) or `2> nul` (Windows).
-- `makefont.py` is not yet capable of making a suitable character for
-  `U+0020 SPACE` or any other whitespace characters that may exist in the
-  future.  You will need to make these yourself in Fontforge (the release
-  fonts currently use a space with a width of 300, i.e., 3/10 of an em).
 
 Hopefully, in the future, `makefont.py` will become more refined, and these issues will be no longer.
 
