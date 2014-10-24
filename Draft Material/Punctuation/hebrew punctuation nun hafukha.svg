@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="solidus.svg">
+   sodipodi:docname="hebrew letter nun.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -24,49 +24,46 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.866"
-     inkscape:cx="500"
-     inkscape:cy="500"
+     inkscape:zoom="1.0005561"
+     inkscape:cx="272.86606"
+     inkscape:cy="626.76577"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      gridtolerance="10"
-     guidetolerance="10"
+     guidetolerance="1"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-width="1851"
      inkscape:window-height="1053"
      inkscape:window-x="69"
      inkscape:window-y="27"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     inkscape:snap-to-guides="true">
     <sodipodi:guide
        orientation="0,1"
        position="500,247"
        id="guide3019" />
     <sodipodi:guide
-       orientation="0,1"
-       position="500,732"
-       id="guide3072" />
-    <sodipodi:guide
-       orientation="0,1"
-       position="500,842"
-       id="guide3074" />
-    <sodipodi:guide
-       orientation="0,1"
-       position="500,955"
-       id="guide3076" />
-    <sodipodi:guide
        orientation="1,0"
        position="100,500"
-       id="guide3867" />
+       id="guide2991" />
     <sodipodi:guide
        orientation="1,0"
        position="180,500"
-       id="guide3869" />
+       id="guide2993" />
     <sodipodi:guide
        orientation="0,1"
-       position="500,43"
-       id="guide11274" />
+       position="500,732"
+       id="guide2994" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="500,950"
+       id="guide2996" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="500,841"
+       id="guide4413" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -76,7 +73,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -86,10 +83,10 @@
      id="layer1"
      transform="translate(0,-52.362183)">
     <path
-       sodipodi:nodetypes="sssssssssss"
+       style="fill:none;stroke:#000000;stroke-width:1.03199995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 191.21296,712.9312 c 48.31488,-3.17537 96.62974,-6.35108 144.9446,-9.5267 23.4483,-1.5412 28.13521,10.7117 29.0079,16.2822 l 12.0118,76.6734 c 1.38165,8.81931 -2.32274,16.03532 -11.8836,15.4788 -52.01786,-3.02788 -86.9013,-5.9969 -134.1156,-7.1297 -44.4548,-1.0667 -110.6747,-0.1452 -119.1315,0.1799 -7.8948,0.3035 -13.1468,-3.5391 -11.9983,-16.4452 0.7307,-8.2112 5.92928,-76.8567 5.9449,-100.6953 l 0.1252,-191.08396 c 0.0473,-72.1309 -11.387816,-159.76684 -13.579696,-172.2287 -2.54,-14.4411 8.321096,-27.5758 16.694796,-34.0911 58.8745,-45.8084 88.1796,-65.4 143.4109,-89.0412 10.2993,-4.4085 21.20762,-1.32984 28.5642,12.8203 l 25.5563,49.1567 c 4.55933,8.76972 2.68281,20.93502 -5.9521,26.1525 l -77.606,46.8919 c -29.02957,17.54055 -46.65884,50.87393 -48.2898,85.4838 -2.24242,47.58535 -4.15289,66.08752 -4.0415,115.4392 l 0.291,128.93176 c 0.0801,35.47829 5.2631,47.723 20.0465,46.7514 z"
+       id="path3004"
        inkscape:connector-curvature="0"
-       id="path3004-8"
-       d="M 420.11381,107.085 C 384.87345,211.5709 336.60906,317.1804 293.98197,410.08401 245.0611,516.70465 179.37142,653.62977 101.20535,798.21873 c -12.697999,23.48836 -0.82651,24.89564 11.32715,24.89563 21.2351,10e-6 32.16135,-1.00285 49.46546,-5.36694 17.9999,-4.53958 18.73207,-9.08924 26.27712,-30.09458 18.63435,-51.87794 73.48474,-171.88161 97.60309,-224.8272 69.9942,-153.65429 144.65044,-307.44591 206.06958,-419.59777 5.4438,-9.94044 2.73699,-18.26952 -4.08038,-22.74636 -12.75158,-8.37375 -36.74776,-18.96115 -54.16773,-23.448048 -5.93042,-1.527496 -11.26207,3.161648 -13.58583,10.051538 z"
-       style="fill:none;stroke:#000000;stroke-width:1.03176868px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       sodipodi:nodetypes="sssssssssssssssssssss" />
   </g>
 </svg>

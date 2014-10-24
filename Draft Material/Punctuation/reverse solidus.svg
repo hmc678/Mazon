@@ -13,8 +13,8 @@
    height="1000"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
-   sodipodi:docname="reverse solidus.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="solidus.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="-613.58886"
-     inkscape:cy="319.06263"
+     inkscape:zoom="0.866"
+     inkscape:cx="500"
+     inkscape:cy="500"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -34,9 +34,9 @@
      guidetolerance="10"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1680"
-     inkscape:window-height="983"
-     inkscape:window-x="0"
+     inkscape:window-width="1851"
+     inkscape:window-height="1053"
+     inkscape:window-x="69"
      inkscape:window-y="27"
      inkscape:window-maximized="1">
     <sodipodi:guide
@@ -76,7 +76,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -89,7 +89,7 @@
        sodipodi:nodetypes="sssssssssss"
        inkscape:connector-curvature="0"
        id="path3004-8"
-       d="m 155.40408,213.827 c 35.24035,104.4859 58.99262,157.52897 101.6197,250.43258 48.92088,106.62065 84.1822,178.29195 162.34827,322.88091 12.69801,23.48836 0.82651,24.89564 -11.32714,24.89564 -21.23511,0 -32.16136,-1.00286 -49.46546,-5.36695 -17.99991,-4.53957 -18.73208,-9.08923 -26.27712,-30.09457 C 313.66797,724.69667 289.24593,669.9468 265.12759,617.00121 195.13339,463.34692 144.98927,362.12173 83.57013,249.96986 c -5.4438,-9.94043 -2.73699,-18.26951 4.08038,-22.74635 12.75158,-8.37375 36.74776,-18.96116 54.16774,-23.44805 5.93041,-1.5275 11.26206,3.16165 13.58583,10.05154 z"
+       d="m 172.48815,107.085 c 35.24036,104.4859 83.50475,210.0954 126.13184,302.99901 48.92087,106.62064 114.61055,243.54576 192.77662,388.13472 12.698,23.48836 0.82651,24.89564 -11.32715,24.89563 -21.2351,10e-6 -32.16135,-1.00285 -49.46546,-5.36694 -17.9999,-4.53958 -18.73207,-9.08924 -26.27712,-30.09458 C 385.69253,735.7749 330.84214,615.77123 306.72379,562.82564 236.72959,409.17135 162.07335,255.37973 100.65421,143.22787 c -5.443796,-9.94044 -2.736986,-18.26952 4.08038,-22.74636 12.75158,-8.37375 36.74776,-18.96115 54.16773,-23.448048 5.93042,-1.527496 11.26207,3.161648 13.58583,10.051538 z"
        style="fill:none;stroke:#000000;stroke-width:1.03176868px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   </g>
 </svg>
