@@ -59,19 +59,19 @@ The following tree represents the layout of the Mazon Font Software source tree.
 
     .
     |-- Draft Material
-    |   |-- basis.svg               - an empty, measured grid for new glyphs.
+    |   |-- basis.svg               // an empty, measured grid for new glyphs.
     |   |-- Letterforms
-    |   |   `-- /* individual glyphs, in .svg format */
+    |   |   `-- [...]               // individual glyphs, in .svg format.
     |   `-- Punctuation
-    |       `-- /* individual glyphs, in .svg format */
-    |-- FONTLOG                     - detailed information about the font.
-    |-- LICENSE                     - the SIL Open Font License v1.1.
-    |-- makefont.py                 - a python script for generating the fonts.
-    |-- MazonHebrew-Regular.otf     - a useable OpenType font.
-    |-- MazonHebrew-Regular.sfd     - the Fontforge save file.
-    |-- README                      - a brief introduction to the font.
-    |-- specimen.pdf                - a type specimen.
-    `-- specimen.sla                - the Scribus save for the type specimen.
+    |       `-- [...]               // individual glyphs, in .svg format.
+    |-- FONTLOG                     // detailed information about the font.
+    |-- LICENSE                     // the SIL Open Font License v1.1.
+    |-- makefont.py                 // a python script for generating the fonts.
+    |-- MazonHebrew-Regular.otf     // a useable OpenType font.
+    |-- MazonHebrew-Regular.sfd     // the Fontforge save file.
+    |-- README                      // a brief introduction to the font.
+    |-- specimen.pdf                // a type specimen.
+    `-- specimen.sla                // the Scribus save for the type specimen.
 
 The glyphs under the directories in `Draft Material` are named after their Unicode character names minus the code point, e.g., the file `full stop.svg` contains an illustration of the character `U+002E FULL STOP`, whereas `hebrew letter alef.svg` contains the same for `U+05D0 HEBREW LETTER ALEF`.  If you create additional glyphs, be sure to name them after their Unicode names.  This is both so others know what the glyph is supposed to represent and so that `makefont.py` can place the glyph appropriately in the font.
 
@@ -98,8 +98,35 @@ The source files to Mazon are kept in a git repository, which can be found at ht
 
 The following log lists changes from release to release.  Full history of the font and its files is available through `git log` and its variations.
 
-    16 October 2014 - v0.1
-        - Initial (private) release.  Contains letterforms, but no punctuation.
+* 25 October 2014 - v0.2
+    - Initial public release.
+    - Most typographic punctuation are now available.  The remaining marks,
+      to implement, or at least those which seem rather important to me, are:
+        - `U+0023 NUMBER SIGN`
+        - `U+0026 AMPERSAND`
+        - `U+0040 COMMERCIAL AT`
+        - `U+007E TILDE`
+        - `U+00A7 SECTION SIGN`
+        - `U+00AB LEFT-POINTING DOUBLE ANGLE QUOTATION MARK`
+        - `U+00B6 PILCROW SIGN`
+        - `U+00BB RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK`
+        - `U+00D7 MULTIPLICATION SIGN`
+        - `U+2007 FIGURE SPACE`
+        - `U+2008 PUNCTUATION SPACE`
+        - `U+2020 DAGGER`
+        - `U+2021 DOUBLE DAGGER`
+    - Note that, for the sake of this release, "punctuation marks" does not
+      include niqqud, Hebrew's system of diacritical vowels.  Nor does it
+      include ta'amei miqra, the cantillation marks found in Biblical texts.
+      Numerical figures are also missing.
+    - A build script, `makefont.py`, is also now available.
+    - The quf now has a more rounded right arm.
+    - Ayin is more balanced.
+    - The ascender of lamed is reshaped ("more square")
+    - The alternate (niqqud) ayin and an alef-lamed ligature are added.
+* 16 October 2014 - v0.1
+    - Initial (private) release.
+    - Contains letterforms, but no punctuation.
 
 # Acknowledgements
 
