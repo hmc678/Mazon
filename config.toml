@@ -1,0 +1,45 @@
+[directories]
+letters     = "./Draft Material/Letterforms"
+punctuation = "./Draft Material/Punctuation"
+
+[specs]
+# Font name attributes
+family name  = "Mazon Hebrew"
+font name    = "MazonHebrew-Regular"
+full name    = "Mazon Hebrew Regular"
+weight       = "Regular"
+
+# `real em` is as reported and rounded by `makefont.py -m`.  `fontforge em` is
+# what would go in the Font Info dialog.
+# Note that `descent` and `ascent` must add up to `fontforge em`.
+real em      = 650
+fontforge em = 1000
+descent      = 247
+ascent       = 853
+
+encoding     = "UnicodeBmp"
+version      = "v0.2"
+
+    [specs.spaces]
+    # The key is the unicode name of a space character.  The value is a float
+    # representing the percentage of `specs.real em` that the space should
+    # take up.
+    space                 = 0.4
+    no-break space        = 0.4
+    en quad               = 0.5
+    em quad               = 1.0
+    en space              = 0.5
+    em space              = 1.0
+    three-per-em space    = 0.3333
+    four-per-em space     = 0.25
+    six-per-em space      = 0.1667
+    # figure space = ?
+    # punctuation space = ?
+    thin space            = 0.2
+    hair space            = 0.1
+    zero width space      = 0.0
+    zero width non-joiner = 0.0
+    zero width joiner     = 0.0
+    # Not spaces, but might as well go here
+    left-to-right mark    = 0.0
+    right-to-left mark    = 0.0
