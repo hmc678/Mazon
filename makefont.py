@@ -23,7 +23,40 @@ if sys.version_info.major < 3:
     input = raw_input
 
 config = None
-NIQQUDDIR = './Draft Material/Niqqudot/'
+
+# The fourth argument to addLookup is called the `feature-script-lang-tuple`
+# in fontforge's python documentation.  It's a five deep tuple, whose structure
+# looks like this (each ___ in the tuples represents an entry from config.toml
+# whose schema is given to the right of the tuple:
+#
+#     ( ___, ... ) lookups.features
+#       /
+#       `> ("lookups.features.name", ( ___, ... )) lookups.features.scripts
+#                                       |
+#                                       v
+#                      ( "lookups.features.scripts.name",
+#                        ("lookups.features.scripts.langs", ...))
+#
+# It goes without saying, be careful when messing with that tuple
+# generator below!
+def create_lookups(font):
+    for lookup in config['lookups']:
+        font.addLookup(lookup['name'],
+                       lookup['type'],
+                       lookup['flags'],
+                       tuple( (feature['name'],                           \
+                               tuple( (script['name'],                    \
+                                       tuple(l for l in script['langs'])) \
+                                    for script in feature['scripts'] ))   \
+                            for feature in lookup['features'] )
+                      )
+
+        # This may not be strictly correct, but for the limited number and
+        # types of sublookups I'm dealing with, it currently suffices.
+        for sub in lookup['subtables']:
+            font.addLookupSubtable(lookup['name'], sub['name'])
+            if lookup['type'] == 'gpos_mark2base':
+                font.addAnchorClass(sub['name'], sub['mark name'])
 
 def download_local_toml():
     TOMLVER = '0.8.2'
@@ -48,19 +81,6 @@ def download_local_toml():
         printerr('Local toml install failed: {}'.format(e))
         sys.exit(1)
 
-# TODO: This needs to be more generic, and clean.  I want to eventually pull
-#       all of these constants out and turn them into a config file business.
-#
-# Also, yay for LISP in python :)
-LOOKUPS = ({'name': "'mark' Low Niqqud in Hebrew lookup 0",
-            'type': 'gpos_mark2base',
-            'features': (('mark',
-                          (('DFLT', 'dflt'),
-                           ('hebr', 'dflt'),),),),
-            'subtable name': "'mark' Low Niqqud in Hebrew lookup 0-1",
-            'mark name': 'LowNiqqud', },
-)
-
 # Unfortunately, this can only be done with a font that is *already* available.
 # So if you need to use it, run generate, then find the em width, then generate,
 # etc.
@@ -71,20 +91,6 @@ def find_em_width():
         total += font[ord(c)].width
     font.close()
     return float(total) / len(config['em width chars'])
-
-# See above, where LOOKUPS is defined for why this is a mess....
-def create_lookups(font):
-    for l in LOOKUPS:
-        font.addLookup(l['name'],
-                       l['type'],
-                       l.setdefault('flags', ('right_to_left',)),
-                       l['features'],
-                      )
-        font.addLookupSubtable(l['name'], l['subtable name'])
-
-        if l['features'][0][0] == 'mark':
-            font.addAnchorClass(l['subtable name'], l['mark name'])
-            
 
 def generate():
     font = fontforge.font()
@@ -128,22 +134,29 @@ def generate():
                 glyph.importOutlines(fullpath)
                 glyph.correctDirection()
 
-                if d == NIQQUDDIR:
+                # TODO: This needs to be cleaned up.
+                if d == config['directories']['niqqudot']:
                     # TODO: This leaves the width of the glyph as 1.  Setting
                     #       it to zero again will make it zero, but off center
                     #       slightly.  How to fix this?
                     bounds = glyph.boundingBox()
-                    width = bounds[2] - bounds[0]
-                    bearing = width / 2.0
+                    orig_width = bounds[2] - bounds[0]
+                    bearing = orig_width / 2.0
                     glyph.width = 0
                     glyph.left_side_bearing = -bearing
                     glyph.right_side_bearing = -bearing
-                    glyph.addAnchorPoint('LowNiqqud', 'mark', 0, 0)
+                    if orig_width > 200:
+                        glyph.addAnchorPoint('LowWideNiqqud', 'mark', 0, 0)
+                    else:
+                        glyph.addAnchorPoint('LowNarrowNiqqud', 'mark', 0, 0)
                 else:
                     glyph.left_side_bearing  = 60
                     glyph.right_side_bearing = 60
-                    glyph.addAnchorPoint('LowNiqqud', 'base',
-                                         glyph.width / 2.0, 0)
+                    if d == config['directories']['letters']:
+                        glyph.addAnchorPoint('LowNarrowNiqqud', 'base',
+                                             glyph.width / 2.0, 0)
+                        glyph.addAnchorPoint('LowWideNiqqud', 'base',
+                                             glyph.width / 2.0 + 25, 0)
 
     # Make whitespace characters.
     for (spacechar, spacewidth) in config['specs']['spaces'].items():

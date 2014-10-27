@@ -1,6 +1,43 @@
 [directories]
 letters     = "./Draft Material/Letterforms"
 punctuation = "./Draft Material/Punctuation"
+niqqudot    = "./Draft Material/Niqqudot"
+
+[[lookups]]
+name  = "'mark' Low Narrow Niqqud in Hebrew lookup 0"
+type  = "gpos_mark2base"
+flags = "right_to_left"
+
+    [[lookups.features]]
+    name = "mark"
+        [[lookups.features.scripts]]
+        name  = "DFLT"
+        langs = ["dflt"]
+        [[lookups.features.scripts]]
+        name  = "hebr"
+        langs = ["dflt"]
+
+    [[lookups.subtables]]
+    name      = "'mark' Low Narrow Niqqud in Hebrew lookup 0-1"
+    mark name = "LowNarrowNiqqud"
+
+[[lookups]]
+name  = "'mark' Low Wide Niqqud in Hebrew lookup 1"
+type  = "gpos_mark2base"
+flags = "right_to_left"
+
+    [[lookups.features]]
+    name = "mark"
+        [[lookups.features.scripts]]
+        name  = "DFLT"
+        langs = ["dflt"]
+        [[lookups.features.scripts]]
+        name  = "hebr"
+        langs = ["dflt"]
+
+    [[lookups.subtables]]
+    name      = "'mark' Low Wide Niqqud in Hebrew lookup 1-1"
+    mark name = "LowWideNiqqud"
 
 [specs]
 # Font name attributes
