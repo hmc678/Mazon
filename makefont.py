@@ -100,6 +100,7 @@ def generate():
                         '(http://scripts.sil.org/OFL)\n'
                         'Created with FontForge 2.0 (http://fontforge.sf.net)')
     font.encoding    = config['specs']['encoding']
+    font.em          = config['specs']['fontforge em']
     font.descent     = config['specs']['descent']
     font.ascent      = config['specs']['ascent']
     font.familyname  = config['specs']['family name']

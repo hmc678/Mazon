@@ -48,11 +48,11 @@ weight       = "Regular"
 
 # `real em` is as reported and rounded by `makefont.py -m`.  `fontforge em` is
 # what would go in the Font Info dialog.
-# Note that `descent` and `ascent` must add up to `fontforge em`.
+# Note that `descent` and `ascent` must (should?) add up to `fontforge em`.
 real em      = 650
 fontforge em = 1000
 descent      = 247
-ascent       = 853
+ascent       = 753
 
 encoding     = "UnicodeBmp"
 version      = "v0.2"
