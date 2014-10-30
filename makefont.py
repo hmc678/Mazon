@@ -80,7 +80,7 @@ def create_lookups(font):
         # types of sublookups I'm dealing with, it currently suffices.
         for sub in lookup['subtables']:
             font.addLookupSubtable(lookup['name'], sub['name'])
-            if lookup['type'] == 'gpos_mark2base':
+            if lookup['type'] in ('gpos_mark2base', 'gpos_mark2mark'):
                 font.addAnchorClass(sub['name'], sub['mark name'])
 
 def download_local_toml():
@@ -183,9 +183,13 @@ def generate():
                         glyph.left_side_bearing = -bearing
                         glyph.right_side_bearing = -bearing
 
-                    for (anchorname, glyphlist) in config['anchors'].items():
-                        if glyphname in glyphlist['glyphs']:
-                            glyph.addAnchorPoint(anchorname, 'mark', 0, 0)
+                    for (anchorname, anchordata) in config['anchors'].items():
+                        if glyphname in anchordata['glyphs']:
+                            glyph.addAnchorPoint(anchorname,
+                                                 anchordata['type'], 0, 0)
+                    # TODO: generalize or otherwise prettify this, please?
+                    if glyphname == 'hebrew point qamats':
+                        glyph.addAnchorPoint('DageshKafSofit', 'mark', 0, 0)
                 elif is_glyph_type(glyph, 'punctuation'):
                     glyph.left_side_bearing  = 60
                     glyph.right_side_bearing = 60

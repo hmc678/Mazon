@@ -1,17 +1,23 @@
 [anchors]
     [anchors.Dagesh]
     glyphs = [ "hebrew point dagesh or mapiq", ]
+    type   = "mark"
+    [anchors.DageshKafSofit]
+    glyphs = [ "hebrew point dagesh or mapiq", ]
+    type   = "basemark"
     [anchors.HighNiqqud]
     glyphs = [ "hebrew point holam",
                "hebrew point holam haser for vav",
                "hebrew point shin dot",
                "hebrew point sin dot",
              ]
+    type   = "mark"
     [anchors.LowWideNiqqud]
     glyphs = [ "hebrew point hataf patah",
                "hebrew point hataf qamats",
                "hebrew point hataf segol",
              ]
+    type   = "mark"
     [anchors.LowNarrowNiqqud]
     glyphs = [ "hebrew point hiriq",
                "hebrew point meteg",
@@ -23,8 +29,10 @@
                "hebrew point sheva",
                "hebrew point tsere",
              ]
+    type   = "mark"
     [anchors.Rafe]
     glyphs = [ "hebrew point rafe", ]
+    type   = "mark"
 
 # Enter data here to overide the default settings for anchor placement.
 # Note that these are highly volatile, and subjective.  If a glyph
@@ -100,6 +108,8 @@
     LowWideNiqqud   = [155, 0]
 [hebrew ligature ayin lamed.corrections]
     Dagesh          = [280, -60]
+[hebrew point dagesh or mapiq.corrections]
+    DageshKafSofit  = [0, 220]
 
 [directories]
 letters     = "./Draft Material/Letterforms"
@@ -109,6 +119,24 @@ niqqudot    = "./Draft Material/Niqqudot"
 # Used to create lookup tables.  These simply set up the tables, but don't
 # deal with glyph placement.  These probably aren't the droids you're looking
 # for....  Check out `<glyphname>.corrections` for alignment data.
+[[lookups]]
+name  = "'mkmk' DageshKafSofit in Hebrew lookup 4"
+type  = "gpos_mark2mark"
+flags = "right_to_left"
+
+    [[lookups.features]]
+    name = "mkmk"
+        [[lookups.features.scripts]]
+        name  = "DFLT"
+        langs = ["dflt"]
+        [[lookups.features.scripts]]
+        name  = "hebr"
+        langs = ["dflt"]
+
+    [[lookups.subtables]]
+    name      = "'mkmk' DageshKafSofit in Hebrew lookup 4-1"
+    mark name = "DageshKafSofit"
+
 [[lookups]]
 name  = "'mark' Low Narrow Niqqud in Hebrew lookup 0"
 type  = "gpos_mark2base"
