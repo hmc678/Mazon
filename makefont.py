@@ -21,8 +21,33 @@ import psMat
 
 if sys.version_info.major < 3:
     input = raw_input
+else:
+    unichr = chr
 
+# This gets loaded from config.toml below, in main, to allow the program to
+# run --install-local-package
 config = None
+
+def correct_anchors(glyph):
+    currents = glyph.anchorPoints
+    try:
+        corrections = config[unicodedata.name(unichr(glyph.unicode))
+                             .lower()]['corrections']
+    except KeyError:
+        return
+
+    # Don't tuple unpack in the for statement.  If there are ever
+    # ligatures, the four-tuple destructure will fail.
+    for anchor in currents:
+        (anchor_name, typ, x, y) = anchor[0:4]
+        if typ != 'base':
+            continue
+        else:
+            try:
+                (x, y) = corrections[anchor_name]
+            except KeyError:
+                pass
+            glyph.addAnchorPoint(anchor_name, typ, x, y)
 
 # The fourth argument to addLookup is called the `feature-script-lang-tuple`
 # in fontforge's python documentation.  It's a five deep tuple, whose structure
@@ -135,28 +160,50 @@ def generate():
                 glyph.correctDirection()
 
                 # TODO: This needs to be cleaned up.
-                if d == config['directories']['niqqudot']:
-                    # TODO: This leaves the width of the glyph as 1.  Setting
-                    #       it to zero again will make it zero, but off center
-                    #       slightly.  How to fix this?
-                    bounds = glyph.boundingBox()
-                    orig_width = bounds[2] - bounds[0]
-                    bearing = orig_width / 2.0
+                # Adjust the bearings of the glyph.  Niqqudot need a zero width.
+                # Most have equal bearings, but the high niqqudot are designed
+                # to be offset.  It makes setting the anchors simpler.
+                #
+                # Also, add anchor points.
+                if is_glyph_type(glyph, 'niqqud'):
                     glyph.width = 0
-                    glyph.left_side_bearing = -bearing
-                    glyph.right_side_bearing = -bearing
-                    if orig_width > 200:
-                        glyph.addAnchorPoint('LowWideNiqqud', 'mark', 0, 0)
+                    bounds = glyph.boundingBox()
+                    if glyphname in config['anchors']['HighNiqqud']['glyphs']:
+                        # HighNiqqud glyphs need to keep their bearings.
+                        # The 100 comes from the guides set up in the .svgs.
+                        glyph.left_side_bearing -= 100
+                        glyph.right_side_bearing += 100
                     else:
-                        glyph.addAnchorPoint('LowNarrowNiqqud', 'mark', 0, 0)
-                else:
+                        # TODO: This leaves the width of the glyph as 1.
+                        #       Setting it to zero again will make it
+                        #       zero, but off center slightly.  How to
+                        #       fix this?
+                        orig_width = bounds[2] - bounds[0]
+                        bearing = orig_width / 2.0
+                        glyph.left_side_bearing = -bearing
+                        glyph.right_side_bearing = -bearing
+
+                    for (anchorname, glyphlist) in config['anchors'].items():
+                        if glyphname in glyphlist['glyphs']:
+                            glyph.addAnchorPoint(anchorname, 'mark', 0, 0)
+                elif is_glyph_type(glyph, 'punctuation'):
                     glyph.left_side_bearing  = 60
                     glyph.right_side_bearing = 60
-                    if d == config['directories']['letters']:
-                        glyph.addAnchorPoint('LowNarrowNiqqud', 'base',
-                                             glyph.width / 2.0, 0)
-                        glyph.addAnchorPoint('LowWideNiqqud', 'base',
-                                             glyph.width / 2.0 + 25, 0)
+                elif is_glyph_type(glyph, 'letter'):
+                    glyph.left_side_bearing  = 60
+                    glyph.right_side_bearing = 60
+                    bounds = glyph.boundingBox()
+                    glyph.addAnchorPoint('LowNarrowNiqqud', 'base',
+                                         glyph.width / 2.0, 0)
+                    glyph.addAnchorPoint('LowWideNiqqud', 'base',
+                                         glyph.width / 2.0, 0)
+                    glyph.addAnchorPoint('Dagesh', 'base',
+                                         glyph.width / 2.0, 0)
+                    glyph.addAnchorPoint('Rafe', 'base',
+                                         glyph.width / 2.0, 0)
+                    glyph.addAnchorPoint('HighNiqqud', 'base',
+                                         bounds[0], 0)
+                    correct_anchors(glyph)
 
     # Make whitespace characters.
     for (spacechar, spacewidth) in config['specs']['spaces'].items():
@@ -172,6 +219,30 @@ def generate():
 
     font.save('MazonHebrew-Regular.gen.sfd')
     font.generate('MazonHebrew-Regular.gen.otf')
+
+# typ is a tuple containing groups to search for the union of.
+def is_glyph_type(glyph, typ):
+    if isinstance(glyph, fontforge.glyph):
+        point = glyph.unicode
+    elif isinstance(glyph, str):
+        point = ord(unicodedata.lookup(glyph))
+    elif isinstance(glyph, int):
+        point = glyph
+    else:
+        raise ValueError('Not an appropriate argument to `is_glyph_type()`.')
+
+    typechecks = {'letter': (lambda pt:
+                             unicodedata.category(unichr(pt))[0] == 'L'),
+                  'niqqud': (lambda pt:
+                             pt in (set(range(0x05b0, 0x5bd + 1))
+                                    | set((0x05bf, 0x05c1, 0x05c2, 0x05c7)))),
+                  'punctuation': (lambda pt:
+                                  unicodedata.category(unichr(pt))[0] == 'P'),
+                  'space': (lambda pt:
+                            unicodedata.category(unichr(pt))[0] == 'Z'),
+                  'wide': (lambda pt:
+                           pt in (set(range(0x05b1, 0x05b3 + 1))))}
+    return typechecks[typ](point)
 
 def printerr(errmsg, level='Error'):
     red = '\033[31;1m'
