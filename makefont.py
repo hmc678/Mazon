@@ -59,9 +59,7 @@ def create_lookups(font):
                 font.addAnchorClass(sub['name'], sub['mark name'])
 
 def download_local_toml():
-    TOMLVER = '0.8.2'
-
-    if os.path.exists('toml-' + TOMLVER) or os.path.exists('toml.py'):
+    if os.path.exists('toml-master/') or os.path.exists('toml.py'):
         printerr('Exiting, since toml files already exist in the current '
                  'directory')
         sys.exit(1)
@@ -71,12 +69,13 @@ def download_local_toml():
             raise Exception('Windows support not yet included.  Sorry!')
         else:
             wget = sub.Popen(['wget', '-O', '-',
-                              'https://pypi.python.org/packages/source/t/toml/toml-' + TOMLVER + '.tar.gz'],
+                              ('https://github.com/uiri/toml/'
+                               'archive/master.zip')],
                              stdout=sub.PIPE)
-            sub.check_call(['tar', '-xz'], stdin=wget.stdout)
+            sub.check_call(['unzip'], stdin=wget.stdout)
             wget.wait()
-            sub.check_call(['mv', 'toml-' + TOMLVER + '/toml.py', 'toml.py'])
-            sub.check_call(['rm', '-r', 'toml-' + TOMLVER])
+            sub.check_call(['mv', 'toml-master/toml.py', 'toml.py'])
+            sub.check_call(['rm', '-r', 'toml-master/'])
     except Exception as e:
         printerr('Local toml install failed: {}'.format(e))
         sys.exit(1)
@@ -198,7 +197,8 @@ if __name__ == '__main__':
 
     try:
         import toml
-        config = toml.load('config.toml')
+        with open('config.toml') as conffile:
+            config = toml.loads(conffile.read())
         # TODO: get this to import properly as unicode from config.toml
         #
         # These are the "standard-width" characters in Hebrew.  The rest are
