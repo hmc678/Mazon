@@ -190,9 +190,6 @@ def generate():
                     # TODO: generalize or otherwise prettify this, please?
                     if glyphname == 'hebrew point qamats':
                         glyph.addAnchorPoint('DageshKafSofit', 'mark', 0, 0)
-                elif is_glyph_type(glyph, 'punctuation'):
-                    glyph.left_side_bearing  = 60
-                    glyph.right_side_bearing = 60
                 elif is_glyph_type(glyph, 'letter'):
                     glyph.left_side_bearing  = 60
                     glyph.right_side_bearing = 60
@@ -208,6 +205,9 @@ def generate():
                     glyph.addAnchorPoint('HighNiqqud', 'base',
                                          bounds[0], 0)
                     correct_anchors(glyph)
+                else:
+                    glyph.left_side_bearing  = 60
+                    glyph.right_side_bearing = 60
 
     # Make whitespace characters.
     for (spacechar, spacewidth) in config['specs']['spaces'].items():
@@ -287,7 +287,7 @@ you have three options:
     1) Run `[sudo] pip install toml`.
     2) Manually install the toml package.  Maybe your OS's package manager can
        do this for you, or you can download it from
-       http://pypi.python.org/pypi/toml/0.8.2 or https://github.com/uiri/toml/
+       https://github.com/uiri/toml/
     3) Try to install a copy into this directory by running
        `makefont.py --install-local-package toml`''')
         sys.exit(1)
