@@ -31,6 +31,8 @@ With that in mind, Mazon aims to be a light, open, low-contrast typeface, suitab
   miscible inline with roman characters, without disturbing the vertical
   rhythm of the line too much.
 
+# Development
+
 ## Software
 
 Several pieces of software have been used to help develop Mazon.  These may be of interest to persons attempting to manipulate the Font Software.  They also deserve mention not only for their contribution to Mazon's creation, but as valuable members of the FLOSS world, without which the development of Mazon would have been, at best, much more expensive, and at worst, impossible.
@@ -43,15 +45,31 @@ Several pieces of software have been used to help develop Mazon.  These may be o
 - [Python](http://www.python.org) is a scripting language used by Fontforge.
   It is used to generate a "rough draft" font, which can then be tuned further
   by hand in Fontforge.
-- [Scribus](http://www.scribus.net) is used to design and print the type
-  specimen.
 - [git](http://git-scm.com) is used to manage the source files and maintain a
   history of revisions to the Mazon Hebrew source files.
 - [BitBucket](http://bitbucket.org) hosts the git repository for Mazon Hebrew.
 
-## Source files
+## makefont.py
 
-Please note that the font files and type specimen (`MazonHebrew-Regular.(otf|sfd)` and `specimen.(pdf|sla)`) are not updated every commit, but only on new versions (i.e., tagged commits).  If you wish to use a version of Mazon that is based off of a non-release commit, you will need to generate the appropriate files yourself.
+After editing the glyphs of the font (i.e., the material under the directories in `Draft Material`), you can regenerate the fonts by running `makefont.py` at the command line, provided Fontforge is installed on the computer.  The script will output two files into the root directory: `MazonHebrew-Regular.gen.sfd` and `MazonHebrew-Regular.gen.otf`.
+
+Please note that the font produced by `makefont.py` is a relatively refined font.  All the niqqudot should be placed properly out-of-the-box and reasonable defaults for letterspacing are applied.  But,
+
+- No attempt has yet been made to optically align the bearings of the font on
+  a per glyph basis, create kerning tables, substitutions, etc.
+- Additionally, the script will print out the string `"Failed to parse color"`
+  about half a dozen times per glyph, so if you are concerned about clobbering
+  your terminal with text, consider running the script with `2> /dev/null`
+  (*nix systems) or `2> nul` (Windows).
+
+Hopefully, in the future, `makefont.py` will continue to improve, and these issues will be no longer.
+
+## config.toml
+
+All of the configurable data for Mazon can be found in `config.toml`.  Notably, there are data there for the manipulating the positioning of niqqudot and the
+width of the various spaces.
+
+## Source files
 
 ### Layout
 
@@ -62,42 +80,35 @@ The following tree represents the layout of the Mazon Font Software source tree.
     |   |-- basis.svg               // an empty, measured grid for new glyphs.
     |   |-- Letterforms
     |   |   `-- [...]               // individual glyphs, in .svg format.
+    |   |-- Niqqudot
+    |   |   `-- [...]               // individual glyphs, in .svg format.
     |   `-- Punctuation
     |       `-- [...]               // individual glyphs, in .svg format.
+    |-- config.toml
     |-- FONTLOG                     // detailed information about the font.
     |-- LICENSE                     // the SIL Open Font License v1.1.
     |-- makefont.py                 // a python script for generating the fonts.
     |-- MazonHebrew-Regular.otf     // a useable OpenType font.
     |-- MazonHebrew-Regular.sfd     // the Fontforge save file.
-    |-- README                      // a brief introduction to the font.
-    |-- specimen.pdf                // a type specimen.
-    `-- specimen.sla                // the Scribus save for the type specimen.
+    `-- README                      // a brief introduction to the font.
 
 The glyphs under the directories in `Draft Material` are named after their Unicode character names minus the code point, e.g., the file `full stop.svg` contains an illustration of the character `U+002E FULL STOP`, whereas `hebrew letter alef.svg` contains the same for `U+05D0 HEBREW LETTER ALEF`.  If you create additional glyphs, be sure to name them after their Unicode names.  This is both so others know what the glyph is supposed to represent and so that `makefont.py` can place the glyph appropriately in the font.
 
-### makefont.py
-
-After editing the glyphs of the font (i.e., the material under the directories in `Draft Material`), you can regenerate the fonts by running `makefont.py` at the command line, provided Fontforge is installed on the computer.  The script will output two files into the root directory: `MazonHebrew-Regular.gen.sfd` and `MazonHebrew-Regular.gen.otf`.
-
-Please note, however, that the font produced by `makefont.py` is currently a very "rough" font.  While technically serviceable, you may wish to further refine the metrics of the font by hand in Fontforge itself.
-
-- No attempt has yet been made to optically align the bearings of the font,
-  create kerning tables, substitutions, etc.
-- Additionally, the script will print out the string `"Failed to parse color"`
-  about half a dozen times per glyph, so if you are concerned about clobbering
-  your terminal with text, consider running the script with `2> /dev/null`
-  (*nix systems) or `2> nul` (Windows).
-
-Hopefully, in the future, `makefont.py` will become more refined, and these issues will be no longer.
-
 ### Revision Control
 
-The source files to Mazon are kept in a git repository, which can be found at http://bitbucket.org/hmc678/mazon-hebrew.  Currently, this repository is kept private, but a public release will occur in the near future.
+The source files to Mazon are kept in a git repository, which can be found at http://bitbucket.org/hmc678/mazon-hebrew.
 
 # Change Log
 
 The following log lists changes from release to release.  Full history of the font and its files is available through `git log` and its variations.
 
+* 2 November 2014 - v0.3
+    - Added all of Hebrew's diacritical vowels (niqqudot).
+    - Configuration data is now available for easier consumption in the
+      file `config.toml`.
+    - Many improvements to `makefont.py`, which now can create lookup tables,
+      add anchors, and adjust glyph metrics according to its configuration
+      data.
 * 25 October 2014 - v0.2
     - Initial public release.
     - Most typographic punctuation are now available.  The remaining marks,
