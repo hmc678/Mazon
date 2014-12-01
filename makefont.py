@@ -24,64 +24,15 @@ if sys.version_info.major < 3:
 else:
     unichr = chr
 
+high_niqqud_glyphnames = [ 'hebrew point holam',
+                           'hebrew point holam haser for vav',
+                           'hebrew point shin dot',
+                           'hebrew point sin dot',
+                         ]
+
 # This gets loaded from config.toml below, in main, to allow the program to
 # run --install-local-package
 config = None
-
-def correct_anchors(glyph):
-    currents = glyph.anchorPoints
-    try:
-        corrections = config[unicodedata.name(unichr(glyph.unicode))
-                             .lower()]['corrections']
-    except KeyError:
-        return
-
-    # Don't tuple unpack in the for statement.  If there are ever
-    # ligatures, the four-tuple destructure will fail.
-    for anchor in currents:
-        (anchor_name, typ, x, y) = anchor[0:4]
-        if typ != 'base':
-            continue
-        else:
-            try:
-                (x, y) = corrections[anchor_name]
-            except KeyError:
-                pass
-            glyph.addAnchorPoint(anchor_name, typ, x, y)
-
-# The fourth argument to addLookup is called the `feature-script-lang-tuple`
-# in fontforge's python documentation.  It's a five deep tuple, whose structure
-# looks like this (each ___ in the tuples represents an entry from config.toml
-# whose schema is given to the right of the tuple:
-#
-#     ( ___, ... ) lookups.features
-#       /
-#       `> ("lookups.features.name", ( ___, ... )) lookups.features.scripts
-#                                       |
-#                                       v
-#                      ( "lookups.features.scripts.name",
-#                        ("lookups.features.scripts.langs", ...))
-#
-# It goes without saying, be careful when messing with that tuple
-# generator below!
-def create_lookups(font):
-    for lookup in config['lookups']:
-        font.addLookup(lookup['name'],
-                       lookup['type'],
-                       lookup['flags'],
-                       tuple( (feature['name'],                           \
-                               tuple( (script['name'],                    \
-                                       tuple(l for l in script['langs'])) \
-                                    for script in feature['scripts'] ))   \
-                            for feature in lookup['features'] )
-                      )
-
-        # This may not be strictly correct, but for the limited number and
-        # types of sublookups I'm dealing with, it currently suffices.
-        for sub in lookup['subtables']:
-            font.addLookupSubtable(lookup['name'], sub['name'])
-            if lookup['type'] in ('gpos_mark2base', 'gpos_mark2mark'):
-                font.addAnchorClass(sub['name'], sub['mark name'])
 
 def download_local_toml():
     if os.path.exists('toml-master/') or os.path.exists('toml.py'):
@@ -133,8 +84,6 @@ def generate():
     font.version     = config['specs']['version']
     font.weight      = config['specs']['weight']
 
-    create_lookups(font)
-
     # This works, but prints out "failed to parse color" 6 times per glyph.
     # That is going to be annoying as heck unless I can suppress that output.
     for d in config['directories'].values():
@@ -168,7 +117,7 @@ def generate():
                 if is_glyph_type(glyph, 'niqqud'):
                     glyph.width = 0
                     bounds = glyph.boundingBox()
-                    if glyphname in config['anchors']['HighNiqqud']['glyphs']:
+                    if glyphname in high_niqqud_glyphnames:
                         # HighNiqqud glyphs need to keep their bearings.
                         # The 100 comes from the guides set up in the .svgs.
                         glyph.left_side_bearing -= 100
@@ -183,28 +132,10 @@ def generate():
                         glyph.left_side_bearing = -bearing
                         glyph.right_side_bearing = -bearing
 
-                    for (anchorname, anchordata) in config['anchors'].items():
-                        if glyphname in anchordata['glyphs']:
-                            glyph.addAnchorPoint(anchorname,
-                                                 anchordata['type'], 0, 0)
-                    # TODO: generalize or otherwise prettify this, please?
-                    if glyphname == 'hebrew point qamats':
-                        glyph.addAnchorPoint('DageshKafSofit', 'mark', 0, 0)
                 elif is_glyph_type(glyph, 'letter'):
                     glyph.left_side_bearing  = 60
                     glyph.right_side_bearing = 60
                     bounds = glyph.boundingBox()
-                    glyph.addAnchorPoint('LowNarrowNiqqud', 'base',
-                                         glyph.width / 2.0, 0)
-                    glyph.addAnchorPoint('LowWideNiqqud', 'base',
-                                         glyph.width / 2.0, 0)
-                    glyph.addAnchorPoint('Dagesh', 'base',
-                                         glyph.width / 2.0, 0)
-                    glyph.addAnchorPoint('Rafe', 'base',
-                                         glyph.width / 2.0, 0)
-                    glyph.addAnchorPoint('HighNiqqud', 'base',
-                                         bounds[0], 0)
-                    correct_anchors(glyph)
                 else:
                     glyph.left_side_bearing  = 60
                     glyph.right_side_bearing = 60
@@ -221,6 +152,7 @@ def generate():
         glyph = font.createChar(glyphnum)
         glyph.width = int(round(spacewidth * config['specs']['real em']))
 
+    font.mergeFeature('MazonHebrew-Regular.fea')
     font.save('MazonHebrew-Regular.gen.sfd')
     font.generate('MazonHebrew-Regular.gen.otf')
 

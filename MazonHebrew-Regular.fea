@@ -1,0 +1,229 @@
+
+# GPOS 
+
+
+lookup mkmkDageshKafSofit {
+  lookupflag RightToLeft;
+  markClass [\afii57797 ] <anchor 0 0> @DageshKafSofit;
+  pos mark [\afii57807 ] <anchor 0 0> mark @DageshKafSofit;
+} mkmkDageshKafSofit;
+
+lookup markRafe {
+  lookupflag RightToLeft;
+  markClass [\afii57841 ] <anchor 0 0> @Rafe;
+  pos base [\afii57673 ] <anchor 167 0> mark @Rafe;
+  pos base [\afii57676 ] <anchor 299 0> mark @Rafe;
+  pos base [\afii57688 ] <anchor 285 0> mark @Rafe;
+  pos base [\afii57689 ] <anchor 378 0> mark @Rafe;
+  pos base [\afii57665 \afii57667 \afii57674 \afii57668 ] <anchor 342 0> mark @Rafe;
+  pos base [\afii57670 ] <anchor 182 0> mark @Rafe;
+  pos base [\afii57680 ] <anchor 202 0> mark @Rafe;
+  pos base [\afii57664 ] <anchor 338 0> mark @Rafe;
+  pos base [\afii57671 ] <anchor 326 0> mark @Rafe;
+  pos base [\afii57686 ] <anchor 314 0> mark @Rafe;
+  pos base [\afii57669 ] <anchor 168 0> mark @Rafe;
+  pos base [\uniFB4F ] <anchor 352 0> mark @Rafe;
+  pos base [\uniFB20 ] <anchor 355 0> mark @Rafe;
+  pos base [\afii57678 ] <anchor 341 0> mark @Rafe;
+  pos base [\afii57666 ] <anchor 228 0> mark @Rafe;
+  pos base [\afii57683 ] <anchor 288 0> mark @Rafe;
+  pos base [\afii57687 ] <anchor 290 0> mark @Rafe;
+  pos base [\afii57679 ] <anchor 176 0> mark @Rafe;
+  pos base [\afii57672 ] <anchor 330 0> mark @Rafe;
+  pos base [\afii57677 ] <anchor 322 0> mark @Rafe;
+  pos base [\afii57681 ] <anchor 315 0> mark @Rafe;
+  pos base [\afii57685 ] <anchor 301 0> mark @Rafe;
+  pos base [\afii57690 ] <anchor 367 0> mark @Rafe;
+  pos base [\afii57684 ] <anchor 300 0> mark @Rafe;
+  pos base [\afii57675 ] <anchor 308 0> mark @Rafe;
+  pos base [\afii57682 ] <anchor 350 0> mark @Rafe;
+} markRafe;
+
+lookup markDagesh {
+  lookupflag RightToLeft;
+  markClass [\afii57807 ] <anchor 0 0> @Dagesh;
+  pos base [\afii57673 ] <anchor 115 105> mark @Dagesh;
+  pos base [\afii57676 ] <anchor 300 25> mark @Dagesh;
+  pos base [\afii57688 ] <anchor 285 0> mark @Dagesh;
+  pos base [\afii57689 ] <anchor 475 0> mark @Dagesh;
+  pos base [\afii57665 \afii57667 ] <anchor 310 0> mark @Dagesh;
+  pos base [\afii57670 ] <anchor 55 0> mark @Dagesh;
+  pos base [\afii57680 ] <anchor 190 0> mark @Dagesh;
+  pos base [\afii57664 ] <anchor 265 -80> mark @Dagesh;
+  pos base [\afii57671 ] <anchor 340 -40> mark @Dagesh;
+  pos base [\afii57686 ] <anchor 200 -100> mark @Dagesh;
+  pos base [\afii57674 ] <anchor 300 0> mark @Dagesh;
+  pos base [\afii57669 ] <anchor 130 0> mark @Dagesh;
+  pos base [\uniFB4F ] <anchor 280 -60> mark @Dagesh;
+  pos base [\uniFB20 ] <anchor 435 20> mark @Dagesh;
+  pos base [\afii57678 ] <anchor 380 0> mark @Dagesh;
+  pos base [\afii57666 ] <anchor 185 30> mark @Dagesh;
+  pos base [\afii57683 ] <anchor 350 -10> mark @Dagesh;
+  pos base [\afii57687 ] <anchor 300 50> mark @Dagesh;
+  pos base [\afii57679 ] <anchor 176 0> mark @Dagesh;
+  pos base [\afii57672 ] <anchor 330 0> mark @Dagesh;
+  pos base [\afii57677 ] <anchor 322 0> mark @Dagesh;
+  pos base [\afii57681 ] <anchor 315 0> mark @Dagesh;
+  pos base [\afii57685 ] <anchor 301 0> mark @Dagesh;
+  pos base [\afii57690 ] <anchor 435 -30> mark @Dagesh;
+  pos base [\afii57684 ] <anchor 385 -20> mark @Dagesh;
+  pos base [\afii57675 ] <anchor 308 0> mark @Dagesh;
+  pos base [\afii57682 ] <anchor 430 30> mark @Dagesh;
+  pos base [\afii57668 ] <anchor 340 -25> mark @Dagesh;
+} markDagesh;
+
+lookup markHighNiqqud {
+  lookupflag RightToLeft;
+  markClass [\afii57803 \uni05BA \afii57804 \afii57806 ] <anchor 0 0> @HighNiqqud;
+  pos base [\afii57673 \afii57671 \afii57669 ] <anchor 60 0> mark @HighNiqqud;
+  pos base [\afii57676 \afii57688 \uniFB4F \afii57677 ] <anchor 60 0> mark @HighNiqqud;
+  pos base [\afii57689 \afii57679 \afii57685 \afii57675 ] <anchor 60 0> mark @HighNiqqud;
+  pos base [\afii57665 \afii57674 \afii57687 \afii57668 ] <anchor 60 0> mark @HighNiqqud;
+  pos base [\afii57667 \afii57682 ] <anchor 60 0> mark @HighNiqqud;
+  pos base [\afii57670 \uniFB20 ] <anchor 60 0> mark @HighNiqqud;
+  pos base [\afii57680 \afii57666 ] <anchor 85 0> mark @HighNiqqud;
+  pos base [\afii57664 ] <anchor 60 0> mark @HighNiqqud;
+  pos base [\afii57686 \afii57684 ] <anchor 60 0> mark @HighNiqqud;
+  pos base [\afii57678 ] <anchor 75 0> mark @HighNiqqud;
+  pos base [\afii57683 ] <anchor 60 0> mark @HighNiqqud;
+  pos base [\afii57672 ] <anchor 60 0> mark @HighNiqqud;
+  pos base [\afii57681 ] <anchor 60 0> mark @HighNiqqud;
+  pos base [\afii57690 ] <anchor 120 0> mark @HighNiqqud;
+} markHighNiqqud;
+
+lookup markLowWideNiqqud {
+  lookupflag RightToLeft;
+  markClass [\afii57802 \afii57800 \afii57801 ] <anchor 0 0> @LowWideNiqqud;
+  pos base [\afii57673 ] <anchor 185 0> mark @LowWideNiqqud;
+  pos base [\afii57676 ] <anchor 280 0> mark @LowWideNiqqud;
+  pos base [\afii57688 ] <anchor 430 0> mark @LowWideNiqqud;
+  pos base [\afii57689 ] <anchor 378 0> mark @LowWideNiqqud;
+  pos base [\afii57665 ] <anchor 342 0> mark @LowWideNiqqud;
+  pos base [\afii57667 ] <anchor 480 0> mark @LowWideNiqqud;
+  pos base [\afii57670 ] <anchor 155 0> mark @LowWideNiqqud;
+  pos base [\afii57680 ] <anchor 210 0> mark @LowWideNiqqud;
+  pos base [\afii57664 ] <anchor 338 0> mark @LowWideNiqqud;
+  pos base [\afii57671 ] <anchor 326 0> mark @LowWideNiqqud;
+  pos base [\afii57686 ] <anchor 314 0> mark @LowWideNiqqud;
+  pos base [\afii57674 ] <anchor 300 360> mark @LowWideNiqqud;
+  pos base [\afii57669 ] <anchor 200 0> mark @LowWideNiqqud;
+  pos base [\uniFB4F ] <anchor 352 0> mark @LowWideNiqqud;
+  pos base [\uniFB20 ] <anchor 355 0> mark @LowWideNiqqud;
+  pos base [\afii57678 ] <anchor 341 0> mark @LowWideNiqqud;
+  pos base [\afii57666 ] <anchor 228 0> mark @LowWideNiqqud;
+  pos base [\afii57683 ] <anchor 288 0> mark @LowWideNiqqud;
+  pos base [\afii57687 ] <anchor 370 0> mark @LowWideNiqqud;
+  pos base [\afii57679 ] <anchor 176 0> mark @LowWideNiqqud;
+  pos base [\afii57672 ] <anchor 330 0> mark @LowWideNiqqud;
+  pos base [\afii57677 ] <anchor 322 0> mark @LowWideNiqqud;
+  pos base [\afii57681 ] <anchor 315 0> mark @LowWideNiqqud;
+  pos base [\afii57685 ] <anchor 301 0> mark @LowWideNiqqud;
+  pos base [\afii57690 ] <anchor 425 0> mark @LowWideNiqqud;
+  pos base [\afii57684 ] <anchor 300 0> mark @LowWideNiqqud;
+  pos base [\afii57675 ] <anchor 308 0> mark @LowWideNiqqud;
+  pos base [\afii57682 ] <anchor 470 0> mark @LowWideNiqqud;
+  pos base [\afii57668 ] <anchor 320 0> mark @LowWideNiqqud;
+} markLowWideNiqqud;
+
+lookup markLowNarrowNiqqud {
+  lookupflag RightToLeft;
+  markClass [\afii57798 \afii57797 \afii57793 \afii57796 \afii57794 \afii57839 \uni05C7 \afii57799 \afii57795 ] <anchor 0 0> @LowNarrowNiqqud;
+  pos base [\afii57673 ] <anchor 190 0> mark @LowNarrowNiqqud;
+  pos base [\afii57676 ] <anchor 280 0> mark @LowNarrowNiqqud;
+  pos base [\afii57688 ] <anchor 470 0> mark @LowNarrowNiqqud;
+  pos base [\afii57689 ] <anchor 378 0> mark @LowNarrowNiqqud;
+  pos base [\afii57665 ] <anchor 342 0> mark @LowNarrowNiqqud;
+  pos base [\afii57667 ] <anchor 510 0> mark @LowNarrowNiqqud;
+  pos base [\afii57670 ] <anchor 155 0> mark @LowNarrowNiqqud;
+  pos base [\afii57680 ] <anchor 210 0> mark @LowNarrowNiqqud;
+  pos base [\afii57664 ] <anchor 338 0> mark @LowNarrowNiqqud;
+  pos base [\afii57671 ] <anchor 326 0> mark @LowNarrowNiqqud;
+  pos base [\afii57686 ] <anchor 314 0> mark @LowNarrowNiqqud;
+  pos base [\afii57674 ] <anchor 300 360> mark @LowNarrowNiqqud;
+  pos base [\afii57669 ] <anchor 220 0> mark @LowNarrowNiqqud;
+  pos base [\uniFB4F ] <anchor 352 0> mark @LowNarrowNiqqud;
+  pos base [\uniFB20 ] <anchor 355 0> mark @LowNarrowNiqqud;
+  pos base [\afii57678 ] <anchor 341 0> mark @LowNarrowNiqqud;
+  pos base [\afii57666 ] <anchor 228 0> mark @LowNarrowNiqqud;
+  pos base [\afii57683 ] <anchor 288 0> mark @LowNarrowNiqqud;
+  pos base [\afii57687 \afii57672 ] <anchor 330 0> mark @LowNarrowNiqqud;
+  pos base [\afii57679 ] <anchor 176 0> mark @LowNarrowNiqqud;
+  pos base [\afii57677 ] <anchor 322 0> mark @LowNarrowNiqqud;
+  pos base [\afii57681 ] <anchor 315 0> mark @LowNarrowNiqqud;
+  pos base [\afii57685 ] <anchor 301 0> mark @LowNarrowNiqqud;
+  pos base [\afii57690 ] <anchor 425 0> mark @LowNarrowNiqqud;
+  pos base [\afii57684 ] <anchor 300 0> mark @LowNarrowNiqqud;
+  pos base [\afii57675 ] <anchor 308 0> mark @LowNarrowNiqqud;
+  pos base [\afii57682 ] <anchor 440 0> mark @LowNarrowNiqqud;
+  pos base [\afii57668 ] <anchor 320 0> mark @LowNarrowNiqqud;
+} markLowNarrowNiqqud;
+
+lookup DageshKafSofitTrigger {
+  lookupflag RightToLeft;
+    pos \afii57807 \afii57674  \afii57797'lookup mkmkDageshKafSofit  ;
+} DageshKafSofitTrigger;
+
+feature mkmk {
+
+  script DFLT;
+     language dflt ;
+      lookup mkmkDageshKafSofit;
+
+  script hebr;
+     language dflt ;
+      lookup mkmkDageshKafSofit;
+} mkmk;
+
+feature mark {
+
+  script DFLT;
+     language dflt ;
+      lookup markRafe;
+      lookup markDagesh;
+      lookup markHighNiqqud;
+      lookup markLowWideNiqqud;
+      lookup markLowNarrowNiqqud;
+
+  script hebr;
+     language dflt ;
+      lookup markRafe;
+      lookup markDagesh;
+      lookup markHighNiqqud;
+      lookup markLowWideNiqqud;
+      lookup markLowNarrowNiqqud;
+} mark;
+
+feature kern {
+
+  script DFLT;
+     language dflt ;
+      lookup DageshKafSofitTrigger;
+
+  script hebr;
+     language dflt ;
+      lookup DageshKafSofitTrigger;
+} kern;
+#Mark attachment classes (defined in GDEF, used in lookupflags)
+
+@GDEF_Simple = [\parenleft \backslash \quotedblleft \grave \fraction \emdash 
+	\exclam \uni05C6 \quoteleft \braceleft \afii57645 \plus \quotedblright 
+	\bracketright \quotedbl \greater \plusminus \endash \bullet \bracketleft 
+	\afii57658 \parenright \divide \perthousand \periodcentered \semicolon 
+	\afii57842 \bar \colon \period \uni05F3 \less \slash \uni05F4 \hyphen \asterisk 
+	\quoteright \underscore \comma \asciicircum \question \percent \braceright 
+	\ellipsis \quotesingle \equal \afii57673 \afii57676 \afii57688 \afii57689 
+	\afii57665 \afii57667 \afii57670 \afii57680 \afii57664 \afii57671 \afii57686 
+	\afii57674 \afii57669 \uniFB4F \uniFB20 \afii57678 \afii57666 \afii57683 
+	\afii57687 \afii57679 \afii57672 \afii57677 \afii57681 \afii57685 \afii57690 
+	\afii57684 \afii57675 \afii57682 \afii57668 \uni200B \uni2000 \uni2006 \space 
+	\uni2009 \afii300 \uni2003 \afii61664 \afii299 \uni200A \afii301 \uni2004 
+	\uni2002 \uni2001 \uni2005 \uni00A0 ];
+@GDEF_Mark = [\afii57802 \afii57798 \afii57803 \uni05BA \afii57797 \afii57793 
+	\afii57796 \afii57800 \afii57794 \afii57804 \afii57801 \afii57839 \afii57807 
+	\uni05C7 \afii57799 \afii57841 \afii57795 \afii57806 ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, , @GDEF_Mark, ;
+
+} GDEF;
+

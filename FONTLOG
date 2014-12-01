@@ -64,11 +64,6 @@ Please note that the font produced by `makefont.py` is a relatively refined font
 
 Hopefully, in the future, `makefont.py` will continue to improve, and these issues will be no longer.
 
-## config.toml
-
-All of the configurable data for Mazon can be found in `config.toml`.  Notably, there are data there for the manipulating the positioning of niqqudot and the
-width of the various spaces.
-
 ## Source files
 
 ### Layout
@@ -88,6 +83,7 @@ The following tree represents the layout of the Mazon Font Software source tree.
     |-- FONTLOG                     // detailed information about the font.
     |-- LICENSE                     // the SIL Open Font License v1.1.
     |-- makefont.py                 // a python script for generating the fonts.
+    |-- MazonHebrew-Regular.fea     // contains lookup/mark placement information.
     |-- MazonHebrew-Regular.otf     // a useable OpenType font.
     |-- MazonHebrew-Regular.sfd     // the Fontforge save file.
     `-- README                      // a brief introduction to the font.
