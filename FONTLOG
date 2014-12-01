@@ -60,7 +60,7 @@ Please note that the font produced by `makefont.py` is a relatively refined font
 - Additionally, the script will print out the string `"Failed to parse color"`
   about half a dozen times per glyph, so if you are concerned about clobbering
   your terminal with text, consider running the script with `2> /dev/null`
-  (*nix systems) or `2> nul` (Windows).
+  (\*nix systems) or `2> nul` (Windows).
 
 Hopefully, in the future, `makefont.py` will continue to improve, and these issues will be no longer.
 
