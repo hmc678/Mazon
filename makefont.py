@@ -114,7 +114,7 @@ def generate():
                 # to be offset.  It makes setting the anchors simpler.
                 #
                 # Also, add anchor points.
-                if is_glyph_type(glyph, 'niqqud'):
+                if d == './Draft Material/Niqqudot':
                     glyph.width = 0
                     bounds = glyph.boundingBox()
                     if glyphname in high_niqqud_glyphnames:
@@ -132,13 +132,25 @@ def generate():
                         glyph.left_side_bearing = -bearing
                         glyph.right_side_bearing = -bearing
 
-                elif is_glyph_type(glyph, 'letter'):
+                elif d == './Draft Material/Letterforms':
                     glyph.left_side_bearing  = 60
                     glyph.right_side_bearing = 60
-                    bounds = glyph.boundingBox()
                 else:
                     glyph.left_side_bearing  = 60
                     glyph.right_side_bearing = 60
+
+    # Make Private Use Area chars
+    glyph = font.createChar(0xf300, 'afii57668.fp')
+    glyph.addReference('afii57668')
+    glyph.useRefsMetrics('afii57668')
+
+    glyph = font.createChar(0xf301, 'afii57671.fp')
+    glyph.addReference('afii57671')
+    glyph.useRefsMetrics('afii57671')
+
+    glyph = font.createChar(0xf302, 'afii57682.fp')
+    glyph.addReference('afii57682')
+    glyph.useRefsMetrics('afii57682')
 
     # Make whitespace characters.
     for (spacechar, spacewidth) in config['specs']['spaces'].items():
@@ -155,30 +167,6 @@ def generate():
     font.mergeFeature('MazonHebrew-Regular.fea')
     font.save('MazonHebrew-Regular.gen.sfd')
     font.generate('MazonHebrew-Regular.gen.otf')
-
-# typ is a tuple containing groups to search for the union of.
-def is_glyph_type(glyph, typ):
-    if isinstance(glyph, fontforge.glyph):
-        point = glyph.unicode
-    elif isinstance(glyph, str):
-        point = ord(unicodedata.lookup(glyph))
-    elif isinstance(glyph, int):
-        point = glyph
-    else:
-        raise ValueError('Not an appropriate argument to `is_glyph_type()`.')
-
-    typechecks = {'letter': (lambda pt:
-                             unicodedata.category(unichr(pt))[0] == 'L'),
-                  'niqqud': (lambda pt:
-                             pt in (set(range(0x05b0, 0x5bd + 1))
-                                    | set((0x05bf, 0x05c1, 0x05c2, 0x05c7)))),
-                  'punctuation': (lambda pt:
-                                  unicodedata.category(unichr(pt))[0] == 'P'),
-                  'space': (lambda pt:
-                            unicodedata.category(unichr(pt))[0] == 'Z'),
-                  'wide': (lambda pt:
-                           pt in (set(range(0x05b1, 0x05b3 + 1))))}
-    return typechecks[typ](point)
 
 def printerr(errmsg, level='Error'):
     red = '\033[31;1m'

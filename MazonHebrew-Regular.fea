@@ -9,15 +9,22 @@ lookup caltAltAyin {
   sub \afii57682' [\afii57799 \afii57801 \afii57800 \afii57802 \afii57793 \afii57794 \afii57795 \afii57798 \afii57797 \afii57796 \afii57839 \uni05C7] by \uniFB20;
 } caltAltAyin;
 
+lookup caltFurtivePatah {
+  lookupflag RightToLeft;
+  sub [\afii57668 \afii57671 \afii57682]' [\afii57799 \afii57801 \afii57800 \afii57802 \afii57793 \afii57794 \afii57795 \afii57798 \afii57797 \afii57796 \afii57839 \uni05C7] [@Spaces @Punctuation] by [\afii57668.fp \afii57671.fp \afii57682.fp]; 
+} caltFurtivePatah;
+
 feature calt {
 
   script DFLT;
      language dflt ;
       lookup caltAltAyin;
+      lookup caltFurtivePatah;
 
   script hebr;
      language dflt ;
       lookup caltAltAyin;
+      lookup caltFurtivePatah;
 } calt;
 
 # GPOS 
@@ -36,11 +43,11 @@ lookup markRafe {
   pos base [\afii57676 ] <anchor 299 0> mark @Rafe;
   pos base [\afii57688 ] <anchor 285 0> mark @Rafe;
   pos base [\afii57689 ] <anchor 378 0> mark @Rafe;
-  pos base [\afii57665 \afii57667 \afii57674 \afii57668 ] <anchor 342 0> mark @Rafe;
+  pos base [\afii57665 \afii57667 \afii57674 \afii57668 \afii57668.fp ] <anchor 342 0> mark @Rafe;
   pos base [\afii57670 ] <anchor 182 0> mark @Rafe;
   pos base [\afii57680 ] <anchor 202 0> mark @Rafe;
   pos base [\afii57664 ] <anchor 338 0> mark @Rafe;
-  pos base [\afii57671 ] <anchor 326 0> mark @Rafe;
+  pos base [\afii57671 \afii57671.fp ] <anchor 326 0> mark @Rafe;
   pos base [\afii57686 ] <anchor 314 0> mark @Rafe;
   pos base [\afii57669 ] <anchor 168 0> mark @Rafe;
   pos base [\uniFB4F ] <anchor 352 0> mark @Rafe;
@@ -57,7 +64,7 @@ lookup markRafe {
   pos base [\afii57690 ] <anchor 367 0> mark @Rafe;
   pos base [\afii57684 ] <anchor 300 0> mark @Rafe;
   pos base [\afii57675 ] <anchor 308 0> mark @Rafe;
-  pos base [\afii57682 ] <anchor 350 0> mark @Rafe;
+  pos base [\afii57682 \afii57682.fp] <anchor 350 0> mark @Rafe;
 } markRafe;
 
 lookup markDagesh {
@@ -71,7 +78,7 @@ lookup markDagesh {
   pos base [\afii57670 ] <anchor 55 0> mark @Dagesh;
   pos base [\afii57680 ] <anchor 190 0> mark @Dagesh;
   pos base [\afii57664 ] <anchor 265 -80> mark @Dagesh;
-  pos base [\afii57671 ] <anchor 340 -40> mark @Dagesh;
+  pos base [\afii57671 \afii57671.fp ] <anchor 340 -40> mark @Dagesh;
   pos base [\afii57686 ] <anchor 200 -100> mark @Dagesh;
   pos base [\afii57674 ] <anchor 300 0> mark @Dagesh;
   pos base [\afii57669 ] <anchor 130 0> mark @Dagesh;
@@ -89,14 +96,14 @@ lookup markDagesh {
   pos base [\afii57690 ] <anchor 435 -30> mark @Dagesh;
   pos base [\afii57684 ] <anchor 385 -20> mark @Dagesh;
   pos base [\afii57675 ] <anchor 308 0> mark @Dagesh;
-  pos base [\afii57682 ] <anchor 430 30> mark @Dagesh;
-  pos base [\afii57668 ] <anchor 340 -25> mark @Dagesh;
+  pos base [\afii57682 \afii57682.fp] <anchor 430 30> mark @Dagesh;
+  pos base [\afii57668 \afii57668.fp] <anchor 340 -25> mark @Dagesh;
 } markDagesh;
 
 lookup markHighNiqqud {
   lookupflag RightToLeft;
   markClass [\afii57803 \uni05BA \afii57804 \afii57806 ] <anchor 0 0> @HighNiqqud;
-  pos base [\afii57673 \afii57676 \afii57688 \afii57689 \afii57665 \afii57667 \afii57670 \afii57664 \afii57671 \afii57686 \afii57674 \afii57669 \uniFB4F \uniFB20 \afii57683 \afii57687 \afii57679 \afii57672 \afii57677 \afii57681 \afii57685 \afii57684 \afii57675 \afii57682 \afii57668 ] <anchor 60 0> mark @HighNiqqud;
+  pos base [\afii57673 \afii57676 \afii57688 \afii57689 \afii57665 \afii57667 \afii57670 \afii57664 \afii57671 \afii57671.fp \afii57686 \afii57674 \afii57669 \uniFB4F \uniFB20 \afii57683 \afii57687 \afii57679 \afii57672 \afii57677 \afii57681 \afii57685 \afii57684 \afii57675 \afii57682 \afii57682.fp \afii57668 \afii57668.fp ] <anchor 60 0> mark @HighNiqqud;
   pos base [\afii57680 \afii57666 ] <anchor 85 0> mark @HighNiqqud;
   pos base [\afii57678 ] <anchor 75 0> mark @HighNiqqud;
   pos base [\afii57690 ] <anchor 120 0> mark @HighNiqqud;
@@ -115,6 +122,7 @@ lookup markLowWideNiqqud {
   pos base [\afii57680 ] <anchor 210 0> mark @LowWideNiqqud;
   pos base [\afii57664 ] <anchor 338 0> mark @LowWideNiqqud;
   pos base [\afii57671 ] <anchor 326 0> mark @LowWideNiqqud;
+  pos base [\afii57671.fp ] <anchor 560 0> mark @LowWideNiqqud;
   pos base [\afii57686 ] <anchor 314 0> mark @LowWideNiqqud;
   pos base [\afii57674 ] <anchor 300 360> mark @LowWideNiqqud;
   pos base [\afii57669 ] <anchor 200 0> mark @LowWideNiqqud;
@@ -133,7 +141,9 @@ lookup markLowWideNiqqud {
   pos base [\afii57684 ] <anchor 300 0> mark @LowWideNiqqud;
   pos base [\afii57675 ] <anchor 308 0> mark @LowWideNiqqud;
   pos base [\afii57682 ] <anchor 470 0> mark @LowWideNiqqud;
+  pos base [\afii57682.fp ] <anchor 490 0> mark @LowWideNiqqud;
   pos base [\afii57668 ] <anchor 320 0> mark @LowWideNiqqud;
+  pos base [\afii57668.fp ] <anchor 520 0> mark @LowWideNiqqud;
 } markLowWideNiqqud;
 
 lookup markLowNarrowNiqqud {
@@ -149,6 +159,7 @@ lookup markLowNarrowNiqqud {
   pos base [\afii57680 ] <anchor 210 0> mark @LowNarrowNiqqud;
   pos base [\afii57664 ] <anchor 338 0> mark @LowNarrowNiqqud;
   pos base [\afii57671 ] <anchor 326 0> mark @LowNarrowNiqqud;
+  pos base [\afii57671.fp ] <anchor 560 0> mark @LowNarrowNiqqud;
   pos base [\afii57686 ] <anchor 314 0> mark @LowNarrowNiqqud;
   pos base [\afii57674 ] <anchor 300 360> mark @LowNarrowNiqqud;
   pos base [\afii57669 ] <anchor 220 0> mark @LowNarrowNiqqud;
@@ -166,7 +177,9 @@ lookup markLowNarrowNiqqud {
   pos base [\afii57684 ] <anchor 300 0> mark @LowNarrowNiqqud;
   pos base [\afii57675 ] <anchor 308 0> mark @LowNarrowNiqqud;
   pos base [\afii57682 ] <anchor 440 0> mark @LowNarrowNiqqud;
+  pos base [\afii57682.fp ] <anchor 510 0> mark @LowNarrowNiqqud;
   pos base [\afii57668 ] <anchor 320 0> mark @LowNarrowNiqqud;
+  pos base [\afii57668.fp ] <anchor 520 0> mark @LowNarrowNiqqud;
 } markLowNarrowNiqqud;
 
 lookup DageshKafSofitTrigger {
@@ -226,7 +239,7 @@ feature kern {
 	\afii57665 \afii57667 \afii57670 \afii57680 \afii57664 \afii57671 \afii57686 
 	\afii57674 \afii57669 \uniFB4F \uniFB20 \afii57678 \afii57666 \afii57683 
 	\afii57687 \afii57679 \afii57672 \afii57677 \afii57681 \afii57685 \afii57690 
-	\afii57684 \afii57675 \afii57682 \afii57668 \uni200B \uni2000 \uni2006 \space 
+	\afii57684 \afii57675 \afii57682 \afii57682.fp \afii57668 \uni200B \uni2000 \uni2006 \space 
 	\uni2009 \afii300 \uni2003 \afii61664 \afii299 \uni200A \afii301 \uni2004 
 	\uni2002 \uni2001 \uni2005 \uni00A0 ];
 @GDEF_Mark = [\afii57802 \afii57798 \afii57803 \uni05BA \afii57797 \afii57793 
