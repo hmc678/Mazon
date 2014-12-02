@@ -1,3 +1,24 @@
+@Spaces = [space uni2000-uni2009 uni200A uni200B afii61664 afii299 afii300 afii301];
+@Punctuation = [exclam quotedbl percent quotesingle parenleft parenright asterisk plus comma hyphen period slash colon semicolon less equal greater question bracketleft backslash bracketright asciicircum underscore grave braceleft bar braceright plusminus periodcentered divide afii57645 afii57842 afii57658 endash emdash quoteleft quoteright quotedblleft quotedblright bullet ellipsis perthousand fraction];
+# GSUB 
+
+
+lookup caltAltAyin {
+  lookupflag RightToLeft;
+  ignore sub \afii57682' [\afii57799 \afii57801 \afii57800 \afii57802 \afii57793 \afii57794 \afii57795 \afii57798 \afii57797 \afii57796 \afii57839 \uni05C7] [@Spaces @Punctuation];
+  sub \afii57682' [\afii57799 \afii57801 \afii57800 \afii57802 \afii57793 \afii57794 \afii57795 \afii57798 \afii57797 \afii57796 \afii57839 \uni05C7] by \uniFB20;
+} caltAltAyin;
+
+feature calt {
+
+  script DFLT;
+     language dflt ;
+      lookup caltAltAyin;
+
+  script hebr;
+     language dflt ;
+      lookup caltAltAyin;
+} calt;
 
 # GPOS 
 
@@ -75,19 +96,9 @@ lookup markDagesh {
 lookup markHighNiqqud {
   lookupflag RightToLeft;
   markClass [\afii57803 \uni05BA \afii57804 \afii57806 ] <anchor 0 0> @HighNiqqud;
-  pos base [\afii57673 \afii57671 \afii57669 ] <anchor 60 0> mark @HighNiqqud;
-  pos base [\afii57676 \afii57688 \uniFB4F \afii57677 ] <anchor 60 0> mark @HighNiqqud;
-  pos base [\afii57689 \afii57679 \afii57685 \afii57675 ] <anchor 60 0> mark @HighNiqqud;
-  pos base [\afii57665 \afii57674 \afii57687 \afii57668 ] <anchor 60 0> mark @HighNiqqud;
-  pos base [\afii57667 \afii57682 ] <anchor 60 0> mark @HighNiqqud;
-  pos base [\afii57670 \uniFB20 ] <anchor 60 0> mark @HighNiqqud;
+  pos base [\afii57673 \afii57676 \afii57688 \afii57689 \afii57665 \afii57667 \afii57670 \afii57664 \afii57671 \afii57686 \afii57674 \afii57669 \uniFB4F \uniFB20 \afii57683 \afii57687 \afii57679 \afii57672 \afii57677 \afii57681 \afii57685 \afii57684 \afii57675 \afii57682 \afii57668 ] <anchor 60 0> mark @HighNiqqud;
   pos base [\afii57680 \afii57666 ] <anchor 85 0> mark @HighNiqqud;
-  pos base [\afii57664 ] <anchor 60 0> mark @HighNiqqud;
-  pos base [\afii57686 \afii57684 ] <anchor 60 0> mark @HighNiqqud;
   pos base [\afii57678 ] <anchor 75 0> mark @HighNiqqud;
-  pos base [\afii57683 ] <anchor 60 0> mark @HighNiqqud;
-  pos base [\afii57672 ] <anchor 60 0> mark @HighNiqqud;
-  pos base [\afii57681 ] <anchor 60 0> mark @HighNiqqud;
   pos base [\afii57690 ] <anchor 120 0> mark @HighNiqqud;
 } markHighNiqqud;
 
@@ -160,7 +171,7 @@ lookup markLowNarrowNiqqud {
 
 lookup DageshKafSofitTrigger {
   lookupflag RightToLeft;
-    pos \afii57807 \afii57674  \afii57797'lookup mkmkDageshKafSofit  ;
+    pos \afii57807 \afii57674  \afii57797'lookup mkmkDageshKafSofit   ;
 } DageshKafSofitTrigger;
 
 feature mkmk {
