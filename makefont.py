@@ -19,6 +19,18 @@ import unicodedata
 import fontforge
 import psMat
 
+config = None
+
+try:
+    import toml
+except ImportError:
+    print('''\
+You do not have the package `toml` installed.  You can install it from
+    github.com/uiri/toml
+After installation, rerun this tool.''')
+    sys.exit(1)
+
+
 if sys.version_info.major < 3:
     input = raw_input
 else:
@@ -29,6 +41,9 @@ high_niqqud_glyphnames = [ 'hebrew point holam',
                            'hebrew point shin dot',
                            'hebrew point sin dot',
                          ]
+# These are the "standard-width" characters in Hebrew.  The rest are
+# much narrower, excepting shin, which is a bit wider.
+em_width_chars = u'אבדהחטכךלמםסעפףצקרת'
 
 # This gets loaded from config.toml below, in main, to allow the program to
 # run --install-local-package
@@ -62,10 +77,10 @@ def download_local_toml():
 def find_em_width():
     font = fontforge.open('MazonHebrew-Regular.sfd')
     total = 0
-    for c in config['em width chars']:
+    for c in em_width_chars:
         total += font[ord(c)].width
     font.close()
-    return float(total) / len(config['em width chars'])
+    return float(total) / len(em_width_chars)
 
 def generate():
     font = fontforge.font()
@@ -174,43 +189,14 @@ def printerr(errmsg, level='Error'):
     print(red + level + ': ' + errmsg + reset, file=sys.stderr)
 
 if __name__ == '__main__':
-
     argparser = argparse.ArgumentParser()
     argparser.add_argument('-m', '--find-em-width',
                            help='find the actual em width of the font',
                            action='store_true')
-    argparser.add_argument('--install-local-package',
-                           help='install a python package to the current directory',
-                           action='append',
-                           dest='packages')
     args = argparser.parse_args()
 
-    if args.packages:
-        # Currently we only need one non-standard package, but in the future
-        # maybe there will be more?
-        download_local_toml()
-
-    try:
-        import toml
-        with open('config.toml') as conffile:
-            config = toml.loads(conffile.read())
-        # TODO: get this to import properly as unicode from config.toml
-        #
-        # These are the "standard-width" characters in Hebrew.  The rest are
-        # much narrower, excepting shin, which is a bit wider.
-        config['em width chars'] = u'אבדהחטכךלמםסעפףצקרת'
-    except ImportError:
-        print('''\
-You do not have the python module `toml` installed. This is required to read
-the configuration file which describes our font.  To install this package,
-you have three options:
-    1) Run `[sudo] pip install toml`.
-    2) Manually install the toml package.  Maybe your OS's package manager can
-       do this for you, or you can download it from
-       https://github.com/uiri/toml/
-    3) Try to install a copy into this directory by running
-       `makefont.py --install-local-package toml`''')
-        sys.exit(1)
+    with open('config.toml') as conffile:
+        config = toml.loads(conffile.read())
 
     if len(sys.argv) == 1:
         generate()
