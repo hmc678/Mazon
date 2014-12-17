@@ -11,7 +11,8 @@ lookup caltAltAyin {
 
 lookup caltFurtivePatah {
   lookupflag RightToLeft;
-  sub [\afii57668 \afii57671 \afii57682]' [\afii57799 \afii57801 \afii57800 \afii57802 \afii57793 \afii57794 \afii57795 \afii57798 \afii57797 \afii57796 \afii57839 \uni05C7] [@Spaces @Punctuation] by [\afii57668.fp \afii57671.fp \afii57682.fp]; 
+  sub [\afii57671 \afii57682]' [\afii57799 \afii57801 \afii57800 \afii57802 \afii57793 \afii57794 \afii57795 \afii57798 \afii57797 \afii57796 \afii57839 \uni05C7] [@Spaces @Punctuation] by [\afii57671.fp \afii57682.fp]; 
+  sub \afii57668' \afii57807 [\afii57799 \afii57801 \afii57800 \afii57802 \afii57793 \afii57794 \afii57795 \afii57798 \afii57797 \afii57796 \afii57839 \uni05C7] [@Spaces @Punctuation] by \afii57668.fp;
 } caltFurtivePatah;
 
 feature calt {
