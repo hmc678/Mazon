@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="hebrew point patah.svg">
+   sodipodi:docname="hebrew point meteg.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -34,10 +34,10 @@
      guidetolerance="10"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1851"
-     inkscape:window-height="1053"
-     inkscape:window-x="69"
-     inkscape:window-y="27"
+     inkscape:window-width="1859"
+     inkscape:window-height="1056"
+     inkscape:window-x="61"
+     inkscape:window-y="24"
      inkscape:window-maximized="1">
     <sodipodi:guide
        orientation="0,1"
@@ -69,7 +69,7 @@
        id="guide11274" />
     <sodipodi:guide
        orientation="0,1"
-       position="500,187"
+       position="500,172"
        id="guide3052" />
   </sodipodi:namedview>
   <metadata
@@ -80,7 +80,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -95,7 +95,7 @@
        style="fill:none;stroke:#000000;stroke-width:1.76961458;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none">
       <path
          id="path3000"
-         d="m 205.16786,-11.909618 c -0.008,37.779475 2.08411,104.09705 1.15158,140.423888 -0.30818,12.00339 -4.2367,14.21151 -14.09289,14.23074 l -32.03091,0.0625 c -12.67083,0.0247 -20.61722,-7.13885 -20.25408,-25.40253 0.47974,-24.128072 0.93209,-84.35528 0.93209,-115.8149731 0,-42.3431499 -1.67461,-111.1376569 -0.93204,-137.7890969 0.54182,-19.44612 4.19145,-19.10569 13.63059,-19.33707 l 42.15944,-1.03344 c 11.69543,-0.28668 11.39017,11.95636 10.81078,28.71079 -0.93044,39.730759 -1.36642,79.648607 -1.37456,115.949192 z"
+         d="m 205.16786,-38.737917 c -0.008,37.77947476 2.08411,104.09705 1.15158,140.423887 -0.30818,12.00339 -4.2367,14.21151 -14.09289,14.23074 l -32.03091,0.0625 c -12.67083,0.0247 -20.61722,-7.13885 -20.25408,-25.402529 0.47974,-24.128072 0.93209,-84.3552802 0.93209,-115.814973 0,-42.34315 -1.67461,-111.137658 -0.93204,-137.789098 0.54182,-19.44612 4.19145,-19.10569 13.63059,-19.33707 l 42.15944,-1.03344 c 11.69543,-0.28668 11.39017,11.95636 10.81078,28.71079 -0.93044,39.73076 -1.36642,79.648608 -1.37456,115.949193 z"
          inkscape:connector-curvature="0"
          style="fill:none;stroke:#000000;stroke-width:1.76961458;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
          sodipodi:nodetypes="ssssssssscs" />
