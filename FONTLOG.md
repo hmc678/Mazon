@@ -47,7 +47,7 @@ Several pieces of software have been used to help develop Mazon.  These may be o
   by hand in Fontforge.
 - [git](http://git-scm.com) is used to manage the source files and maintain a
   history of revisions to the Mazon Hebrew source files.
-- [BitBucket](http://bitbucket.org) hosts the git repository for Mazon Hebrew.
+- [Github](http://github.com) hosts the git repository for Mazon Hebrew.
 
 ## makefont.py
 
@@ -80,19 +80,20 @@ The following tree represents the layout of the Mazon Font Software source tree.
     |   `-- Punctuation
     |       `-- [...]               // individual glyphs, in .svg format.
     |-- config.toml
-    |-- FONTLOG                     // detailed information about the font.
+    |-- FONTLOG.md                  // detailed information about the font.
     |-- LICENSE                     // the SIL Open Font License v1.1.
     |-- makefont.py                 // a python script for generating the fonts.
     |-- MazonHebrew-Regular.fea     // contains lookup/mark placement information.
     |-- MazonHebrew-Regular.otf     // a useable OpenType font.
     |-- MazonHebrew-Regular.sfd     // the Fontforge save file.
-    `-- README                      // a brief introduction to the font.
+    `-- README.md                   // a brief introduction to the font.
 
 The glyphs under the directories in `Draft Material` are named after their Unicode character names minus the code point, e.g., the file `full stop.svg` contains an illustration of the character `U+002E FULL STOP`, whereas `hebrew letter alef.svg` contains the same for `U+05D0 HEBREW LETTER ALEF`.  If you create additional glyphs, be sure to name them after their Unicode names.  This is both so others know what the glyph is supposed to represent and so that `makefont.py` can place the glyph appropriately in the font.
 
 ### Revision Control
 
-The source files to Mazon are kept in a git repository, which can be found at http://bitbucket.org/hmc678/mazon-hebrew.
+The source files to Mazon are kept in a git repository, which can be found at
+[https://github.com/hmc678/Mazon](https://github.com/hmc678/Mazon).
 
 # Change Log
 
