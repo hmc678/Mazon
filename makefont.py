@@ -45,32 +45,6 @@ high_niqqud_glyphnames = [ 'hebrew point holam',
 # much narrower, excepting shin, which is a bit wider.
 em_width_chars = u'אבדהחטכךלמםסעפףצקרת'
 
-# This gets loaded from config.toml below, in main, to allow the program to
-# run --install-local-package
-config = None
-
-def download_local_toml():
-    if os.path.exists('toml-master/') or os.path.exists('toml.py'):
-        printerr('Exiting, since toml files already exist in the current '
-                 'directory')
-        sys.exit(1)
-
-    try:
-        if sys.platform.startswith('win32'):
-            raise Exception('Windows support not yet included.  Sorry!')
-        else:
-            wget = sub.Popen(['wget', '-O', '-',
-                              ('https://github.com/uiri/toml/'
-                               'archive/master.zip')],
-                             stdout=sub.PIPE)
-            sub.check_call(['unzip'], stdin=wget.stdout)
-            wget.wait()
-            sub.check_call(['mv', 'toml-master/toml.py', 'toml.py'])
-            sub.check_call(['rm', '-r', 'toml-master/'])
-    except Exception as e:
-        printerr('Local toml install failed: {}'.format(e))
-        sys.exit(1)
-
 # Unfortunately, this can only be done with a font that is *already* available.
 # So if you need to use it, run generate, then find the em width, then generate,
 # etc.
