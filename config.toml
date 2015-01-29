@@ -44,3 +44,18 @@ version      = "v0.3"
     # Not spaces, but might as well go here
     left-to-right mark    = 0.0
     right-to-left mark    = 0.0
+
+    [specs.bearings]
+    # Here is where irregular bearing measurements go.  If a letter looks fine
+    # without further adjustment than makefont.py's default, there is no
+    # need for a value here.
+        [specs.bearings.left]
+        hebrew letter kaf = 45
+        hebrew letter lamed = 30
+        hebrew letter tav = 30
+        [specs.bearings.right]
+        hebrew letter alef = 45
+        hebrew letter final nun = 40
+        hebrew letter lamed = 30
+        hebrew letter shin = 45
+        hebrew letter zayin = 30

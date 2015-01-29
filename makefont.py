@@ -122,8 +122,14 @@ def generate():
                         glyph.right_side_bearing = -bearing
 
                 elif d == './Draft Material/Letterforms':
-                    glyph.left_side_bearing  = 60
-                    glyph.right_side_bearing = 60
+                    try:
+                        glyph.left_side_bearing = config['specs']['bearings']['left'][glyphname]
+                    except KeyError:
+                        glyph.left_side_bearing = 60
+                    try:
+                        glyph.right_side_bearing = config['specs']['bearings']['right'][glyphname]
+                    except KeyError:
+                        glyph.right_side_bearing = 60
                 else:
                     glyph.left_side_bearing  = 60
                     glyph.right_side_bearing = 60
