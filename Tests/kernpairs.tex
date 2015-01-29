@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+
+\usepackage{xltxtra, xunicode, fontspec, changepage}
+\usepackage[marginal, norule]{footmisc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+\geometry{lmargin = 0.25in,
+rmargin = 0.25in,
+tmargin = 0.25in,
+landscape
+}
+\frenchspacing\pagestyle{empty}
+
+\usepackage{polyglossia}
+\setmainlanguage{hebrew}
+\newfontfamily\hebrewfont[Mapping=tex-text, Numbers=OldStyle]{Mazon Hebrew}
+
+\setotherlanguage{english}
+\newfontfamily\englishfont[Mapping=tex-text, Numbers=OldStyle]{ITC Mendoza Roman Std}
+
+\begin{document}
+
+\huge
+\begin{hebrew}
+    \input{kernpairs-stub.tex}
+\end{hebrew}
+
+\end{document}
