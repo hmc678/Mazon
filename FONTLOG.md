@@ -42,6 +42,13 @@ Several pieces of software have been used to help develop Mazon.  These may be o
 - [FontForge](http://fontforge.org) collects the glyphs of the font, allows
   the user to edit various metrics about the font, and generates the final,
   usable font files.
+    - NB.  The font is currently generated with version `20120731`, which is the
+      stable binary distributed by Ubuntu (as of 5 Feb 2015).  There exists an
+      updated fork (?) of FontForge located [here](http://fontforge.github.io).
+      The way that this fontforge imports `.svg` files is *drastically different*
+      and will produce an outline font.  I haven't experimented much, but I suspect
+      that the way to accomodate the newer FontForge is to change the `.svg`s to
+      have no stroke and a plain fill.
 - [Python](http://www.python.org) is a scripting language used by Fontforge.
   It is used to generate a "rough draft" font, which can then be tuned further
   by hand in Fontforge.
@@ -53,16 +60,13 @@ Several pieces of software have been used to help develop Mazon.  These may be o
 
 After editing the glyphs of the font (i.e., the material under the directories in `Draft Material`), you can regenerate the fonts by running `makefont.py` at the command line, provided Fontforge is installed on the computer.  The script will output two files into the root directory: `MazonHebrew-Regular.gen.sfd` and `MazonHebrew-Regular.gen.otf`.
 
-Please note that the font produced by `makefont.py` is a relatively refined font.  All the niqqudot should be placed properly out-of-the-box and reasonable defaults for letterspacing are applied.  But,
+Please note that the font produced by `makefont.py` is a relatively refined font.  All the niqqudot should be placed properly out-of-the-box and reasonable kerning defaults are applied.  But, the script will print out the string `"Failed to parse color"` about half a dozen times per glyph, so if you are concerned about clobbering your terminal with text, consider running the script with `2> /dev/null` (\*nix systems) or `2> nul` (Windows).
 
-- No attempt has yet been made to optically align the bearings of the font on
-  a per glyph basis, create kerning tables, substitutions, etc.
-- Additionally, the script will print out the string `"Failed to parse color"`
-  about half a dozen times per glyph, so if you are concerned about clobbering
-  your terminal with text, consider running the script with `2> /dev/null`
-  (\*nix systems) or `2> nul` (Windows).
+## Tests
 
-Hopefully, in the future, `makefont.py` will continue to improve, and these issues will be no longer.
+### kernpairs
+
+Running `kernpairs.py` will generate the file `kernpairs-stub.tex`, which contains the pairwise permutations of the alef-bet (*i.e.*, אא אב אג...בא בב בג...), along with a listing of the letter and all its niqqudot.  Subsequently running `xelatex kernpairs.tex` will yield a kerning specimen `kernpairs.pdf` for your perusal.
 
 ## Source files
 
@@ -79,6 +83,9 @@ The following tree represents the layout of the Mazon Font Software source tree.
     |   |   `-- [...]               // individual glyphs, in .svg format.
     |   `-- Punctuation
     |       `-- [...]               // individual glyphs, in .svg format.
+    |-- Tests
+    |   |-- kernpairs.py            // generates kern testing sequences.
+    |   `-- kernpairs.tex           // a XeLaTeX template for the sequences.
     |-- config.toml
     |-- FONTLOG.md                  // detailed information about the font.
     |-- LICENSE                     // the SIL Open Font License v1.1.
@@ -128,7 +135,7 @@ The following log lists changes from release to release.  Full history of the fo
       include ta'amei miqra, the cantillation marks found in Biblical texts.
       Numerical figures are also missing.
     - A build script, `makefont.py`, is also now available.
-    - The quf now has a more rounded right arm.
+    - The qof now has a more rounded right arm.
     - Ayin is more balanced.
     - The ascender of lamed is reshaped ("more square")
     - The alternate (niqqud) ayin and an alef-lamed ligature are added.
