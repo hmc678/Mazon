@@ -106,8 +106,20 @@ The source files to Mazon are kept in a git repository, which can be found at
 
 The following log lists changes from release to release.  Full history of the font and its files is available through `git log` and its variations.
 
+* 5 February 2015 - v0.4
+    - Adds support for horizontal kerning.
+    - Fixes bearings on letters that are universally miskerned.
+    - Adds support for the "furtive patah" feature.
+    - Adds support for an alternate ayin when using niqqudot.
+    - Improves spacing of nearly all niqqudot.
+    - Straightens the leg on he.
+    - Dramatically simplifies `makefont.py` by adding an Adobe Feature File,
+      which allows the removal of a great deal of work in `makefont.py` as well
+      as the bulk of the confusing configuration data in `config.toml`.
+    - Adds the beginnings of a testing suite, which now includes a visual
+      kerning pair table.
 * 2 November 2014 - v0.3
-    - Added all of Hebrew's diacritical vowels (niqqudot).
+    - Adds all of Hebrew's diacritical vowels (niqqudot).
     - Configuration data is now available for easier consumption in the
       file `config.toml`.
     - Many improvements to `makefont.py`, which now can create lookup tables,

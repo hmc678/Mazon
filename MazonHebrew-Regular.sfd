@@ -4,8 +4,8 @@ FullName: Mazon Hebrew Regular
 FamilyName: Mazon Hebrew
 Weight: Regular
 Copyright: Copyright (c) 2014 Ryan Dorsey\nLicensed under SIL Open Font License v1.1 (http://scripts.sil.org/OFL)\nCreated with FontForge 2.0 (http://fontforge.sf.net)
-UComments: "2014-10-30: Created." 
-Version: v0.3
+UComments: "2015-2-5: Created." 
+Version: v0.4
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -14,12 +14,12 @@ Descent: 247
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-XUID: [1021 533 316313157 8439209]
+XUID: [1021 734 1179239952 1081570]
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
-CreationTime: 1414683138
-ModificationTime: 1414683138
+CreationTime: 1423149491
+ModificationTime: 1423149491
 OS2TypoAscent: 0
 OS2TypoAOffset: 1
 OS2TypoDescent: 0
@@ -34,59 +34,105 @@ HheadAOffset: 1
 HheadDescent: 0
 HheadDOffset: 1
 OS2Vendor: 'PfEd'
-Lookup: 260 1 0 "'mark' Rafe in Hebrew lookup 4"  {"'mark' Rafe in Hebrew lookup 4-1"  } ['mark' ('DFLT' <'dflt' > 'hebr' <'dflt' > ) ]
-Lookup: 260 1 0 "'mark' Dagesh in Hebrew lookup 3"  {"'mark' Dagesh in Hebrew lookup 3-1"  } ['mark' ('DFLT' <'dflt' > 'hebr' <'dflt' > ) ]
-Lookup: 260 1 0 "'mark' High Niqqud in Hebrew lookup 2"  {"'mark' High Niqqud in Hebrew lookup 2-1"  } ['mark' ('DFLT' <'dflt' > 'hebr' <'dflt' > ) ]
-Lookup: 260 1 0 "'mark' Low Wide Niqqud in Hebrew lookup 1"  {"'mark' Low Wide Niqqud in Hebrew lookup 1-1"  } ['mark' ('DFLT' <'dflt' > 'hebr' <'dflt' > ) ]
-Lookup: 260 1 0 "'mark' Low Narrow Niqqud in Hebrew lookup 0"  {"'mark' Low Narrow Niqqud in Hebrew lookup 0-1"  } ['mark' ('DFLT' <'dflt' > 'hebr' <'dflt' > ) ]
-Lookup: 262 1 0 "'mkmk' DageshKafSofit in Hebrew lookup 4"  {"'mkmk' DageshKafSofit in Hebrew lookup 4-1"  } ['mkmk' ('DFLT' <'dflt' > 'hebr' <'dflt' > ) ]
+Lookup: 6 1 0 "caltAltAyin"  {"caltAltAyin contextual 0"  "caltAltAyin contextual 1"  } ['calt' ('hebr' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 1 0 "Single Substitution lookup 1"  {"Single Substitution lookup 1 subtable"  } []
+Lookup: 6 1 0 "caltFurtivePatah"  {"caltFurtivePatah contextual 0"  "caltFurtivePatah contextual 1"  } ['calt' ('hebr' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 1 1 0 "Single Substitution lookup 3"  {"Single Substitution lookup 3 subtable"  } []
+Lookup: 1 1 0 "Single Substitution lookup 4"  {"Single Substitution lookup 4 subtable"  } []
+Lookup: 262 1 0 "mkmkDageshKafSofit"  {"mkmkDageshKafSofit subtable"  } ['mkmk' ('hebr' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 260 1 0 "markRafe"  {"markRafe subtable"  } ['mark' ('hebr' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 260 1 0 "markDagesh"  {"markDagesh subtable"  } ['mark' ('hebr' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 260 1 0 "markHighNiqqud"  {"markHighNiqqud subtable"  } ['mark' ('hebr' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 260 1 0 "markLowWideNiqqud"  {"markLowWideNiqqud subtable"  } ['mark' ('hebr' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 260 1 0 "markLowNarrowNiqqud"  {"markLowNarrowNiqqud subtable"  } ['mark' ('hebr' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 264 1 0 "DageshKafSofitTrigger"  {"DageshKafSofitTrigger subtable"  } ['kern' ('hebr' <'dflt' > 'DFLT' <'dflt' > ) ]
+Lookup: 258 9 0 "kernHorizontalKerning"  {"kernHorizontalKerning subtable"  } ['kern' ('hebr' <'dflt' > 'DFLT' <'dflt' > ) ]
 DEI: 91125
+ChainPos2: glyph "DageshKafSofitTrigger subtable"  0 0 0 1
+ String: 9 afii57797
+ BString: 19 afii57807 afii57674
+ FString: 0 
+ 1
+  SeqLookup: 0 "mkmkDageshKafSofit" 
+EndFPST
+ChainSub2: coverage "caltFurtivePatah contextual 1"  0 0 0 1
+ 1 0 3
+  Coverage: 9 afii57668
+  FCoverage: 9 afii57807
+  FCoverage: 117 afii57799 afii57801 afii57800 afii57802 afii57793 afii57794 afii57795 afii57798 afii57797 afii57796 afii57839 uni05C7
+  FCoverage: 526 space uni2000 uni2001 uni2002 uni2003 uni2004 uni2005 uni2006 uni2007 uni2008 uni2009 uni200A uni200B afii61664 afii299 afii300 afii301 exclam quotedbl percent quotesingle parenleft parenright asterisk plus comma hyphen period slash colon semicolon less equal greater question bracketleft backslash bracketright asciicircum underscore grave braceleft bar braceright plusminus periodcentered divide afii57645 afii57842 afii57658 endash emdash quoteleft quoteright quotedblleft quotedblright bullet ellipsis perthousand fraction
+ 1
+  SeqLookup: 0 "Single Substitution lookup 4" 
+EndFPST
+ChainSub2: coverage "caltFurtivePatah contextual 0"  0 0 0 1
+ 1 0 2
+  Coverage: 19 afii57671 afii57682
+  FCoverage: 117 afii57799 afii57801 afii57800 afii57802 afii57793 afii57794 afii57795 afii57798 afii57797 afii57796 afii57839 uni05C7
+  FCoverage: 526 space uni2000 uni2001 uni2002 uni2003 uni2004 uni2005 uni2006 uni2007 uni2008 uni2009 uni200A uni200B afii61664 afii299 afii300 afii301 exclam quotedbl percent quotesingle parenleft parenright asterisk plus comma hyphen period slash colon semicolon less equal greater question bracketleft backslash bracketright asciicircum underscore grave braceleft bar braceright plusminus periodcentered divide afii57645 afii57842 afii57658 endash emdash quoteleft quoteright quotedblleft quotedblright bullet ellipsis perthousand fraction
+ 1
+  SeqLookup: 0 "Single Substitution lookup 3" 
+EndFPST
+ChainSub2: coverage "caltAltAyin contextual 1"  0 0 0 1
+ 1 0 1
+  Coverage: 9 afii57682
+  FCoverage: 117 afii57799 afii57801 afii57800 afii57802 afii57793 afii57794 afii57795 afii57798 afii57797 afii57796 afii57839 uni05C7
+ 1
+  SeqLookup: 0 "Single Substitution lookup 1" 
+EndFPST
+ChainSub2: coverage "caltAltAyin contextual 0"  0 0 0 1
+ 1 0 2
+  Coverage: 9 afii57682
+  FCoverage: 117 afii57799 afii57801 afii57800 afii57802 afii57793 afii57794 afii57795 afii57798 afii57797 afii57796 afii57839 uni05C7
+  FCoverage: 526 space uni2000 uni2001 uni2002 uni2003 uni2004 uni2005 uni2006 uni2007 uni2008 uni2009 uni200A uni200B afii61664 afii299 afii300 afii301 exclam quotedbl percent quotesingle parenleft parenright asterisk plus comma hyphen period slash colon semicolon less equal greater question bracketleft backslash bracketright asciicircum underscore grave braceleft bar braceright plusminus periodcentered divide afii57645 afii57842 afii57658 endash emdash quoteleft quoteright quotedblleft quotedblright bullet ellipsis perthousand fraction
+ 0
+EndFPST
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -24
 AntiAlias: 1
 FitToEm: 1
-AnchorClass2: "Rafe"  "'mark' Rafe in Hebrew lookup 4-1" "Dagesh"  "'mark' Dagesh in Hebrew lookup 3-1" "HighNiqqud"  "'mark' High Niqqud in Hebrew lookup 2-1" "LowWideNiqqud"  "'mark' Low Wide Niqqud in Hebrew lookup 1-1" "LowNarrowNiqqud"  "'mark' Low Narrow Niqqud in Hebrew lookup 0-1" "DageshKafSofit"  "'mkmk' DageshKafSofit in Hebrew lookup 4-1" 
-BeginChars: 65536 109
+AnchorClass2: "DageshKafSofit"  "mkmkDageshKafSofit subtable" "Rafe"  "markRafe subtable" "Dagesh"  "markDagesh subtable" "HighNiqqud"  "markHighNiqqud subtable" "LowWideNiqqud"  "markLowWideNiqqud subtable" "LowNarrowNiqqud"  "markLowNarrowNiqqud subtable" 
+BeginChars: 65536 114
 
 StartChar: afii57802
 Encoding: 1459 1459 0
 Width: 2
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "LowWideNiqqud" 0 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
--66.7979 -120.07 m 0
- -67.2119 -116.977 -69.8555 -113.641 -74.1055 -113.641 c 0
- -92.0059 -113.641 -103.433 -114.585 -117.671 -114.125 c 0
- -124.666 -113.899 -125.953 -111.017 -125.964 -103.784 c 0
- -125.977 -95.9492 -125.988 -88.1152 -126 -80.2803 c 0
- -126.015 -70.9824 -121.84 -65.1514 -111.196 -65.418 c 0
- -97.1348 -65.7705 -68.0322 -66.1016 -49.6982 -66.1016 c 0
- -25.0215 -66.1016 9.0752 -64.873 24.6064 -65.418 c 0
- 35.9395 -65.8154 35.7412 -68.4941 35.876 -75.4199 c 0
- 36.0762 -85.7324 36.2773 -96.0439 36.4785 -106.356 c 0
- 36.6455 -114.938 29.5195 -114.289 19.7461 -114.289 c 0
- 11.8975 -114.289 0.0429688 -113.384 -14.2344 -113.311 c 0
- -19.7148 -113.282 -23.6641 -116.262 -23.6641 -121.834 c 0
- -23.6641 -147.719 -22.0625 -182.197 -19.3213 -204.927 c 0
- -18.7451 -209.712 -21.7715 -212.064 -29.4053 -213.006 c 2
- -62.834 -217.128 l 2
- -67.9365 -217.757 -72.2158 -215.364 -71.1035 -204.176 c 0
- -69.2275 -185.31 -63.9531 -141.346 -66.7979 -120.07 c 0
-98.0244 -124.639 m 0
- 83.6289 -124.063 68.7129 -115.128 68.7129 -92.168 c 0
- 68.7129 -64.8438 85.1016 -56.3975 99.6221 -56.3975 c 0
- 118.44 -56.3975 127.834 -68.0703 127.834 -92.9209 c 0
- 127.834 -113.311 116.503 -125.377 98.0244 -124.639 c 0
-98.0244 -153.504 m 0
- 116.503 -152.766 127.834 -164.832 127.834 -185.222 c 0
- 127.834 -210.072 118.44 -221.745 99.6221 -221.745 c 0
- 85.1016 -221.745 68.7129 -213.299 68.7129 -185.975 c 0
- 68.7129 -163.015 83.6289 -154.079 98.0244 -153.504 c 0
+-66.7979 -135.07 m 0
+ -67.2119 -131.976 -69.8555 -128.641 -74.1055 -128.641 c 0
+ -92.0059 -128.641 -103.433 -129.585 -117.671 -129.125 c 0
+ -124.666 -128.899 -125.953 -126.017 -125.964 -118.784 c 0
+ -125.977 -110.949 -125.988 -103.115 -126 -95.2803 c 0
+ -126.015 -85.9824 -121.84 -80.1514 -111.196 -80.418 c 0
+ -97.1348 -80.7705 -68.0322 -81.1016 -49.6982 -81.1016 c 0
+ -25.0215 -81.1016 9.0752 -79.873 24.6064 -80.418 c 0
+ 35.9395 -80.8154 35.7412 -83.4941 35.876 -90.4199 c 0
+ 36.0762 -100.732 36.2773 -111.044 36.4785 -121.356 c 0
+ 36.6455 -129.938 29.5195 -129.289 19.7461 -129.289 c 0
+ 11.8975 -129.289 0.0429688 -128.384 -14.2344 -128.311 c 0
+ -19.7148 -128.282 -23.6641 -131.262 -23.6641 -136.834 c 0
+ -23.6641 -162.719 -22.0625 -197.197 -19.3213 -219.927 c 0
+ -18.7451 -224.712 -21.7715 -227.064 -29.4053 -228.006 c 2
+ -62.834 -232.128 l 2
+ -67.9365 -232.757 -72.2158 -230.364 -71.1035 -219.176 c 0
+ -69.2275 -200.31 -63.9531 -156.346 -66.7979 -135.07 c 0
+98.0244 -139.639 m 0
+ 83.6289 -139.063 68.7129 -130.128 68.7129 -107.168 c 0
+ 68.7129 -79.8438 85.1016 -71.3975 99.6221 -71.3975 c 0
+ 118.44 -71.3975 127.834 -83.0703 127.834 -107.921 c 0
+ 127.834 -128.311 116.503 -140.377 98.0244 -139.639 c 0
+98.0244 -168.504 m 0
+ 116.503 -167.766 127.834 -179.832 127.834 -200.222 c 0
+ 127.834 -225.072 118.44 -236.745 99.6221 -236.745 c 0
+ 85.1016 -236.745 68.7129 -228.299 68.7129 -200.975 c 0
+ 68.7129 -178.015 83.6289 -169.079 98.0244 -168.504 c 0
 EndSplineSet
 EndChar
 
@@ -94,22 +140,23 @@ StartChar: afii57798
 Encoding: 1463 1463 1
 Width: 0
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "LowNarrowNiqqud" 0 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
-3.16895 -113.28 m 0
- -18.8477 -113.274 -51.5 -114.81 -72.6709 -114.125 c 0
- -79.666 -113.899 -80.9531 -111.017 -80.9639 -103.784 c 2
- -81 -80.2803 l 2
- -81.0146 -70.9824 -76.8398 -65.1514 -66.1963 -65.418 c 0
- -52.1348 -65.7705 -23.0322 -66.1016 -4.69824 -66.1016 c 0
- 19.9785 -66.1016 54.0752 -64.873 69.6064 -65.418 c 0
- 80.9395 -65.8154 80.7412 -68.4941 80.876 -75.4199 c 2
- 80.876 -75.4199 81.2773 -96.0439 81.4785 -106.356 c 0
- 81.6455 -114.938 74.5137 -114.635 64.7461 -114.289 c 0
- 43.1045 -113.521 21.7539 -113.285 3.16895 -113.28 c 0
+3.16895 -128.28 m 0
+ -18.8477 -128.274 -51.5 -129.81 -72.6709 -129.125 c 0
+ -79.666 -128.899 -80.9531 -126.017 -80.9639 -118.784 c 2
+ -81 -95.2803 l 2
+ -81.0146 -85.9824 -76.8398 -80.1514 -66.1963 -80.418 c 0
+ -52.1348 -80.7705 -23.0322 -81.1025 -4.69824 -81.1025 c 0
+ 19.9785 -81.1025 54.0752 -79.873 69.6064 -80.418 c 0
+ 80.9395 -80.8154 80.7412 -83.4941 80.876 -90.4199 c 2
+ 80.876 -90.4199 81.2773 -111.044 81.4785 -121.356 c 0
+ 81.6455 -129.938 74.5137 -129.635 64.7461 -129.289 c 0
+ 43.1045 -128.521 21.7539 -128.285 3.16895 -128.28 c 0
 EndSplineSet
 EndChar
 
@@ -117,6 +164,7 @@ StartChar: afii57803
 Encoding: 1474 1474 2
 Width: 0
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "HighNiqqud" 0 0 mark 0
 LayerCount: 2
@@ -134,6 +182,7 @@ StartChar: uni05BA
 Encoding: 1466 1466 3
 Width: 0
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "HighNiqqud" 0 0 mark 0
 LayerCount: 2
@@ -151,30 +200,31 @@ StartChar: afii57797
 Encoding: 1464 1464 4
 Width: 0
 VWidth: 0
+GlyphClass: 4
 Flags: HW
-AnchorPoint: "DageshKafSofit" 0 0 mark 0
 AnchorPoint: "LowNarrowNiqqud" 0 0 mark 0
+AnchorPoint: "DageshKafSofit" 0 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
--21.7979 -120.07 m 0
- -22.2119 -116.977 -24.8555 -113.641 -29.1055 -113.641 c 0
- -47.0059 -113.641 -58.4326 -114.585 -72.6709 -114.125 c 0
- -79.666 -113.899 -80.9531 -111.017 -80.9639 -103.784 c 0
- -80.9766 -95.9492 -80.9883 -88.1152 -81 -80.2803 c 0
- -81.0146 -70.9824 -76.8398 -65.1514 -66.1963 -65.418 c 0
- -52.1348 -65.7705 -23.0322 -66.1016 -4.69824 -66.1016 c 0
- 19.9785 -66.1016 54.0752 -64.873 69.6064 -65.418 c 0
- 80.9395 -65.8154 80.7412 -68.4941 80.876 -75.4199 c 0
- 81.0762 -85.7324 81.2773 -96.0439 81.4785 -106.356 c 0
- 81.6455 -114.938 74.5195 -114.289 64.7461 -114.289 c 0
- 56.8975 -114.289 45.043 -113.384 30.7656 -113.311 c 0
- 25.2852 -113.282 21.3359 -116.262 21.3359 -121.834 c 0
- 21.3359 -147.719 22.9375 -182.197 25.6787 -204.927 c 0
- 26.2549 -209.712 23.2285 -212.064 15.5947 -213.006 c 2
- -17.834 -217.128 l 2
- -22.9365 -217.757 -27.2158 -215.364 -26.1035 -204.176 c 0
- -24.2275 -185.31 -18.9531 -141.346 -21.7979 -120.07 c 0
+-21.7979 -135.07 m 0
+ -22.2119 -131.976 -24.8555 -128.641 -29.1055 -128.641 c 0
+ -47.0059 -128.641 -58.4326 -129.585 -72.6709 -129.125 c 0
+ -79.666 -128.898 -80.9531 -126.016 -80.9639 -118.784 c 0
+ -80.9766 -110.949 -80.9883 -103.114 -81 -95.2803 c 0
+ -81.0146 -85.9824 -76.8398 -80.1514 -66.1963 -80.418 c 0
+ -52.1348 -80.7695 -23.0322 -81.1016 -4.69824 -81.1016 c 0
+ 19.9785 -81.1016 54.0752 -79.873 69.6064 -80.418 c 0
+ 80.9395 -80.8154 80.7412 -83.4932 80.876 -90.4199 c 0
+ 81.0762 -100.731 81.2773 -111.044 81.4785 -121.355 c 0
+ 81.6455 -129.938 74.5195 -129.288 64.7461 -129.288 c 0
+ 56.8975 -129.288 45.043 -128.384 30.7656 -128.31 c 0
+ 25.2852 -128.281 21.3359 -131.261 21.3359 -136.834 c 0
+ 21.3359 -162.719 22.9375 -197.197 25.6787 -219.926 c 0
+ 26.2549 -224.712 23.2285 -227.064 15.5947 -228.006 c 2
+ -17.834 -232.127 l 2
+ -22.9365 -232.757 -27.2158 -230.364 -26.1035 -219.176 c 0
+ -24.2275 -200.31 -18.9531 -156.346 -21.7979 -135.07 c 0
 EndSplineSet
 EndChar
 
@@ -182,16 +232,17 @@ StartChar: afii57793
 Encoding: 1460 1460 5
 Width: 1
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "LowNarrowNiqqud" 0 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
-0.311523 -125.173 m 0
- -14.084 -124.598 -29 -115.662 -29 -92.7021 c 0
- -29 -65.3779 -12.6113 -56.9316 1.9082 -56.9316 c 0
- 20.7275 -56.9316 30.1201 -68.6045 30.1201 -93.4551 c 0
- 30.1201 -113.845 18.79 -125.911 0.311523 -125.173 c 0
+0.311523 -140.173 m 0
+ -14.084 -139.598 -29 -130.662 -29 -107.703 c 0
+ -29 -80.3779 -12.6113 -71.9316 1.9082 -71.9316 c 0
+ 20.7275 -71.9316 30.1201 -83.6045 30.1201 -108.455 c 0
+ 30.1201 -128.845 18.79 -140.911 0.311523 -140.173 c 0
 EndSplineSet
 EndChar
 
@@ -199,26 +250,27 @@ StartChar: afii57796
 Encoding: 1467 1467 6
 Width: 1
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "LowNarrowNiqqud" 0 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
--75.6885 -125.173 m 0
- -90.084 -124.598 -105 -115.662 -105 -92.7021 c 0
- -105 -65.3779 -88.6113 -56.9316 -74.0918 -56.9316 c 0
- -55.2725 -56.9316 -45.8799 -68.6045 -45.8799 -93.4551 c 0
- -45.8799 -113.845 -57.21 -125.911 -75.6885 -125.173 c 0
-76.8086 -172.038 m 0
- 91.2051 -172.613 106.12 -181.549 106.12 -204.509 c 0
- 106.12 -231.833 89.7314 -240.279 75.2119 -240.279 c 0
- 56.3936 -240.279 47 -228.606 47 -203.756 c 0
- 47 -183.366 58.3311 -171.3 76.8086 -172.038 c 0
-0.311523 -114.501 m 0
- 18.79 -113.763 30.1201 -125.829 30.1201 -146.219 c 0
- 30.1201 -171.069 20.7275 -182.742 1.9082 -182.742 c 0
- -12.6113 -182.742 -29 -174.296 -29 -146.972 c 0
- -29 -124.012 -14.084 -115.076 0.311523 -114.501 c 0
+-75.6885 -140.583 m 0
+ -90.084 -140.008 -105 -131.072 -105 -108.112 c 0
+ -105 -80.7881 -88.6113 -72.3418 -74.0918 -72.3418 c 0
+ -55.2725 -72.3418 -45.8799 -84.0146 -45.8799 -108.865 c 0
+ -45.8799 -129.255 -57.21 -141.32 -75.6885 -140.583 c 0
+76.8086 -187.448 m 0
+ 91.2051 -188.023 106.12 -196.959 106.12 -219.918 c 0
+ 106.12 -247.243 89.7314 -255.689 75.2119 -255.689 c 0
+ 56.3936 -255.689 47 -244.017 47 -219.166 c 0
+ 47 -198.776 58.3311 -186.71 76.8086 -187.448 c 0
+0.311523 -129.911 m 0
+ 18.79 -129.173 30.1201 -141.239 30.1201 -161.629 c 0
+ 30.1201 -186.479 20.7275 -198.151 1.9082 -198.151 c 0
+ -12.6113 -198.151 -29 -189.706 -29 -162.381 c 0
+ -29 -139.422 -14.084 -130.486 0.311523 -129.911 c 0
 EndSplineSet
 EndChar
 
@@ -226,32 +278,33 @@ StartChar: afii57800
 Encoding: 1458 1458 7
 Width: 2
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "LowWideNiqqud" 0 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
--41.8311 -113.28 m 0
- -63.8477 -113.274 -96.5 -114.81 -117.671 -114.125 c 0
- -124.666 -113.899 -125.953 -111.017 -125.964 -103.784 c 0
- -125.977 -95.9492 -125.988 -88.1152 -126 -80.2803 c 0
- -126.015 -70.9824 -121.84 -65.1514 -111.196 -65.418 c 0
- -97.1348 -65.7705 -68.0322 -66.1016 -49.6982 -66.1016 c 0
- -25.0215 -66.1016 9.0752 -64.873 24.6064 -65.418 c 0
- 35.9395 -65.8154 35.7412 -68.4941 35.876 -75.4199 c 0
- 36.0762 -85.7324 36.2773 -96.0439 36.4785 -106.356 c 0
- 36.6455 -114.938 29.5127 -114.66 19.7461 -114.289 c 0
- -0.0693359 -113.534 -26.3438 -113.284 -41.8311 -113.28 c 0
-97.8506 -125.979 m 0
- 83.4541 -125.403 68.5381 -116.468 68.5381 -93.5078 c 0
- 68.5381 -66.1836 84.9277 -57.7373 99.4473 -57.7373 c 0
- 118.266 -57.7373 127.659 -69.4102 127.659 -94.2607 c 0
- 127.659 -114.65 116.328 -126.717 97.8506 -125.979 c 0
-97.8506 -157.844 m 0
- 116.328 -157.105 127.659 -169.172 127.659 -189.562 c 0
- 127.659 -214.412 118.266 -226.085 99.4473 -226.085 c 0
- 84.9277 -226.085 68.5381 -217.639 68.5381 -190.314 c 0
- 68.5381 -167.354 83.4541 -158.419 97.8506 -157.844 c 0
+-41.8311 -128.28 m 0
+ -63.8477 -128.275 -96.5 -129.81 -117.671 -129.125 c 0
+ -124.666 -128.899 -125.953 -126.017 -125.964 -118.784 c 0
+ -125.977 -110.949 -125.988 -103.115 -126 -95.2803 c 0
+ -126.015 -85.9824 -121.84 -80.1514 -111.196 -80.418 c 0
+ -97.1348 -80.7705 -68.0322 -81.1025 -49.6982 -81.1025 c 0
+ -25.0215 -81.1025 9.0752 -79.873 24.6064 -80.418 c 0
+ 35.9395 -80.8154 35.7412 -83.4941 35.876 -90.4199 c 0
+ 36.0762 -100.732 36.2773 -111.044 36.4785 -121.356 c 0
+ 36.6455 -129.938 29.5127 -129.66 19.7461 -129.289 c 0
+ -0.0693359 -128.535 -26.3438 -128.284 -41.8311 -128.28 c 0
+97.8506 -140.979 m 0
+ 83.4541 -140.403 68.5381 -131.468 68.5381 -108.508 c 0
+ 68.5381 -81.1836 84.9277 -72.7373 99.4473 -72.7373 c 0
+ 118.266 -72.7373 127.659 -84.4102 127.659 -109.261 c 0
+ 127.659 -129.65 116.328 -141.717 97.8506 -140.979 c 0
+97.8506 -172.844 m 0
+ 116.328 -172.106 127.659 -184.172 127.659 -204.562 c 0
+ 127.659 -229.412 118.266 -241.085 99.4473 -241.085 c 0
+ 84.9277 -241.085 68.5381 -232.64 68.5381 -205.314 c 0
+ 68.5381 -182.354 83.4541 -173.419 97.8506 -172.844 c 0
 EndSplineSet
 EndChar
 
@@ -259,21 +312,22 @@ StartChar: afii57794
 Encoding: 1461 1461 8
 Width: 2
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "LowNarrowNiqqud" 0 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
--53.6885 -125.173 m 0
- -68.084 -124.598 -83 -115.662 -83 -92.7021 c 0
- -83 -65.3779 -66.6113 -56.9316 -52.0918 -56.9316 c 0
- -33.2725 -56.9316 -23.8799 -68.6045 -23.8799 -93.4551 c 0
- -23.8799 -113.845 -35.21 -125.911 -53.6885 -125.173 c 0
-55.3799 -125.104 m 0
- 36.9023 -125.843 25.5713 -113.776 25.5713 -93.3867 c 0
- 25.5713 -68.5361 34.9648 -56.8633 53.7832 -56.8633 c 0
- 68.3027 -56.8633 84.6924 -65.3096 84.6924 -92.6338 c 0
- 84.6924 -115.594 69.7764 -124.529 55.3799 -125.104 c 0
+-53.6885 -140.173 m 0
+ -68.084 -139.598 -83 -130.662 -83 -107.703 c 0
+ -83 -80.3779 -66.6113 -71.9326 -52.0918 -71.9326 c 0
+ -33.2725 -71.9326 -23.8799 -83.6045 -23.8799 -108.455 c 0
+ -23.8799 -128.845 -35.21 -140.911 -53.6885 -140.173 c 0
+55.3799 -140.104 m 0
+ 36.9023 -140.843 25.5713 -128.776 25.5713 -108.388 c 0
+ 25.5713 -83.5361 34.9648 -71.8643 53.7832 -71.8643 c 0
+ 68.3027 -71.8643 84.6924 -80.3096 84.6924 -107.635 c 0
+ 84.6924 -130.595 69.7764 -139.529 55.3799 -140.104 c 0
 EndSplineSet
 EndChar
 
@@ -281,6 +335,7 @@ StartChar: afii57804
 Encoding: 1473 1473 9
 Width: 0
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "HighNiqqud" 0 0 mark 0
 LayerCount: 2
@@ -298,36 +353,37 @@ StartChar: afii57801
 Encoding: 1457 1457 10
 Width: 1
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "LowWideNiqqud" 0 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
--108.688 -125.173 m 0
- -123.084 -124.598 -138 -115.662 -138 -92.7021 c 0
- -138 -65.3779 -121.611 -56.9316 -107.092 -56.9316 c 0
- -88.2725 -56.9316 -78.8799 -68.6045 -78.8799 -93.4551 c 0
- -78.8799 -113.845 -90.21 -125.911 -108.688 -125.173 c 0
--56.8311 -151.038 m 0
- -38.3525 -150.301 -27.0225 -162.366 -27.0225 -182.756 c 0
- -27.0225 -207.606 -36.415 -219.279 -55.2344 -219.279 c 0
- -69.7539 -219.279 -86.1426 -210.834 -86.1426 -183.509 c 0
- -86.1426 -160.549 -71.2266 -151.613 -56.8311 -151.038 c 0
-0.379883 -125.104 m 0
- -18.0977 -125.843 -29.4287 -113.776 -29.4287 -93.3867 c 0
- -29.4287 -68.5361 -20.0352 -56.8633 -1.2168 -56.8633 c 0
- 13.3027 -56.8633 29.6924 -65.3096 29.6924 -92.6338 c 0
- 29.6924 -115.594 14.7764 -124.529 0.379883 -125.104 c 0
-108.846 -124.504 m 0
- 94.4492 -123.929 79.5332 -114.993 79.5332 -92.0332 c 0
- 79.5332 -64.709 95.9229 -56.2627 110.442 -56.2627 c 0
- 129.261 -56.2627 138.654 -67.9355 138.654 -92.7861 c 0
- 138.654 -113.176 127.323 -125.242 108.846 -124.504 c 0
-104.846 -153.369 m 0
- 123.323 -152.631 134.654 -164.697 134.654 -185.087 c 0
- 134.654 -209.938 125.261 -221.61 106.442 -221.61 c 0
- 91.9229 -221.61 75.5332 -213.164 75.5332 -185.84 c 0
- 75.5332 -162.88 90.4492 -153.944 104.846 -153.369 c 0
+-108.688 -140.173 m 0
+ -123.084 -139.598 -138 -130.662 -138 -107.702 c 0
+ -138 -80.3779 -121.611 -71.9316 -107.092 -71.9316 c 0
+ -88.2725 -71.9316 -78.8799 -83.6045 -78.8799 -108.455 c 0
+ -78.8799 -128.845 -90.21 -140.911 -108.688 -140.173 c 0
+-56.8311 -166.038 m 0
+ -38.3525 -165.301 -27.0225 -177.366 -27.0225 -197.756 c 0
+ -27.0225 -222.606 -36.415 -234.279 -55.2344 -234.279 c 0
+ -69.7539 -234.279 -86.1426 -225.834 -86.1426 -198.509 c 0
+ -86.1426 -175.549 -71.2266 -166.613 -56.8311 -166.038 c 0
+0.379883 -140.104 m 0
+ -18.0977 -140.843 -29.4287 -128.776 -29.4287 -108.387 c 0
+ -29.4287 -83.5361 -20.0352 -71.8633 -1.2168 -71.8633 c 0
+ 13.3027 -71.8633 29.6924 -80.3096 29.6924 -107.634 c 0
+ 29.6924 -130.594 14.7764 -139.529 0.379883 -140.104 c 0
+108.846 -139.504 m 0
+ 94.4492 -138.929 79.5332 -129.993 79.5332 -107.033 c 0
+ 79.5332 -79.709 95.9229 -71.2627 110.442 -71.2627 c 0
+ 129.261 -71.2627 138.654 -82.9355 138.654 -107.786 c 0
+ 138.654 -128.176 127.323 -140.242 108.846 -139.504 c 0
+104.846 -168.369 m 0
+ 123.323 -167.631 134.654 -179.697 134.654 -200.087 c 0
+ 134.654 -224.938 125.261 -236.61 106.442 -236.61 c 0
+ 91.9229 -236.61 75.5332 -228.164 75.5332 -200.84 c 0
+ 75.5332 -177.88 90.4492 -168.944 104.846 -168.369 c 0
 EndSplineSet
 EndChar
 
@@ -335,22 +391,23 @@ StartChar: afii57839
 Encoding: 1469 1469 11
 Width: 1
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "LowNarrowNiqqud" 0 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
--18.0703 -152.796 m 0
- -18.0654 -130.764 -19.2852 -92.0889 -18.7412 -70.9043 c 0
- -18.5615 -63.9033 -16.2705 -62.6162 -10.5225 -62.6045 c 2
- 8.15723 -62.5684 l 2
- 15.5459 -62.5537 20.1807 -66.7314 19.9688 -77.3828 c 0
- 19.6885 -91.4531 19.4248 -126.577 19.4248 -144.923 c 0
- 19.4248 -169.617 20.4014 -209.736 19.9688 -225.279 c 0
- 19.6523 -236.619 17.5244 -236.421 12.0195 -236.556 c 2
- -12.5664 -237.158 l 2
- -19.3877 -237.325 -19.209 -230.186 -18.8711 -220.415 c 0
- -18.3291 -197.245 -18.0742 -173.966 -18.0703 -152.796 c 0
+-18.0703 -168.441 m 0
+ -18.0654 -146.409 -19.2852 -107.734 -18.7412 -86.5498 c 0
+ -18.5615 -79.5498 -16.2705 -78.2617 -10.5225 -78.25 c 2
+ 8.15723 -78.2139 l 2
+ 15.5459 -78.1992 20.1807 -82.377 19.9688 -93.0283 c 0
+ 19.6885 -107.1 19.4248 -142.223 19.4248 -160.569 c 0
+ 19.4248 -185.263 20.4014 -225.382 19.9688 -240.925 c 0
+ 19.6523 -252.265 17.5244 -252.066 12.0195 -252.201 c 2
+ -12.5664 -252.804 l 2
+ -19.3877 -252.972 -19.209 -245.831 -18.8711 -236.061 c 0
+ -18.3291 -212.891 -18.0742 -189.611 -18.0703 -168.441 c 0
 EndSplineSet
 EndChar
 
@@ -358,6 +415,7 @@ StartChar: afii57807
 Encoding: 1468 1468 12
 Width: 1
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "Dagesh" 0 0 mark 0
 AnchorPoint: "DageshKafSofit" 0 0 basemark 0
@@ -376,29 +434,30 @@ StartChar: uni05C7
 Encoding: 1479 1479 13
 Width: 0
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "LowNarrowNiqqud" 0 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
--21.7979 -120.07 m 0
- -22.0303 -116.957 -24.8555 -113.641 -29.1055 -113.641 c 0
- -47.0059 -113.641 -58.4326 -114.585 -72.6709 -114.125 c 0
- -79.666 -113.899 -80.9531 -111.017 -80.9639 -103.784 c 0
- -80.9766 -95.9492 -80.9883 -88.1152 -81 -80.2803 c 0
- -81.0146 -70.9824 -76.8398 -65.1514 -66.1963 -65.418 c 0
- -52.1348 -65.7705 -23.0322 -66.1016 -4.69824 -66.1016 c 0
- 19.9785 -66.1016 54.0752 -64.873 69.6064 -65.418 c 0
- 80.9395 -65.8154 80.7412 -68.4941 80.876 -75.4199 c 0
- 81.0762 -85.7324 81.2773 -96.0439 81.4785 -106.356 c 0
- 81.6455 -114.938 74.5195 -114.289 64.7461 -114.289 c 0
- 56.8975 -114.289 45.043 -113.384 30.7656 -113.311 c 0
- 25.2852 -113.282 21.3359 -116.262 21.3359 -121.834 c 0
- 21.3359 -147.719 24.9375 -206.197 27.6787 -228.927 c 0
- 28.2549 -233.712 25.2402 -236.164 17.5947 -237.006 c 2
- -19.834 -241.128 l 2
- -24.9443 -241.69 -29.9072 -239.273 -28.1035 -228.176 c 0
- -22.6562 -194.667 -19.3096 -153.488 -21.7979 -120.07 c 0
+-21.7979 -135.633 m 0
+ -22.0303 -132.519 -24.8555 -129.202 -29.1055 -129.202 c 0
+ -47.0059 -129.202 -58.4326 -130.147 -72.6709 -129.687 c 0
+ -79.666 -129.461 -80.9531 -126.578 -80.9639 -119.346 c 0
+ -80.9766 -111.511 -80.9883 -103.677 -81 -95.8418 c 0
+ -81.0146 -86.5439 -76.8398 -80.7139 -66.1963 -80.9795 c 0
+ -52.1348 -81.332 -23.0322 -81.6641 -4.69824 -81.6641 c 0
+ 19.9785 -81.6641 54.0752 -80.4346 69.6064 -80.9795 c 0
+ 80.9395 -81.3779 80.7412 -84.0557 80.876 -90.9814 c 0
+ 81.0762 -101.294 81.2773 -111.605 81.4785 -121.918 c 0
+ 81.6455 -130.5 74.5195 -129.851 64.7461 -129.851 c 0
+ 56.8975 -129.851 45.043 -128.945 30.7656 -128.872 c 0
+ 25.2852 -128.844 21.3359 -131.823 21.3359 -137.396 c 0
+ 21.3359 -163.281 24.9375 -221.759 27.6787 -244.488 c 0
+ 28.2549 -249.274 25.2402 -251.726 17.5947 -252.568 c 2
+ -19.834 -256.689 l 2
+ -24.9443 -257.252 -29.9072 -254.836 -28.1035 -243.738 c 0
+ -22.6562 -210.229 -19.3096 -169.051 -21.7979 -135.633 c 0
 EndSplineSet
 EndChar
 
@@ -406,21 +465,22 @@ StartChar: afii57799
 Encoding: 1456 1456 14
 Width: 1
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "LowNarrowNiqqud" 0 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
-0.311523 -125.173 m 0
- -14.084 -124.598 -29 -115.662 -29 -92.7021 c 0
- -29 -65.3779 -12.6113 -56.9316 1.9082 -56.9316 c 0
- 20.7275 -56.9316 30.1201 -68.6045 30.1201 -93.4551 c 0
- 30.1201 -113.845 18.79 -125.911 0.311523 -125.173 c 0
-0.311523 -154.038 m 0
- 18.79 -153.3 30.1201 -165.366 30.1201 -185.756 c 0
- 30.1201 -210.606 20.7275 -222.279 1.9082 -222.279 c 0
- -12.6113 -222.279 -29 -213.833 -29 -186.509 c 0
- -29 -163.549 -14.084 -154.613 0.311523 -154.038 c 0
+0.311523 -140.173 m 0
+ -14.084 -139.598 -29 -130.662 -29 -107.702 c 0
+ -29 -80.3779 -12.6113 -71.9316 1.9082 -71.9316 c 0
+ 20.7275 -71.9316 30.1201 -83.6045 30.1201 -108.455 c 0
+ 30.1201 -128.845 18.79 -140.911 0.311523 -140.173 c 0
+0.311523 -169.038 m 0
+ 18.79 -168.3 30.1201 -180.366 30.1201 -200.756 c 0
+ 30.1201 -225.606 20.7275 -237.279 1.9082 -237.279 c 0
+ -12.6113 -237.279 -29 -228.833 -29 -201.509 c 0
+ -29 -178.549 -14.084 -169.613 0.311523 -169.038 c 0
 EndSplineSet
 EndChar
 
@@ -428,6 +488,7 @@ StartChar: afii57841
 Encoding: 1471 1471 15
 Width: 0
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "Rafe" 0 0 mark 0
 LayerCount: 2
@@ -451,26 +512,27 @@ StartChar: afii57795
 Encoding: 1462 1462 16
 Width: 2
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "LowNarrowNiqqud" 0 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
--53.6885 -125.173 m 0
- -68.084 -124.598 -83 -115.662 -83 -92.7021 c 0
- -83 -65.3779 -66.6113 -56.9316 -52.0918 -56.9316 c 0
- -33.2725 -56.9316 -23.8799 -68.6045 -23.8799 -93.4551 c 0
- -23.8799 -113.845 -35.21 -125.911 -53.6885 -125.173 c 0
-0.168945 -151.038 m 0
- 18.6475 -150.301 29.9775 -162.366 29.9775 -182.756 c 0
- 29.9775 -207.606 20.585 -219.279 1.76562 -219.279 c 0
- -12.7539 -219.279 -29.1426 -210.834 -29.1426 -183.509 c 0
- -29.1426 -160.549 -14.2266 -151.613 0.168945 -151.038 c 0
-55.3799 -125.104 m 0
- 36.9023 -125.843 25.5713 -113.776 25.5713 -93.3867 c 0
- 25.5713 -68.5361 34.9648 -56.8633 53.7832 -56.8633 c 0
- 68.3027 -56.8633 84.6924 -65.3096 84.6924 -92.6338 c 0
- 84.6924 -115.594 69.7764 -124.529 55.3799 -125.104 c 0
+-53.6885 -140.172 m 0
+ -68.084 -139.598 -83 -130.662 -83 -107.702 c 0
+ -83 -80.377 -66.6113 -71.9316 -52.0918 -71.9316 c 0
+ -33.2725 -71.9316 -23.8799 -83.6035 -23.8799 -108.455 c 0
+ -23.8799 -128.845 -35.21 -140.91 -53.6885 -140.172 c 0
+0.168945 -166.038 m 0
+ 18.6475 -165.3 29.9775 -177.366 29.9775 -197.756 c 0
+ 29.9775 -222.606 20.585 -234.279 1.76562 -234.279 c 0
+ -12.7539 -234.279 -29.1426 -225.833 -29.1426 -198.509 c 0
+ -29.1426 -175.549 -14.2266 -166.613 0.168945 -166.038 c 0
+55.3799 -140.104 m 0
+ 36.9023 -140.842 25.5713 -128.776 25.5713 -108.387 c 0
+ 25.5713 -83.5361 34.9648 -71.8633 53.7832 -71.8633 c 0
+ 68.3027 -71.8633 84.6924 -80.3086 84.6924 -107.634 c 0
+ 84.6924 -130.594 69.7764 -139.529 55.3799 -140.104 c 0
 EndSplineSet
 EndChar
 
@@ -478,6 +540,7 @@ StartChar: afii57806
 Encoding: 1465 1465 17
 Width: 0
 VWidth: 0
+GlyphClass: 4
 Flags: HW
 AnchorPoint: "HighNiqqud" 0 0 mark 0
 LayerCount: 2
@@ -495,6 +558,7 @@ StartChar: parenleft
 Encoding: 40 40 18
 Width: 310
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -517,6 +581,7 @@ StartChar: backslash
 Encoding: 92 92 19
 Width: 519
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -539,6 +604,7 @@ StartChar: quotedblleft
 Encoding: 8220 8220 20
 Width: 395
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -572,6 +638,7 @@ StartChar: grave
 Encoding: 96 96 21
 Width: 302
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -588,6 +655,7 @@ StartChar: fraction
 Encoding: 8260 8260 22
 Width: 683
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -610,6 +678,7 @@ StartChar: emdash
 Encoding: 8212 8212 23
 Width: 745
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -632,6 +701,7 @@ StartChar: exclam
 Encoding: 33 33 24
 Width: 239
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -658,6 +728,7 @@ StartChar: uni05C6
 Encoding: 1478 1478 25
 Width: 405
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -690,6 +761,7 @@ StartChar: quoteleft
 Encoding: 8216 8216 26
 Width: 240
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -712,6 +784,7 @@ StartChar: braceleft
 Encoding: 123 123 27
 Width: 434
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -754,6 +827,7 @@ StartChar: afii57645
 Encoding: 1470 1470 28
 Width: 436
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -776,6 +850,7 @@ StartChar: plus
 Encoding: 43 43 29
 Width: 427
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -812,6 +887,7 @@ StartChar: quotedblright
 Encoding: 8221 8221 30
 Width: 395
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -845,6 +921,7 @@ StartChar: bracketright
 Encoding: 93 93 31
 Width: 306
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -873,6 +950,7 @@ StartChar: quotedbl
 Encoding: 34 34 32
 Width: 386
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -894,6 +972,7 @@ StartChar: greater
 Encoding: 62 62 33
 Width: 519
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -924,6 +1003,7 @@ StartChar: plusminus
 Encoding: 177 177 34
 Width: 427
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -971,6 +1051,7 @@ StartChar: endash
 Encoding: 8211 8211 35
 Width: 450
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -993,6 +1074,7 @@ StartChar: bullet
 Encoding: 8226 8226 36
 Width: 318
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1009,6 +1091,7 @@ StartChar: bracketleft
 Encoding: 91 91 37
 Width: 306
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1037,6 +1120,7 @@ StartChar: afii57658
 Encoding: 1475 1475 38
 Width: 257
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1058,6 +1142,7 @@ StartChar: parenright
 Encoding: 41 41 39
 Width: 310
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1080,6 +1165,7 @@ StartChar: divide
 Encoding: 247 247 40
 Width: 441
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1112,6 +1198,7 @@ StartChar: perthousand
 Encoding: 8240 8240 41
 Width: 951
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1164,6 +1251,7 @@ StartChar: periodcentered
 Encoding: 183 183 42
 Width: 239
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1180,6 +1268,7 @@ StartChar: semicolon
 Encoding: 59 59 43
 Width: 244
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1207,6 +1296,7 @@ StartChar: afii57842
 Encoding: 1472 1472 44
 Width: 195
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1229,6 +1319,7 @@ StartChar: bar
 Encoding: 124 124 45
 Width: 195
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1251,6 +1342,7 @@ StartChar: colon
 Encoding: 58 58 46
 Width: 241
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1272,6 +1364,7 @@ StartChar: period
 Encoding: 46 46 47
 Width: 239
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1288,6 +1381,7 @@ StartChar: uni05F3
 Encoding: 1523 1523 48
 Width: 303
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1305,6 +1399,7 @@ StartChar: less
 Encoding: 60 60 49
 Width: 519
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1335,6 +1430,7 @@ StartChar: slash
 Encoding: 47 47 50
 Width: 519
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1357,6 +1453,7 @@ StartChar: uni05F4
 Encoding: 1524 1524 51
 Width: 461
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1380,6 +1477,7 @@ StartChar: hyphen
 Encoding: 45 45 52
 Width: 369
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1402,6 +1500,7 @@ StartChar: asterisk
 Encoding: 42 42 53
 Width: 389
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1426,6 +1525,7 @@ StartChar: quoteright
 Encoding: 8217 8217 54
 Width: 240
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1448,6 +1548,7 @@ StartChar: underscore
 Encoding: 95 95 55
 Width: 719
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1470,6 +1571,7 @@ StartChar: comma
 Encoding: 44 44 56
 Width: 243
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1492,6 +1594,7 @@ StartChar: asciicircum
 Encoding: 94 94 57
 Width: 530
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1522,6 +1625,7 @@ StartChar: question
 Encoding: 63 63 58
 Width: 421
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1554,6 +1658,7 @@ StartChar: percent
 Encoding: 37 37 59
 Width: 683
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1596,6 +1701,7 @@ StartChar: braceright
 Encoding: 125 125 60
 Width: 434
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1638,6 +1744,7 @@ StartChar: ellipsis
 Encoding: 8230 8230 61
 Width: 765
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1664,6 +1771,7 @@ StartChar: quotesingle
 Encoding: 39 39 62
 Width: 225
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1680,6 +1788,7 @@ StartChar: equal
 Encoding: 61 61 63
 Width: 395
 VWidth: 0
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -1713,12 +1822,13 @@ StartChar: afii57673
 Encoding: 1497 1497 64
 Width: 334
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 59.9998 0 basechar 0
-AnchorPoint: "Rafe" 167 0 basechar 0
+AnchorPoint: "LowNarrowNiqqud" 190 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 185 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
 AnchorPoint: "Dagesh" 115 105 basechar 0
-AnchorPoint: "LowWideNiqqud" 180 0 basechar 0
-AnchorPoint: "LowNarrowNiqqud" 180 0 basechar 0
+AnchorPoint: "Rafe" 167 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1734,60 +1844,75 @@ SplineSet
  268.313 508.504 275.992 495.369 273.452 480.928 c 0
  258.896 398.164 237.519 311.732 225.85 282.946 c 0
 EndSplineSet
+PairPos2: "kernHorizontalKerning subtable" ellipsis dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" underscore dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" backslash dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" period dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" comma dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57679 dx=25 dy=0 dh=25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57665 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: afii57676
 Encoding: 1500 1500 65
-Width: 598
+Width: 538
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 60.0002 0 basechar 0
-AnchorPoint: "Rafe" 299 0 basechar 0
-AnchorPoint: "Dagesh" 300 25 basechar 0
-AnchorPoint: "LowWideNiqqud" 280 0 basechar 0
-AnchorPoint: "LowNarrowNiqqud" 280 0 basechar 0
+AnchorPoint: "LowNarrowNiqqud" 250 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 250 0 basechar 0
+AnchorPoint: "HighNiqqud" 30 0 basechar 0
+AnchorPoint: "Dagesh" 270 25 basechar 0
+AnchorPoint: "Rafe" 269 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-323.994 591.919 m 0
- 545.316 588.123 506.538 574.132 533.942 391.001 c 0
- 543.582 326.576 536.073 295.654 510.03 254.196 c 0
- 474.485 197.613 441.232 151.58 396.571 102.471 c 0
- 369.911 73.1562 321.403 22.4443 289.708 -6.15039 c 0
- 285.53 -9.91895 277.376 -12.5898 273.321 -7.35156 c 0
- 257.327 13.3105 250.366 22.5127 241.554 38.9238 c 0
- 239.46 42.8223 241.379 47.8242 245.352 50.8984 c 0
- 268.376 68.7139 299.155 95.6602 330.613 126.153 c 0
- 382.547 176.491 426.509 231.68 464.301 294.599 c 0
- 474.629 311.795 477.127 323.566 471.828 376.772 c 0
- 469.676 398.386 463.495 480.33 390.893 483.71 c 0
- 270.916 489.295 235.422 486.908 114.985 484.631 c 0
- 100.493 484.357 89.1768 489.672 89.792 499.194 c 0
- 90.4121 508.775 96.7539 557.784 96.8125 585.744 c 0
- 96.8857 620.702 96.958 653.659 97.0312 688.617 c 0
- 97.1406 741.26 87.9307 779.785 66.1562 817.367 c 0
- 62.0898 824.386 57.709 831.316 61.375 838.367 c 0
- 64.6865 844.736 78.749 868.902 84.375 878.894 c 0
- 92.1289 892.665 99.1748 896.447 108.906 892.211 c 0
- 120.848 887.013 150.101 867.069 160.969 857.805 c 0
- 167.461 852.271 181.095 841.656 174.375 830.398 c 0
- 149.341 788.457 149.049 774.693 149.094 721.242 c 0
- 149.125 684.073 149.157 648.904 149.188 611.735 c 0
- 149.197 600.696 158.966 594.729 172.213 594.244 c 0
- 185.46 593.759 275.978 592.742 323.994 591.919 c 0
+293.994 591.919 m 0
+ 515.316 588.123 476.538 574.132 503.942 391.001 c 0
+ 513.582 326.576 506.073 295.654 480.03 254.196 c 0
+ 444.485 197.613 411.232 151.58 366.571 102.471 c 0
+ 339.911 73.1562 291.403 22.4443 259.708 -6.15039 c 0
+ 255.53 -9.91895 247.376 -12.5898 243.321 -7.35156 c 0
+ 227.327 13.3105 220.366 22.5127 211.554 38.9238 c 0
+ 209.46 42.8223 211.379 47.8242 215.352 50.8984 c 0
+ 238.376 68.7139 269.155 95.6602 300.613 126.153 c 0
+ 352.547 176.491 396.509 231.68 434.301 294.599 c 0
+ 444.629 311.795 447.127 323.566 441.828 376.772 c 0
+ 439.676 398.386 433.495 480.33 360.893 483.71 c 0
+ 240.916 489.295 205.422 486.908 84.9854 484.631 c 0
+ 70.4932 484.357 59.1768 489.672 59.792 499.194 c 0
+ 60.4121 508.775 66.7539 557.784 66.8125 585.744 c 0
+ 66.8857 620.702 66.958 653.659 67.0312 688.617 c 0
+ 67.1406 741.26 57.9307 779.785 36.1562 817.367 c 0
+ 32.0898 824.386 27.709 831.316 31.375 838.367 c 0
+ 34.6865 844.736 48.749 868.902 54.375 878.894 c 0
+ 62.1289 892.665 69.1748 896.447 78.9062 892.211 c 0
+ 90.8477 887.013 120.101 867.069 130.969 857.805 c 0
+ 137.461 852.271 151.095 841.656 144.375 830.398 c 0
+ 119.341 788.457 119.049 774.693 119.094 721.242 c 0
+ 119.125 684.073 119.157 648.904 119.188 611.735 c 0
+ 119.197 600.696 128.966 594.729 142.213 594.244 c 0
+ 155.46 593.759 245.978 592.742 293.994 591.919 c 0
 EndSplineSet
+PairPos2: "kernHorizontalKerning subtable" ellipsis dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" underscore dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" backslash dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" period dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" comma dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57665 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: afii57688
 Encoding: 1512 1512 66
 Width: 570
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 60.0002 0 basechar 0
-AnchorPoint: "Rafe" 285 0 basechar 0
-AnchorPoint: "Dagesh" 285 0 basechar 0
-AnchorPoint: "LowWideNiqqud" 430 0 basechar 0
 AnchorPoint: "LowNarrowNiqqud" 470 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 430 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
+AnchorPoint: "Dagesh" 285 0 basechar 0
+AnchorPoint: "Rafe" 285 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1809,18 +1934,25 @@ SplineSet
  533.807 585.334 503.065 554.174 505.177 379.866 c 2
  508.555 101.052 l 2
 EndSplineSet
+PairPos2: "kernHorizontalKerning subtable" ellipsis dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" underscore dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" backslash dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" period dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" comma dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57665 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: afii57689
 Encoding: 1513 1513 67
-Width: 755
+Width: 740
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 60.0004 0 basechar 0
-AnchorPoint: "Rafe" 377.5 0 basechar 0
+AnchorPoint: "LowNarrowNiqqud" 378 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 378 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
 AnchorPoint: "Dagesh" 475 0 basechar 0
-AnchorPoint: "LowWideNiqqud" 377.5 0 basechar 0
-AnchorPoint: "LowNarrowNiqqud" 377.5 0 basechar 0
+AnchorPoint: "Rafe" 378 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1870,12 +2002,13 @@ StartChar: afii57665
 Encoding: 1489 1489 68
 Width: 685
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 59.9995 0 basechar 0
-AnchorPoint: "Rafe" 342.5 0 basechar 0
+AnchorPoint: "LowNarrowNiqqud" 342 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 342 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
 AnchorPoint: "Dagesh" 310 0 basechar 0
-AnchorPoint: "LowWideNiqqud" 342.5 0 basechar 0
-AnchorPoint: "LowNarrowNiqqud" 342.5 0 basechar 0
+AnchorPoint: "Rafe" 342 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1903,18 +2036,25 @@ SplineSet
  136.771 604.761 152.659 586.438 170.761 586.408 c 0
  235.689 586.302 298.338 585.1 346.33 583.961 c 0
 EndSplineSet
+PairPos2: "kernHorizontalKerning subtable" afii57687 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57682.fp dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57682 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57668 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57667 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57673 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: afii57667
 Encoding: 1491 1491 69
 Width: 685
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 60.0001 0 basechar 0
-AnchorPoint: "Rafe" 342.5 0 basechar 0
-AnchorPoint: "Dagesh" 310 0 basechar 0
-AnchorPoint: "LowWideNiqqud" 480 0 basechar 0
 AnchorPoint: "LowNarrowNiqqud" 510 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 480 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
+AnchorPoint: "Dagesh" 310 0 basechar 0
+AnchorPoint: "Rafe" 342 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1941,18 +2081,25 @@ SplineSet
  70.8535 482.903 58.5547 488.345 60.1377 497.738 c 2
  60.1377 497.738 72.0166 572.188 77.9551 607.414 c 0
 EndSplineSet
+PairPos2: "kernHorizontalKerning subtable" ellipsis dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" underscore dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" backslash dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" period dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" comma dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57665 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: afii57670
 Encoding: 1494 1494 70
-Width: 364
+Width: 334
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 59.9997 0 basechar 0
-AnchorPoint: "Rafe" 182 0 basechar 0
-AnchorPoint: "Dagesh" 55 0 basechar 0
-AnchorPoint: "LowWideNiqqud" 155 0 basechar 0
 AnchorPoint: "LowNarrowNiqqud" 155 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 155 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
+AnchorPoint: "Dagesh" 55 0 basechar 0
+AnchorPoint: "Rafe" 182 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -1983,12 +2130,13 @@ StartChar: afii57680
 Encoding: 1504 1504 71
 Width: 405
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 85 0 basechar 0
-AnchorPoint: "Rafe" 202.5 0 basechar 0
-AnchorPoint: "Dagesh" 190 0 basechar 0
-AnchorPoint: "LowWideNiqqud" 210 0 basechar 0
 AnchorPoint: "LowNarrowNiqqud" 210 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 210 0 basechar 0
+AnchorPoint: "HighNiqqud" 85 0 basechar 0
+AnchorPoint: "Dagesh" 190 0 basechar 0
+AnchorPoint: "Rafe" 202 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2014,18 +2162,25 @@ SplineSet
  73.1641 91.2461 77.8506 103.499 101.299 101.958 c 0
  149.614 98.7822 197.929 95.6064 246.243 92.4307 c 0
 EndSplineSet
+PairPos2: "kernHorizontalKerning subtable" afii57687 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57682.fp dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57682 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57668 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57667 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57673 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: afii57664
 Encoding: 1488 1488 72
-Width: 677
+Width: 662
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 59.9999 0 basechar 0
-AnchorPoint: "Rafe" 338.5 0 basechar 0
+AnchorPoint: "LowNarrowNiqqud" 338 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 338 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
 AnchorPoint: "Dagesh" 265 -80 basechar 0
-AnchorPoint: "LowWideNiqqud" 338.5 0 basechar 0
-AnchorPoint: "LowNarrowNiqqud" 338.5 0 basechar 0
+AnchorPoint: "Rafe" 338 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2068,12 +2223,13 @@ StartChar: afii57671
 Encoding: 1495 1495 73
 Width: 651
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 59.9998 0 basechar 0
-AnchorPoint: "Rafe" 325.5 0 basechar 0
+AnchorPoint: "LowNarrowNiqqud" 326 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 326 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
 AnchorPoint: "Dagesh" 340 -40 basechar 0
-AnchorPoint: "LowWideNiqqud" 325.5 0 basechar 0
-AnchorPoint: "LowNarrowNiqqud" 325.5 0 basechar 0
+AnchorPoint: "Rafe" 326 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2102,18 +2258,20 @@ SplineSet
  358.34 485.067 284.631 488.174 218.265 480.546 c 0
  182.316 476.414 163.735 450.903 161.98 388.281 c 0
 EndSplineSet
+Substitution2: "Single Substitution lookup 3 subtable" afii57671.fp
 EndChar
 
 StartChar: afii57686
 Encoding: 1510 1510 74
 Width: 629
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 60.0003 0 basechar 0
-AnchorPoint: "Rafe" 314.5 0 basechar 0
+AnchorPoint: "LowNarrowNiqqud" 314 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 314 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
 AnchorPoint: "Dagesh" 200 -100 basechar 0
-AnchorPoint: "LowWideNiqqud" 314.5 0 basechar 0
-AnchorPoint: "LowNarrowNiqqud" 314.5 0 basechar 0
+AnchorPoint: "Rafe" 314 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2159,12 +2317,13 @@ StartChar: afii57674
 Encoding: 1498 1498 75
 Width: 685
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 59.9995 0 basechar 0
-AnchorPoint: "Rafe" 342.5 0 basechar 0
-AnchorPoint: "Dagesh" 300 0 basechar 0
-AnchorPoint: "LowWideNiqqud" 300 360 basechar 0
 AnchorPoint: "LowNarrowNiqqud" 300 360 basechar 0
+AnchorPoint: "LowWideNiqqud" 300 360 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
+AnchorPoint: "Dagesh" 300 0 basechar 0
+AnchorPoint: "Rafe" 342 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2191,18 +2350,25 @@ SplineSet
  584.592 469.651 l 2
  556.936 454.805 553.666 425.03 553.592 380.729 c 2
 EndSplineSet
+PairPos2: "kernHorizontalKerning subtable" ellipsis dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" underscore dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" backslash dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" period dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" comma dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57665 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: afii57669
 Encoding: 1493 1493 76
 Width: 337
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 59.9998 0 basechar 0
-AnchorPoint: "Rafe" 168.5 0 basechar 0
-AnchorPoint: "Dagesh" 130 0 basechar 0
-AnchorPoint: "LowWideNiqqud" 200 0 basechar 0
 AnchorPoint: "LowNarrowNiqqud" 220 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 200 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
+AnchorPoint: "Dagesh" 130 0 basechar 0
+AnchorPoint: "Rafe" 168 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2224,18 +2390,25 @@ SplineSet
  253.852 8.03711 206.829 -12.792 200.875 -13.2031 c 0
  194.932 -13.6123 192.674 -3.0166 192.889 1.0791 c 0
 EndSplineSet
+PairPos2: "kernHorizontalKerning subtable" ellipsis dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" underscore dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" backslash dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" period dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" comma dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57665 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: uniFB4F
 Encoding: 64335 64335 77
 Width: 703
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 60.0002 0 basechar 0
-AnchorPoint: "Rafe" 351.5 0 basechar 0
+AnchorPoint: "LowNarrowNiqqud" 352 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 352 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
 AnchorPoint: "Dagesh" 280 -60 basechar 0
-AnchorPoint: "LowWideNiqqud" 351.5 0 basechar 0
-AnchorPoint: "LowNarrowNiqqud" 351.5 0 basechar 0
+AnchorPoint: "Rafe" 352 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2276,12 +2449,13 @@ StartChar: uniFB20
 Encoding: 64288 64288 78
 Width: 710
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 59.9997 0 basechar 0
-AnchorPoint: "Rafe" 355 0 basechar 0
-AnchorPoint: "Dagesh" 435 20 basechar 0
-AnchorPoint: "LowWideNiqqud" 355 0 basechar 0
 AnchorPoint: "LowNarrowNiqqud" 355 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 355 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
+AnchorPoint: "Dagesh" 435 20 basechar 0
+AnchorPoint: "Rafe" 355 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2321,12 +2495,13 @@ StartChar: afii57678
 Encoding: 1502 1502 79
 Width: 682
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 75 0 basechar 0
-AnchorPoint: "Rafe" 341 0 basechar 0
-AnchorPoint: "Dagesh" 380 0 basechar 0
-AnchorPoint: "LowWideNiqqud" 341 0 basechar 0
 AnchorPoint: "LowNarrowNiqqud" 341 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 341 0 basechar 0
+AnchorPoint: "HighNiqqud" 75 0 basechar 0
+AnchorPoint: "Dagesh" 380 0 basechar 0
+AnchorPoint: "Rafe" 341 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2363,18 +2538,25 @@ SplineSet
  142.243 602.993 150.263 607.039 163.849 594.25 c 0
  193.524 566.315 209.633 546.905 231.238 509.484 c 0
 EndSplineSet
+PairPos2: "kernHorizontalKerning subtable" afii57687 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57682.fp dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57682 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57668 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57667 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57673 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: afii57666
 Encoding: 1490 1490 80
 Width: 455
 VWidth: 0
+GlyphClass: 2
 Flags: HW
+AnchorPoint: "LowNarrowNiqqud" 228 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 228 0 basechar 0
 AnchorPoint: "HighNiqqud" 85 0 basechar 0
-AnchorPoint: "Rafe" 227.5 0 basechar 0
 AnchorPoint: "Dagesh" 185 30 basechar 0
-AnchorPoint: "LowWideNiqqud" 227.5 0 basechar 0
-AnchorPoint: "LowNarrowNiqqud" 227.5 0 basechar 0
+AnchorPoint: "Rafe" 228 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2403,18 +2585,20 @@ SplineSet
  58.3027 71.4219 59.6641 80.2393 68.8633 85.0254 c 0
  126.031 114.762 198.602 160.904 234.023 190.207 c 0
 EndSplineSet
+PairPos2: "kernHorizontalKerning subtable" afii57673 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: afii57683
 Encoding: 1507 1507 81
 Width: 575
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 59.9996 0 basechar 0
-AnchorPoint: "Rafe" 287.5 0 basechar 0
+AnchorPoint: "LowNarrowNiqqud" 288 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 288 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
 AnchorPoint: "Dagesh" 350 -10 basechar 0
-AnchorPoint: "LowWideNiqqud" 287.5 0 basechar 0
-AnchorPoint: "LowNarrowNiqqud" 287.5 0 basechar 0
+AnchorPoint: "Rafe" 288 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2446,18 +2630,25 @@ SplineSet
  503.868 -193.909 451.795 -214.738 445.841 -215.148 c 0
  439.897 -215.558 437.632 -204.961 437.854 -200.867 c 0
 EndSplineSet
+PairPos2: "kernHorizontalKerning subtable" ellipsis dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" underscore dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" backslash dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" period dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" comma dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57665 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: afii57687
 Encoding: 1511 1511 82
 Width: 580
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 59.9995 0 basechar 0
-AnchorPoint: "Rafe" 290 0 basechar 0
-AnchorPoint: "Dagesh" 300 50 basechar 0
-AnchorPoint: "LowWideNiqqud" 370 0 basechar 0
 AnchorPoint: "LowNarrowNiqqud" 330 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 370 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
+AnchorPoint: "Dagesh" 300 50 basechar 0
+AnchorPoint: "Rafe" 290 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2491,18 +2682,21 @@ SplineSet
  252.717 487.972 205.794 485.586 85.3574 483.309 c 0
  70.8652 483.034 58.415 488.491 60.1641 497.871 c 0
 EndSplineSet
+PairPos2: "kernHorizontalKerning subtable" afii57682.fp dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57682 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: afii57679
 Encoding: 1503 1503 83
-Width: 353
+Width: 333
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 60.0004 0 basechar 0
-AnchorPoint: "Rafe" 176.5 0 basechar 0
-AnchorPoint: "Dagesh" 176.5 0 basechar 0
-AnchorPoint: "LowWideNiqqud" 176.5 0 basechar 0
-AnchorPoint: "LowNarrowNiqqud" 176.5 0 basechar 0
+AnchorPoint: "LowNarrowNiqqud" 176 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 176 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
+AnchorPoint: "Dagesh" 176 0 basechar 0
+AnchorPoint: "Rafe" 176 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2532,12 +2726,13 @@ StartChar: afii57672
 Encoding: 1496 1496 84
 Width: 660
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 60.0005 0 basechar 0
-AnchorPoint: "Rafe" 330 0 basechar 0
-AnchorPoint: "Dagesh" 330 0 basechar 0
-AnchorPoint: "LowWideNiqqud" 330 0 basechar 0
 AnchorPoint: "LowNarrowNiqqud" 330 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 330 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
+AnchorPoint: "Dagesh" 330 0 basechar 0
+AnchorPoint: "Rafe" 330 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2575,12 +2770,13 @@ StartChar: afii57677
 Encoding: 1501 1501 85
 Width: 645
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 60.0002 0 basechar 0
-AnchorPoint: "Rafe" 322.5 0 basechar 0
-AnchorPoint: "Dagesh" 322.5 0 basechar 0
-AnchorPoint: "LowWideNiqqud" 322.5 0 basechar 0
-AnchorPoint: "LowNarrowNiqqud" 322.5 0 basechar 0
+AnchorPoint: "LowNarrowNiqqud" 322 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 322 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
+AnchorPoint: "Dagesh" 322 0 basechar 0
+AnchorPoint: "Rafe" 322 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2613,12 +2809,13 @@ StartChar: afii57681
 Encoding: 1505 1505 86
 Width: 630
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 60 0 basechar 0
-AnchorPoint: "Rafe" 315 0 basechar 0
-AnchorPoint: "Dagesh" 315 0 basechar 0
-AnchorPoint: "LowWideNiqqud" 315 0 basechar 0
 AnchorPoint: "LowNarrowNiqqud" 315 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 315 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
+AnchorPoint: "Dagesh" 315 0 basechar 0
+AnchorPoint: "Rafe" 315 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2647,12 +2844,13 @@ StartChar: afii57685
 Encoding: 1509 1509 87
 Width: 602
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 60.0004 0 basechar 0
-AnchorPoint: "Rafe" 301 0 basechar 0
-AnchorPoint: "Dagesh" 301 0 basechar 0
-AnchorPoint: "LowWideNiqqud" 301 0 basechar 0
 AnchorPoint: "LowNarrowNiqqud" 301 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 301 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
+AnchorPoint: "Dagesh" 301 0 basechar 0
+AnchorPoint: "Rafe" 301 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2691,58 +2889,68 @@ EndChar
 
 StartChar: afii57690
 Encoding: 1514 1514 88
-Width: 734
+Width: 704
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 120 0 basechar 0
-AnchorPoint: "Rafe" 367 0 basechar 0
-AnchorPoint: "Dagesh" 435 -30 basechar 0
-AnchorPoint: "LowWideNiqqud" 425 0 basechar 0
-AnchorPoint: "LowNarrowNiqqud" 425 0 basechar 0
+AnchorPoint: "LowNarrowNiqqud" 395 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 395 0 basechar 0
+AnchorPoint: "HighNiqqud" 90 0 basechar 0
+AnchorPoint: "Dagesh" 405 -30 basechar 0
+AnchorPoint: "Rafe" 337 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-255.391 388.281 m 0
- 255.763 267.316 261.637 141.886 269.009 23.1924 c 0
- 269.754 11.1953 265.611 7.37402 260.108 4.48633 c 0
- 248.068 -1.83398 202.661 -4.15918 196.705 -4.54004 c 0
- 158.197 -7 85.4941 -8.45508 68.4629 -7.63867 c 0
- 61.8584 -7.32227 59.0908 -2.50391 60.2617 5.6875 c 2
- 72.4287 90.8438 l 2
- 72.9043 94.1758 76.7451 98.7041 82.3564 98.6016 c 0
- 99.167 98.293 171.896 92.8154 194.094 96.8672 c 0
- 202.621 98.4238 205.11 100.67 204.903 111.62 c 2
- 198.759 436.707 l 2
- 197.729 491.21 138.915 470.88 142.702 493.795 c 2
- 161.021 604.657 l 2
- 161.756 609.107 164.104 611.664 167.753 611.603 c 2
- 180.402 611.39 l 2
- 186.604 611.285 207.261 592.989 220.619 592.965 c 0
- 285.001 592.847 411.143 591.668 459.153 590.52 c 0
- 697.017 584.829 666.274 553.67 668.386 379.362 c 2
- 671.764 100.548 l 2
- 672.053 76.7031 673.941 37.7061 673.536 33.1895 c 0
- 672.792 24.8984 671.408 22.2852 670.17 20.0088 c 0
- 662.434 5.79004 615.389 -15.0156 609.438 -15.4248 c 0
- 603.519 -15.8311 601.248 -5.25 601.465 -1.14453 c 0
- 603.304 33.6973 606.612 76.2412 606.567 115.04 c 2
- 606.272 366.323 l 2
- 606.246 388.043 598.619 474.257 526.052 478.311 c 0
- 440.917 483.067 374.707 486.174 308.342 478.546 c 0
- 272.393 474.414 255.198 450.928 255.391 388.281 c 0
+225.391 388.281 m 0
+ 225.763 267.316 231.637 141.886 239.009 23.1924 c 0
+ 239.754 11.1953 235.611 7.37402 230.108 4.48633 c 0
+ 218.068 -1.83398 172.661 -4.15918 166.705 -4.54004 c 0
+ 128.197 -7 55.4941 -8.45508 38.4629 -7.63867 c 0
+ 31.8584 -7.32227 29.0908 -2.50391 30.2617 5.6875 c 2
+ 42.4287 90.8438 l 2
+ 42.9043 94.1758 46.7451 98.7041 52.3564 98.6016 c 0
+ 69.167 98.293 141.896 92.8154 164.094 96.8672 c 0
+ 172.621 98.4238 175.11 100.67 174.903 111.62 c 2
+ 168.759 436.707 l 2
+ 167.729 491.21 108.915 470.88 112.702 493.795 c 2
+ 131.021 604.657 l 2
+ 131.756 609.107 134.104 611.664 137.753 611.603 c 2
+ 150.402 611.39 l 2
+ 156.604 611.285 177.261 592.989 190.619 592.965 c 0
+ 255.001 592.847 381.143 591.668 429.153 590.52 c 0
+ 667.017 584.829 636.274 553.67 638.386 379.362 c 2
+ 641.764 100.548 l 2
+ 642.053 76.7031 643.941 37.7061 643.536 33.1895 c 0
+ 642.792 24.8984 641.408 22.2852 640.17 20.0088 c 0
+ 632.434 5.79004 585.389 -15.0156 579.438 -15.4248 c 0
+ 573.519 -15.8311 571.248 -5.25 571.465 -1.14453 c 0
+ 573.304 33.6973 576.612 76.2412 576.567 115.04 c 2
+ 576.272 366.323 l 2
+ 576.246 388.043 568.619 474.257 496.052 478.311 c 0
+ 410.917 483.067 344.707 486.174 278.342 478.546 c 0
+ 242.393 474.414 225.198 450.928 225.391 388.281 c 0
 EndSplineSet
+PairPos2: "kernHorizontalKerning subtable" afii57682.fp dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57682 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57687 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57682.fp dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57682 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57668 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57667 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57673 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: afii57684
 Encoding: 1508 1508 89
 Width: 600
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 60.0003 0 basechar 0
-AnchorPoint: "Rafe" 300 0 basechar 0
-AnchorPoint: "Dagesh" 385 -20 basechar 0
-AnchorPoint: "LowWideNiqqud" 300 0 basechar 0
 AnchorPoint: "LowNarrowNiqqud" 300 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 300 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
+AnchorPoint: "Dagesh" 385 -20 basechar 0
+AnchorPoint: "Rafe" 300 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2777,52 +2985,60 @@ SplineSet
  109.665 608.653 112.109 611.195 115.76 611.134 c 2
  128.409 610.921 l 2
 EndSplineSet
+PairPos2: "kernHorizontalKerning subtable" afii57687 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57682.fp dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57682 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57668 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57667 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: afii57675
 Encoding: 1499 1499 90
-Width: 615
+Width: 600
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 60.0004 0 basechar 0
-AnchorPoint: "Rafe" 307.5 0 basechar 0
-AnchorPoint: "Dagesh" 307.5 0 basechar 0
-AnchorPoint: "LowWideNiqqud" 307.5 0 basechar 0
-AnchorPoint: "LowNarrowNiqqud" 307.5 0 basechar 0
+AnchorPoint: "LowNarrowNiqqud" 293 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 293 0 basechar 0
+AnchorPoint: "HighNiqqud" 45 0 basechar 0
+AnchorPoint: "Dagesh" 293 0 basechar 0
+AnchorPoint: "Rafe" 293 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-549.552 383.254 m 1
- 551.686 202.801 l 2
- 552.733 35.165 555.973 -0.175781 495.118 1.29688 c 0
- 437.23 2.69824 414.567 3.71875 354.186 2.68652 c 0
- 284.339 1.49219 185.897 -1.66016 127.12 -4.09277 c 0
- 86.0742 -5.79199 57.4473 -8.82031 60.1807 7.6875 c 2
- 73.21 86.3633 l 1
- 76.2188 98.2725 83.9248 101.198 98.3975 100.926 c 0
- 218.829 98.6602 335.577 97.165 455.592 101.832 c 0
- 491.188 103.217 486.775 194.116 486.936 215.832 c 2
- 486.923 357.495 l 2
- 487.539 425.23 445.661 447.446 356.83 468.697 c 0
- 286.295 485.571 231.573 488.509 133.282 485.129 c 0
- 115.266 484.51 107.195 492.041 108.625 501.459 c 2
- 119.168 570.919 l 2
- 122.288 591.479 130.66 591.82 187.505 591.436 c 0
- 293.734 590.718 383.351 578.419 475.605 547.512 c 0
- 584.784 510.936 550.077 490.845 549.552 383.254 c 1
+534.552 383.254 m 1
+ 536.686 202.801 l 2
+ 537.733 35.165 540.973 -0.175781 480.118 1.29688 c 0
+ 422.23 2.69824 399.567 3.71875 339.186 2.68652 c 0
+ 269.339 1.49219 170.897 -1.66016 112.12 -4.09277 c 0
+ 71.0742 -5.79199 42.4473 -8.82031 45.1807 7.6875 c 2
+ 58.21 86.3633 l 1
+ 61.2188 98.2725 68.9248 101.198 83.3975 100.926 c 0
+ 203.829 98.6602 320.577 97.165 440.592 101.832 c 0
+ 476.188 103.217 471.775 194.116 471.936 215.832 c 2
+ 471.923 357.495 l 2
+ 472.539 425.23 430.661 447.446 341.83 468.697 c 0
+ 271.295 485.571 216.573 488.509 118.282 485.129 c 0
+ 100.266 484.51 92.1953 492.041 93.625 501.459 c 2
+ 104.168 570.919 l 2
+ 107.288 591.479 115.66 591.82 172.505 591.436 c 0
+ 278.734 590.718 368.351 578.419 460.605 547.512 c 0
+ 569.784 510.936 535.077 490.845 534.552 383.254 c 1
 EndSplineSet
+PairPos2: "kernHorizontalKerning subtable" afii57673 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
 EndChar
 
 StartChar: afii57682
 Encoding: 1506 1506 91
 Width: 701
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 60.0001 0 basechar 0
-AnchorPoint: "Rafe" 350.5 0 basechar 0
-AnchorPoint: "Dagesh" 430 30 basechar 0
-AnchorPoint: "LowWideNiqqud" 470 0 basechar 0
 AnchorPoint: "LowNarrowNiqqud" 440 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 470 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
+AnchorPoint: "Dagesh" 430 30 basechar 0
+AnchorPoint: "Rafe" 350 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2855,179 +3071,262 @@ SplineSet
  75.291 -7.39258 77.6699 -0.462891 92.0928 2 c 0
  136.3 9.54883 190.813 22.9873 239.867 41.625 c 0
 EndSplineSet
+PairPos2: "kernHorizontalKerning subtable" afii57668 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57665 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+PairPos2: "kernHorizontalKerning subtable" afii57673 dx=-25 dy=0 dh=-25 dv=0 dx=0 dy=0 dh=0 dv=0
+Substitution2: "Single Substitution lookup 3 subtable" afii57682.fp
+Substitution2: "Single Substitution lookup 1 subtable" uniFB20
 EndChar
 
 StartChar: afii57668
 Encoding: 1492 1492 92
-Width: 693
+Width: 685
 VWidth: 0
+GlyphClass: 2
 Flags: HW
-AnchorPoint: "HighNiqqud" 60.0004 0 basechar 0
-AnchorPoint: "Rafe" 346.5 0 basechar 0
-AnchorPoint: "Dagesh" 340 -25 basechar 0
-AnchorPoint: "LowWideNiqqud" 320 0 basechar 0
 AnchorPoint: "LowNarrowNiqqud" 320 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 320 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
+AnchorPoint: "Dagesh" 340 -25 basechar 0
+AnchorPoint: "Rafe" 342 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-119.146 304.845 m 0
- 122.176 317.79 127.866 327.73 133.003 328.162 c 0
- 159.986 330.431 174.258 330.749 187.868 330.229 c 0
- 195.558 329.936 195.847 329.024 194.798 321.787 c 0
- 190.905 294.923 187.086 282.666 183.873 260.405 c 2
- 150.761 30.9473 l 1
- 150.468 18.2871 143.237 14.8418 138.177 12.0264 c 0
- 114.125 -0.318359 95.1367 -7.20703 68.9912 -12.2734 c 0
- 63.0322 -13.4287 59.8809 -7.83496 60.0039 3.05566 c 1
- 75.5928 116.56 93.5391 195.466 119.146 304.845 c 0
-86.1533 608.98 m 0
- 86.8711 613.428 89.2607 615.985 92.9121 615.923 c 0
- 96.9355 615.854 100.959 615.784 104.983 615.715 c 0
- 113.945 615.561 130.551 597.258 143.89 596.7 c 0
- 202.665 594.244 294.14 586.904 363.987 585.71 c 0
- 447.707 584.278 558.886 588.738 614.706 590.744 c 0
- 627.886 591.218 632.229 584.028 632.269 575.557 c 2
- 632.612 500.744 l 2
- 632.668 488.745 627.101 490.297 618.456 484.432 c 0
- 609.8 478.559 601.144 472.685 592.487 466.812 c 0
- 570.354 451.794 561.558 424.607 561.487 380.307 c 2
- 561.05 103.4 l 2
- 561.012 79.2861 567.622 39.8457 567.22 35.2754 c 0
- 566.479 26.873 565.077 24.2227 563.845 21.9316 c 0
- 556.118 7.57129 502.481 -13.4971 496.527 -13.9121 c 0
- 490.584 -14.3262 488.312 -3.61719 488.527 0.525391 c 0
- 490.356 35.7861 495.729 69.6475 495.862 108.9 c 2
- 496.737 367.275 l 2
- 496.812 388.992 500.989 479.891 465.394 481.275 c 0
- 345.378 485.942 213.638 484.447 93.2061 482.182 c 0
- 78.7344 481.909 66.5283 487.335 68.0186 496.744 c 0
- 69.5361 506.322 80.1084 571.568 86.1533 608.98 c 0
+102.985 279.852 m 2
+ 103.35 292.296 105.742 298.575 115.114 299.015 c 2
+ 167.142 301.45 l 2
+ 174.597 301.799 179.386 295.481 179.406 288.169 c 2
+ 180.12 34.0117 l 2
+ 180.155 21.3486 175.485 16.4639 170.578 13.3896 c 0
+ 148.791 -0.260742 131.428 -9.52637 105.924 -17.207 c 0
+ 100.11 -18.957 94.3779 -14.3193 94.6963 -3.43262 c 2
+ 102.985 279.852 l 2
+78.2578 608.98 m 0
+ 78.9756 613.428 81.3652 615.985 85.0166 615.923 c 0
+ 89.04 615.854 93.0635 615.784 97.0879 615.715 c 0
+ 106.05 615.561 122.655 597.258 135.994 596.7 c 0
+ 194.77 594.244 286.244 586.904 356.092 585.71 c 0
+ 439.812 584.278 550.99 588.738 606.811 590.744 c 0
+ 619.99 591.218 624.334 584.028 624.373 575.557 c 2
+ 624.717 500.744 l 2
+ 624.773 488.745 619.205 490.297 610.561 484.432 c 0
+ 601.904 478.559 593.248 472.685 584.592 466.812 c 0
+ 562.459 451.794 553.662 424.607 553.592 380.307 c 2
+ 553.154 103.4 l 2
+ 553.117 79.2861 559.727 39.8457 559.324 35.2754 c 0
+ 558.584 26.873 557.182 24.2227 555.949 21.9316 c 0
+ 548.223 7.57129 494.586 -13.4971 488.633 -13.9121 c 0
+ 482.689 -14.3262 480.418 -3.61719 480.633 0.525391 c 0
+ 482.461 35.7861 487.834 69.6475 487.967 108.9 c 2
+ 488.842 367.275 l 2
+ 488.916 388.992 493.094 479.891 457.498 481.275 c 0
+ 337.482 485.942 205.742 484.447 85.3105 482.182 c 0
+ 70.8389 481.909 58.6328 487.335 60.123 496.744 c 0
+ 61.6406 506.322 72.2129 571.568 78.2578 608.98 c 0
 EndSplineSet
+Substitution2: "Single Substitution lookup 4 subtable" afii57668.fp
+EndChar
+
+StartChar: afii57668.fp
+Encoding: 62208 62208 93
+Width: 685
+VWidth: 0
+Flags: H
+AnchorPoint: "LowNarrowNiqqud" 520 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 520 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
+AnchorPoint: "Dagesh" 340 -25 basechar 0
+AnchorPoint: "Rafe" 342 0 basechar 0
+LayerCount: 2
+Fore
+Refer: 92 1492 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: afii57671.fp
+Encoding: 62209 62209 94
+Width: 651
+VWidth: 0
+Flags: H
+AnchorPoint: "LowNarrowNiqqud" 560 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 560 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
+AnchorPoint: "Dagesh" 340 -40 basechar 0
+AnchorPoint: "Rafe" 326 0 basechar 0
+LayerCount: 2
+Fore
+Refer: 73 1495 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: afii57682.fp
+Encoding: 62210 62210 95
+Width: 701
+VWidth: 0
+Flags: H
+AnchorPoint: "LowNarrowNiqqud" 510 0 basechar 0
+AnchorPoint: "LowWideNiqqud" 490 0 basechar 0
+AnchorPoint: "HighNiqqud" 60 0 basechar 0
+AnchorPoint: "Dagesh" 430 30 basechar 0
+AnchorPoint: "Rafe" 350 0 basechar 0
+LayerCount: 2
+Fore
+Refer: 91 1506 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni200B
-Encoding: 8203 8203 93
+Encoding: 8203 8203 96
 Width: 0
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2000
-Encoding: 8192 8192 94
+Encoding: 8192 8192 97
 Width: 325
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2006
-Encoding: 8198 8198 95
+Encoding: 8198 8198 98
 Width: 108
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: space
-Encoding: 32 32 96
+Encoding: 32 32 99
 Width: 260
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2009
-Encoding: 8201 8201 97
+Encoding: 8201 8201 100
 Width: 130
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: afii300
-Encoding: 8207 8207 98
+Encoding: 8207 8207 101
 Width: 0
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2003
-Encoding: 8195 8195 99
+Encoding: 8195 8195 102
 Width: 650
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: afii61664
-Encoding: 8204 8204 100
+Encoding: 8204 8204 103
 Width: 0
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: afii299
-Encoding: 8206 8206 101
+Encoding: 8206 8206 104
 Width: 0
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni200A
-Encoding: 8202 8202 102
+Encoding: 8202 8202 105
 Width: 65
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: afii301
-Encoding: 8205 8205 103
+Encoding: 8205 8205 106
 Width: 0
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2004
-Encoding: 8196 8196 104
+Encoding: 8196 8196 107
 Width: 217
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2002
-Encoding: 8194 8194 105
+Encoding: 8194 8194 108
 Width: 325
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2001
-Encoding: 8193 8193 106
+Encoding: 8193 8193 109
 Width: 650
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2005
-Encoding: 8197 8197 107
+Encoding: 8197 8197 110
 Width: 163
 VWidth: 0
+GlyphClass: 2
 Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni00A0
-Encoding: 160 160 108
+Encoding: 160 160 111
 Width: 260
+VWidth: 0
+GlyphClass: 2
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2007
+Encoding: 8199 8199 112
+Width: 1000
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2008
+Encoding: 8200 8200 113
+Width: 1000
 VWidth: 0
 Flags: W
 LayerCount: 2
