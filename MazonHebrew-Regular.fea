@@ -2,6 +2,12 @@
 @Punctuation = [exclam quotedbl percent quotesingle parenleft parenright asterisk plus comma hyphen period slash colon semicolon less equal greater question bracketleft backslash bracketright asciicircum underscore grave braceleft bar braceright plusminus periodcentered divide afii57645 afii57842 afii57658 endash emdash quoteleft quoteright quotedblleft quotedblright bullet ellipsis perthousand fraction];
 # GSUB 
 
+lookup ccmpHatafMeteg {
+  lookupflag RightToLeft;
+  sub \afii57801' \afii301' \afii57839' by hataf_segol_meteg;
+  sub \afii57800' \afii301' \afii57839' by hataf_patah_meteg;
+  sub \afii57802' \afii301' \afii57839' by hataf_qamats_meteg;
+} ccmpHatafMeteg;
 
 lookup caltAltAyin {
   lookupflag RightToLeft;
@@ -14,6 +20,16 @@ lookup caltFurtivePatah {
   sub [\afii57671 \afii57682]' [\afii57799 \afii57801 \afii57800 \afii57802 \afii57793 \afii57794 \afii57795 \afii57798 \afii57797 \afii57796 \afii57839 \uni05C7] [@Spaces @Punctuation] by [\afii57671.fp \afii57682.fp]; 
   sub \afii57668' \afii57807 [\afii57799 \afii57801 \afii57800 \afii57802 \afii57793 \afii57794 \afii57795 \afii57798 \afii57797 \afii57796 \afii57839 \uni05C7] [@Spaces @Punctuation] by \afii57668.fp;
 } caltFurtivePatah;
+
+feature ccmp {
+  script DFLT;
+    language dflt;
+      lookup ccmpHatafMeteg;
+
+  script hebr;
+    language dflt;
+      lookup ccmpHatafMeteg;
+} ccmp;
 
 feature calt {
 
@@ -29,7 +45,6 @@ feature calt {
 } calt;
 
 # GPOS 
-
 
 lookup mkmkDageshKafSofit {
   lookupflag RightToLeft;
@@ -121,7 +136,7 @@ lookup markHolamHaserForVav {
 
 lookup markLowWideNiqqud {
   lookupflag RightToLeft;
-  markClass [\afii57802 \afii57800 \afii57801 ] <anchor 0 0> @LowWideNiqqud;
+  markClass [\afii57802 \afii57800 \afii57801 hataf_patah_meteg hataf_qamats_meteg hataf_segol_meteg] <anchor 0 0> @LowWideNiqqud;
   pos base [\afii57673 ] <anchor 185 0> mark @LowWideNiqqud;
   pos base [\afii57676 ] <anchor 250 0> mark @LowWideNiqqud;
   pos base [\afii57688 ] <anchor 430 0> mark @LowWideNiqqud;
@@ -193,6 +208,22 @@ lookup markLowNarrowNiqqud {
   pos base [\afii57668.fp ] <anchor 520 0> mark @LowNarrowNiqqud;
 } markLowNarrowNiqqud;
 
+lookup mkmkNiqqudPlusMeteg {
+  lookupflag RightToLeft;
+  markClass [\afii57839 ] <anchor 0 0> @NiqqudPlusMeteg;
+  pos mark \afii57799 <anchor -80 0> mark @NiqqudPlusMeteg;
+  pos mark \afii57801 <anchor -190 0> mark @NiqqudPlusMeteg;
+  pos mark \afii57800 <anchor -180 0> mark @NiqqudPlusMeteg;
+  pos mark \afii57802 <anchor -175 0> mark @NiqqudPlusMeteg;
+  pos mark \afii57793 <anchor -80 0> mark @NiqqudPlusMeteg;
+  pos mark \afii57794 <anchor -130 0> mark @NiqqudPlusMeteg;
+  pos mark \afii57795 <anchor -130 0> mark @NiqqudPlusMeteg;
+  pos mark \afii57798 <anchor -130 0> mark @NiqqudPlusMeteg;
+  pos mark \afii57797 <anchor -130 0> mark @NiqqudPlusMeteg;
+  pos mark \afii57796 <anchor -165 0> mark @NiqqudPlusMeteg;
+  pos mark \uni05C7 <anchor -130 0> mark @NiqqudPlusMeteg;
+} mkmkNiqqudPlusMeteg;
+
 lookup DageshKafSofitTrigger {
   lookupflag RightToLeft;
     pos \afii57807 \afii57674  \afii57797'lookup mkmkDageshKafSofit   ;
@@ -221,10 +252,12 @@ feature mkmk {
   script DFLT;
      language dflt ;
       lookup mkmkDageshKafSofit;
+      lookup mkmkNiqqudPlusMeteg;
 
   script hebr;
      language dflt ;
       lookup mkmkDageshKafSofit;
+      lookup mkmkNiqqudPlusMeteg;
 } mkmk;
 
 feature mark {

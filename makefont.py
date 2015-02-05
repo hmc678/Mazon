@@ -134,18 +134,7 @@ def generate():
                     glyph.left_side_bearing  = 60
                     glyph.right_side_bearing = 60
 
-    # Make Private Use Area chars
-    glyph = font.createChar(0xf300, 'afii57668.fp')
-    glyph.addReference('afii57668')
-    glyph.useRefsMetrics('afii57668')
-
-    glyph = font.createChar(0xf301, 'afii57671.fp')
-    glyph.addReference('afii57671')
-    glyph.useRefsMetrics('afii57671')
-
-    glyph = font.createChar(0xf302, 'afii57682.fp')
-    glyph.addReference('afii57682')
-    glyph.useRefsMetrics('afii57682')
+    make_private_use_chars(font)
 
     # Make whitespace characters.
     for (spacechar, spacewidth) in config['specs']['spaces'].items():
@@ -162,6 +151,52 @@ def generate():
     font.mergeFeature('MazonHebrew-Regular.fea')
     font.save('MazonHebrew-Regular.gen.sfd')
     font.generate('MazonHebrew-Regular.gen.otf')
+
+# TODO: This is terrible!
+def make_private_use_chars(font):
+    glyph = font.createChar(0xf300, 'afii57668.fp')
+    glyph.addReference('afii57668')
+    glyph.useRefsMetrics('afii57668')
+
+    glyph = font.createChar(0xf301, 'afii57671.fp')
+    glyph.addReference('afii57671')
+    glyph.useRefsMetrics('afii57671')
+
+    glyph = font.createChar(0xf302, 'afii57682.fp')
+    glyph.addReference('afii57682')
+    glyph.useRefsMetrics('afii57682')
+
+    glyph = font.createChar(0xf303, 'hataf_patah_meteg')
+    glyph.importOutlines('./Draft Material/Niqqudot/hebrew point hataf patah meteg.svg')
+    glyph.correctDirection()
+    glyph.width = 0
+    bounds = glyph.boundingBox()
+    orig_width = bounds[2] - bounds[0]
+    bearing = orig_width / 2.0
+    glyph.left_side_bearing = -bearing
+    glyph.right_side_bearing = -bearing
+
+
+    glyph = font.createChar(0xf304, 'hataf_qamats_meteg')
+    glyph.importOutlines('./Draft Material/Niqqudot/hebrew point hataf qamats meteg.svg')
+    glyph.correctDirection()
+    glyph.width = 0
+    bounds = glyph.boundingBox()
+    orig_width = bounds[2] - bounds[0]
+    bearing = orig_width / 2.0
+    glyph.left_side_bearing = -bearing
+    glyph.right_side_bearing = -bearing
+
+
+    glyph = font.createChar(0xf305, 'hataf_segol_meteg')
+    glyph.importOutlines('./Draft Material/Niqqudot/hebrew point hataf segol meteg.svg')
+    glyph.correctDirection()
+    glyph.width = 0
+    bounds = glyph.boundingBox()
+    orig_width = bounds[2] - bounds[0]
+    bearing = orig_width / 2.0
+    glyph.left_side_bearing = -bearing
+    glyph.right_side_bearing = -bearing
 
 def printerr(errmsg, level='Error'):
     red = '\033[31;1m'
