@@ -190,6 +190,24 @@ lookup DageshKafSofitTrigger {
     pos \afii57807 \afii57674  \afii57797'lookup mkmkDageshKafSofit   ;
 } DageshKafSofitTrigger;
 
+lookup kernHorizontalKerning {
+  lookupflag RightToLeft, IgnoreMarks;
+    # bet gimel kaf mem nun ayin tav + yod
+    pos [\afii57665 \afii57666 \afii57675 \afii57678 \afii57680 \afii57682 \afii57690] \afii57673 <-25 0 -25 0>;
+    # bet gimel mem pe nun tav + dalet he ayin qof
+    pos [\afii57665 \afii57678 \afii57680 \afii57684 \afii57690] [\afii57667 \afii57668 \afii57682 \afii57682.fp \afii57687] <-25 0 -25 0>;
+    # dalet vav yod kaf-sofit lamed pe-sofit resh + bet
+    pos [\afii57667 \afii57669 \afii57673 \afii57674 \afii57676 \afii57683 \afii57688] \afii57665 <-25 0 -25 0>;
+    # ayin + bet he
+    pos \afii57682 [\afii57665 \afii57668] <-25 0 -25 0>;
+    # qof tav + ayin
+    pos [\afii57687 \afii57690] [\afii57682 \afii57682.fp] <-25 0 -25 0>;
+    # yod + nun sofit
+    pos \afii57673 \afii57679 <25 0 25 0>;
+    # dalet vav yod kaf-sofit lamed pe-sofit resh + comma period
+    pos [\afii57667 \afii57669 \afii57673 \afii57674 \afii57676 \afii57683 \afii57688] [comma period backslash underscore ellipsis] <-25 0 -25 0>;
+} kernHorizontalKerning;
+
 feature mkmk {
 
   script DFLT;
@@ -225,10 +243,12 @@ feature kern {
   script DFLT;
      language dflt ;
       lookup DageshKafSofitTrigger;
+      lookup kernHorizontalKerning;
 
   script hebr;
      language dflt ;
       lookup DageshKafSofitTrigger;
+      lookup kernHorizontalKerning;
 } kern;
 #Mark attachment classes (defined in GDEF, used in lookupflags)
 
