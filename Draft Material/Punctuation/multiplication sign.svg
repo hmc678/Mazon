@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="1000"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="multiplication.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="-20.418346"
+     inkscape:cy="499.42483"
+     inkscape:document-units="px"
+     inkscape:current-layer="g2998"
+     showgrid="true"
+     gridtolerance="10"
+     guidetolerance="10"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1859"
+     inkscape:window-height="1056"
+     inkscape:window-x="61"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       orientation="0,1"
+       position="500,247"
+       id="guide3019" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="500,732"
+       id="guide3072" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="500,842"
+       id="guide3074" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="500,955"
+       id="guide3076" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="100,500"
+       id="guide3867" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="180,500"
+       id="guide3869" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-52.362183)">
+    <g
+       id="g2998"
+       transform="matrix(1,0,0,-1,36.928571,645.86218)"
+       style="fill:none;stroke:#000000;stroke-opacity:1">
+      <path
+         id="path3000"
+         d="m 284.76836,161.28012 c -7.81768,-7.82474 -10.39022,-13.42513 -3.40889,-20.40646 17.19045,-17.19045 82.77028,-68.93054 101.27224,-87.432497 6.67096,-6.670964 6.79071,-10.602342 0.37254,-17.043143 L 343.42562,-3.320224 c -4.50407,-4.519957 -12.23998,-3.640195 -16.68755,1.374781 -17.02266,19.194369 -68.00033,75.109053 -90.7785,97.110253 -6.03263,5.82686 -11.53694,5.32374 -17.16709,-0.30641 C 201.50035,77.56627 142.65809,15.776099 120.63275,-7.469043 114.28609,-14.16719 109.57067,-12.1019 102.20728,-4.504661 L 74.634926,23.943362 c -9.466207,9.766843 -11.931508,19.69984 -1.571255,29.169944 16.376506,14.969444 74.794389,70.655734 94.233829,90.095174 6.27568,6.27568 7.17652,13.0474 0.12608,19.8777 -23.68952,22.94987 -82.463738,70.45231 -100.957416,86.95349 -9.285132,8.28476 -8.320985,14.56269 -0.583504,21.65809 l 34.30379,31.45712 c 6.96821,6.38995 12.502,8.17611 17.66984,2.00107 21.40465,-25.5764 72.05194,-78.30756 92.23692,-99.45731 6.05591,-6.34537 13.59835,-6.23535 19.8944,0.18253 12.45735,12.6984 70.51812,75.67805 91.64294,95.79903 10.82579,10.31135 13.66621,7.30942 20.84857,0.16034 l 34.19243,-34.03403 c 8.89923,-8.85793 2.0372,-15.0172 -7.39237,-23.8007 -28.34491,-26.40287 -53.96378,-52.15019 -84.51082,-82.72569 z"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-width:1.03199995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:nodetypes="sssssssssssssssssssssssss" />
+      <g
+         id="g3782"
+         transform="translate(-11.928571,-117.64196)"
+         style="fill:none;stroke:#000000;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
