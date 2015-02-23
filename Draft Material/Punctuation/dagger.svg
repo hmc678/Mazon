@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="1000"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="dagger.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="-165.35506"
+     inkscape:cy="577.34974"
+     inkscape:document-units="px"
+     inkscape:current-layer="g2998"
+     showgrid="true"
+     gridtolerance="10"
+     guidetolerance="10"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1859"
+     inkscape:window-height="1056"
+     inkscape:window-x="61"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       orientation="0,1"
+       position="500,247"
+       id="guide3019" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="500,732"
+       id="guide3072" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="500,842"
+       id="guide3074" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="500,955"
+       id="guide3076" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="100,500"
+       id="guide3867" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="180,500"
+       id="guide3869" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-52.362183)">
+    <g
+       id="g2998"
+       transform="matrix(1,0,0,-1,36.928571,645.86218)"
+       style="fill:none;stroke:#000000;stroke-opacity:1">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1.03199995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 237.79018,432.03125 -39.59375,-0.625 c -13.59978,-0.21468 -22.37943,-5.50907 -21.75,-19.53125 1.37247,-30.57539 2.08204,-85.72243 2.54939,-142.33326 0.0395,-4.7815 -2.61063,-6.22134 -7.41006,-5.96654 -32.09852,1.7041 -64.19705,1.40819 -96.295581,3.1123 -6.026361,0.31994 -9.75987,-2.1111 -10.09375,-10.59375 l -2,-50.8125 c -0.337515,-8.57498 1.91895,-16.40874 11.625,-16.1875 l 98.740141,2.2507 c 2.96769,0.0677 5.81136,-2.73738 5.80634,-5.51663 -0.0448,-24.74416 0.0785,-47.27032 0.0785,-64.95282 0,-57.59772 -4.5823,-193.0489 -3,-258.0625 0.36376,-14.94621 4.62345,-16.47613 14.625,-14.84375 l 48.25,7.875 c 12.39226,2.02257 12.02798,9.18313 11.59375,22.0625 -2.33127,69.14532 -1.24982,160.36076 -1.25,223.59375 -6e-5,19.75977 -0.0863,50.86009 0.28066,86.47423 0.0337,3.27486 1.82786,5.34343 5.60613,5.18397 l 96.30071,-4.06445 c 10.70749,-0.45192 13.32978,5.71037 13.625,13.59375 0.66666,17.80208 1.33333,31.60417 2,49.40625 0.38224,10.20689 -3.31432,14.96413 -14.625,14.59375 l -95.67897,-3.13309 c -4.1149,-0.13475 -6.67455,1.24276 -6.64313,5.46433 0.41536,55.8067 1.44196,110.87931 2.3846,152.07501 0.28006,12.2393 -8.66607,11.03946 -15.12498,10.9375 z"
+         id="path3000"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssssssssssssssssssssssssss" />
+      <g
+         id="g3782"
+         transform="translate(-11.928571,-117.64196)"
+         style="fill:none;stroke:#000000;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
