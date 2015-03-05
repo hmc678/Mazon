@@ -12,7 +12,6 @@ from __future__ import division, print_function
 import argparse
 import os
 import os.path as path
-import subprocess as sub
 import sys
 import unicodedata
 
@@ -45,6 +44,42 @@ high_niqqud_glyphnames = [ 'hebrew point holam',
 # much narrower, excepting shin, which is a bit wider.
 em_width_chars = u'אבדהחטכךלמםסעפףצקרת'
 
+def adjust_bearings(directory, glyph, name, left_bearing=60, right_bearing=60):
+    # TODO: This needs to be cleaned up.
+    # Adjust the bearings of the glyph.  Niqqudot need a zero width.
+    # Most have equal bearings, but the high niqqudot are designed
+    # to be offset.  It means needing only one anchor instead of four.
+    #
+    # Also, add anchor points.
+    if directory == config['directories']['niqqudot']:
+        glyph.width = 0
+        if name in high_niqqud_glyphnames:
+            # HighNiqqud glyphs need to keep their bearings.
+            # The 100 comes from the guides set up in the .svgs.
+            # The right_side_bearing is probably not necessary.
+            glyph.left_side_bearing -= 100
+            glyph.right_side_bearing += 100
+        else:
+            # TODO: This leaves the width of the glyph as 1.
+            #       Setting it to zero again will make it
+            #       zero, but off center slightly.  How to
+            #       fix this?
+            bounds = glyph.boundingBox()
+            orig_width = bounds[2] - bounds[0]
+            bearing = orig_width / 2.0
+            glyph.left_side_bearing = -bearing
+            glyph.right_side_bearing = -bearing
+
+    else:
+        try:
+            glyph.left_side_bearing = config['specs']['bearings']['left'][name]
+        except KeyError:
+            glyph.left_side_bearing = left_bearing
+        try:
+            glyph.right_side_bearing = config['specs']['bearings']['right'][name]
+        except KeyError:
+            glyph.right_side_bearing = right_bearing
+
 # Unfortunately, this can only be done with a font that is *already* available.
 # So if you need to use it, run generate, then find the em width, then generate,
 # etc.
@@ -73,6 +108,15 @@ def generate():
     font.version     = config['specs']['version']
     font.weight      = config['specs']['weight']
 
+    make_basic_glyphs(font)
+    make_private_use_glyphs(font)
+    make_space_glyphs(font)
+
+    font.mergeFeature('MazonHebrew-Regular.fea')
+    font.save('MazonHebrew-Regular.gen.sfd')
+    font.generate('MazonHebrew-Regular.gen.otf')
+
+def make_basic_glyphs(font):
     # This works, but prints out "failed to parse color" 6 times per glyph.
     # That is going to be annoying as heck unless I can suppress that output.
     for d in config['directories'].values():
@@ -96,64 +140,12 @@ def generate():
                 glyph = font.createChar(glyphnum)
                 glyph.importOutlines(fullpath)
                 glyph.correctDirection()
-
-                # TODO: This needs to be cleaned up.
-                # Adjust the bearings of the glyph.  Niqqudot need a zero width.
-                # Most have equal bearings, but the high niqqudot are designed
-                # to be offset.  It makes setting the anchors simpler.
-                #
-                # Also, add anchor points.
-                if d == './Draft Material/Niqqudot':
-                    glyph.width = 0
-                    bounds = glyph.boundingBox()
-                    if glyphname in high_niqqud_glyphnames:
-                        # HighNiqqud glyphs need to keep their bearings.
-                        # The 100 comes from the guides set up in the .svgs.
-                        glyph.left_side_bearing -= 100
-                        glyph.right_side_bearing += 100
-                    else:
-                        # TODO: This leaves the width of the glyph as 1.
-                        #       Setting it to zero again will make it
-                        #       zero, but off center slightly.  How to
-                        #       fix this?
-                        orig_width = bounds[2] - bounds[0]
-                        bearing = orig_width / 2.0
-                        glyph.left_side_bearing = -bearing
-                        glyph.right_side_bearing = -bearing
-
-                elif d == './Draft Material/Letterforms':
-                    try:
-                        glyph.left_side_bearing = config['specs']['bearings']['left'][glyphname]
-                    except KeyError:
-                        glyph.left_side_bearing = 60
-                    try:
-                        glyph.right_side_bearing = config['specs']['bearings']['right'][glyphname]
-                    except KeyError:
-                        glyph.right_side_bearing = 60
-                else:
-                    glyph.left_side_bearing  = 60
-                    glyph.right_side_bearing = 60
-
-    make_private_use_chars(font)
-
-    # Make whitespace characters.
-    for (spacechar, spacewidth) in config['specs']['spaces'].items():
-        print('Creating space: {}'.format(spacechar))
-        try:
-            glyphnum = ord(unicodedata.lookup(spacechar))
-        except KeyError:
-            printerr('`{}` in SPACES does not correspond to a unicode name'
-                     .format(spacechar), level='Warning')
-            continue
-        glyph = font.createChar(glyphnum)
-        glyph.width = int(round(spacewidth * config['specs']['real em']))
-
-    font.mergeFeature('MazonHebrew-Regular.fea')
-    font.save('MazonHebrew-Regular.gen.sfd')
-    font.generate('MazonHebrew-Regular.gen.otf')
+                adjust_bearings(d, glyph, glyphname)
 
 # TODO: This is terrible!
-def make_private_use_chars(font):
+# Using the empty string as the name to `adjust_bearings` won't affect anything
+# the way it is currently setup, and hopefully it will be more robust soon.
+def make_private_use_glyphs(font):
     glyph = font.createChar(0xf300, 'afii57668.fp')
     glyph.addReference('afii57668')
     glyph.useRefsMetrics('afii57668')
@@ -169,34 +161,29 @@ def make_private_use_chars(font):
     glyph = font.createChar(0xf303, 'hataf_patah_meteg')
     glyph.importOutlines('./Draft Material/Niqqudot/hebrew point hataf patah meteg.svg')
     glyph.correctDirection()
-    glyph.width = 0
-    bounds = glyph.boundingBox()
-    orig_width = bounds[2] - bounds[0]
-    bearing = orig_width / 2.0
-    glyph.left_side_bearing = -bearing
-    glyph.right_side_bearing = -bearing
-
+    adjust_bearings('./Draft Material/Niqqudot', glyph, '')
 
     glyph = font.createChar(0xf304, 'hataf_qamats_meteg')
     glyph.importOutlines('./Draft Material/Niqqudot/hebrew point hataf qamats meteg.svg')
-    glyph.correctDirection()
-    glyph.width = 0
-    bounds = glyph.boundingBox()
-    orig_width = bounds[2] - bounds[0]
-    bearing = orig_width / 2.0
-    glyph.left_side_bearing = -bearing
-    glyph.right_side_bearing = -bearing
-
+    adjust_bearings('./Draft Material/Niqqudot', glyph, '')
 
     glyph = font.createChar(0xf305, 'hataf_segol_meteg')
     glyph.importOutlines('./Draft Material/Niqqudot/hebrew point hataf segol meteg.svg')
     glyph.correctDirection()
-    glyph.width = 0
-    bounds = glyph.boundingBox()
-    orig_width = bounds[2] - bounds[0]
-    bearing = orig_width / 2.0
-    glyph.left_side_bearing = -bearing
-    glyph.right_side_bearing = -bearing
+    adjust_bearings('./Draft Material/Niqqudot', glyph, '')
+
+def make_space_glyphs(font):
+    # Make whitespace characters.
+    for (spacechar, spacewidth) in config['specs']['spaces'].items():
+        print('Creating space: {}'.format(spacechar))
+        try:
+            glyphnum = ord(unicodedata.lookup(spacechar))
+        except KeyError:
+            printerr('`{}` in SPACES does not correspond to a unicode name'
+                     .format(spacechar), level='Warning')
+            continue
+        glyph = font.createChar(glyphnum)
+        glyph.width = int(round(spacewidth * config['specs']['real em']))
 
 def printerr(errmsg, level='Error'):
     red = '\033[31;1m'
