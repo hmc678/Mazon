@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="1000"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="hebrew letter qof.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="909.78396"
+     inkscape:cy="564.60725"
+     inkscape:document-units="px"
+     inkscape:current-layer="g3804"
+     showgrid="true"
+     gridtolerance="10"
+     guidetolerance="10"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1859"
+     inkscape:window-height="1056"
+     inkscape:window-x="61"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       orientation="0,1"
+       position="500,247"
+       id="guide3019" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="500,732"
+       id="guide3072" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="500,842"
+       id="guide3074" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="500,955"
+       id="guide3076" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="100,500"
+       id="guide3867" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="180,500"
+       id="guide3869" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-52.362183)">
+    <g
+       id="g3804"
+       transform="translate(68.571429,411.42857)">
+      <path
+         sodipodi:nodetypes="sssssssssssssssssss"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-width:1.02755904px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 24.777312,-103.93767 c -1.749266,9.380228 10.70082,14.83701 25.193,14.563 120.436818,-2.27719 167.359258,-4.66358 287.335858,0.9213 72.6024,3.37962 79.97819,85.2380198 80.93529,106.93744 l 2.42647,55.01331 c 0.55404,12.56124 -4.35499,19.925266 -9.95366,27.16027 -39.19871,50.65539 -93.47273,98.80598 -142.38265,134.0201 -6.48388,4.66826 -6.97087,9.50998 -7.60172,15.4086 -1.0881,10.17398 3.54484,58.73189 11.46261,67.63135 3.86536,4.34461 10.12709,4.58898 15.37716,0.65672 68.97067,-51.65847 140.19074,-129.16053 185.47536,-196.8444 10.86739,-16.24276 11.8526,-32.611418 11.03638,-48.15621 L 480.3555,2.41421 c -8.82037,-167.98314 33.59822,-195.25991 -209.94733,-201.07628 -48.01065,-1.14659 -146.38345,-2.14439 -162.90817,-2.4448 -16.667193,-0.303 -32.398439,-17.91411 -44.204523,-18.10825 -4.2123,-0.0693 -8.424599,-0.13857 -12.6369,-0.2078 -3.650798,-0.06 -5.932764,2.51382 -6.7587,6.9428 -6.374191,34.18082 -12.748377,74.36163 -19.122565,108.54245 z"
+         id="path3786-1-4" />
+    </g>
+  </g>
+</svg>

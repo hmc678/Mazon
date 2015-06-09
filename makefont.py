@@ -172,6 +172,16 @@ def make_private_use_glyphs(font):
     glyph.correctDirection()
     adjust_bearings('./Draft Material/Niqqudot', glyph, '')
 
+    glyph = font.createChar(0xf306, 'qof.noleg')
+    glyph.importOutlines('./Draft Material/Letterforms/hebrew letter qof.noleg.svg')
+    glyph.correctDirection()
+    adjust_bearings('./Draft Material/Letterforms', glyph, 'hebrew letter qof')
+
+    glyph = font.createChar(0xf307, 'final_mem_with_hiriq')
+    glyph.importOutlines('./Draft Material/Letterforms/hebrew letter final mem with hiriq.svg')
+    glyph.correctDirection()
+    adjust_bearings('./Draft Material/Letterforms', glyph, 'hebrew letter final mem')
+
 def make_space_glyphs(font):
     # Make whitespace characters.
     for (spacechar, spacewidth) in config['specs']['spaces'].items():
