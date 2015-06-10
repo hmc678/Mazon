@@ -21,6 +21,11 @@ lookup caltFurtivePatah {
   sub \afii57668' \afii57807 [\afii57799 \afii57801 \afii57800 \afii57802 \afii57793 \afii57794 \afii57795 \afii57798 \afii57797 \afii57796 \afii57839 \uni05C7] [@Spaces @Punctuation] by \afii57668.fp;
 } caltFurtivePatah;
 
+lookup caltQofVowelMeteg {
+  lookupflag RightToLeft;
+  sub \afii57687' [\afii57799 \afii57801 \afii57800 \afii57802 \afii57793 \afii57794 \afii57795 \afii57798 \afii57797 \afii57796 \afii57839 \uni05C7] \afii57839 by \afii57687.niqqudadj;
+} caltQofVowelMeteg;
+
 feature ccmp {
   script DFLT;
     language dflt;
@@ -37,11 +42,13 @@ feature calt {
      language dflt ;
       lookup caltAltAyin;
       lookup caltFurtivePatah;
+      lookup caltQofVowelMeteg;
 
   script hebr;
      language dflt ;
       lookup caltAltAyin;
       lookup caltFurtivePatah;
+      lookup caltQofVowelMeteg;
 } calt;
 
 # GPOS 
@@ -157,6 +164,7 @@ lookup markLowWideNiqqud {
   pos base [\afii57666 ] <anchor 228 0> mark @LowWideNiqqud;
   pos base [\afii57683 ] <anchor 288 0> mark @LowWideNiqqud;
   pos base [\afii57687 ] <anchor 380 0> mark @LowWideNiqqud;
+  pos base [\afii57687.niqqudadj ] <anchor 430 0> mark @LowWideNiqqud;
   pos base [\afii57679 ] <anchor 176 0> mark @LowWideNiqqud;
   pos base [\afii57672 ] <anchor 330 0> mark @LowWideNiqqud;
   pos base [\afii57677 ] <anchor 322 0> mark @LowWideNiqqud;
@@ -194,6 +202,7 @@ lookup markLowNarrowNiqqud {
   pos base [\afii57666 ] <anchor 228 0> mark @LowNarrowNiqqud;
   pos base [\afii57683 ] <anchor 288 0> mark @LowNarrowNiqqud;
   pos base [\afii57687 ] <anchor 350 0> mark @LowNarrowNiqqud;
+  pos base [\afii57687.niqqudadj ] <anchor 390 0> mark @LowNarrowNiqqud;
   pos base [\afii57672 ] <anchor 330 0> mark @LowNarrowNiqqud;
   pos base [\afii57679 ] <anchor 176 0> mark @LowNarrowNiqqud;
   pos base [\afii57677 ] <anchor 322 0> mark @LowNarrowNiqqud;
@@ -232,7 +241,7 @@ lookup DageshKafSofitTrigger {
 lookup kernHorizontalKerning {
   lookupflag RightToLeft, IgnoreMarks;
     # bet gimel kaf mem nun ayin tav + yod
-    pos [\afii57665 \afii57666 \afii57675 \afii57678 \afii57680 \afii57682 \afii57690] \afii57673 <-25 0 -25 0>;
+    pos [\afii57665 \afii57666 \afii57675 \afii57678 \afii57680 \afii57682 \afii57690] \afii57673 <-35 0 -35 0>;
     # bet gimel mem pe nun tav + dalet he ayin qof
     pos [\afii57665 \afii57678 \afii57680 \afii57684 \afii57690] [\afii57667 \afii57668 \afii57682 \afii57682.fp \afii57687] <-25 0 -25 0>;
     # dalet vav yod kaf-sofit lamed pe-sofit resh + bet
@@ -241,6 +250,8 @@ lookup kernHorizontalKerning {
     pos \afii57682 [\afii57665 \afii57668] <-25 0 -25 0>;
     # qof tav + ayin
     pos [\afii57687 \afii57690] [\afii57682 \afii57682.fp] <-25 0 -25 0>;
+    # resh + gimel
+    pos \afii57688 \afii57666 <-25 0 -25 0>;
     # yod + nun sofit
     pos \afii57673 \afii57679 <25 0 25 0>;
     # dalet vav yod kaf-sofit lamed pe-sofit resh + comma period

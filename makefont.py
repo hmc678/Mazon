@@ -182,6 +182,10 @@ def make_private_use_glyphs(font):
     glyph.correctDirection()
     adjust_bearings('./Draft Material/Letterforms', glyph, 'hebrew letter final mem')
 
+    glyph = font.createChar(0xf308, 'afii57687.niqqudadj')
+    glyph.addReference('afii57687')
+    glyph.useRefsMetrics('afii57687')
+
 def make_space_glyphs(font):
     # Make whitespace characters.
     for (spacechar, spacewidth) in config['specs']['spaces'].items():
